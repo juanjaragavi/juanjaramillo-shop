@@ -1,20 +1,22 @@
 .root {
     display: grid;
-    grid-template-columns: 5fr 5fr;
-    padding: 45px 0px;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    margin: 5px 25px;
 }
 
 .linkContainers {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .categoryName {
+    color: var(--jj-pink);
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
     display: inline-block;
 }
 
@@ -39,21 +41,9 @@
 
 .menuLink {
     transition: color 0.3s ease-in-out;
-    color: var(--standard-black);
+    color: var(--standard-white);
 }
 
 .menuLink:hover {
-    color: var(--standard-gold);
-}
-
-.imageContainer {
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    justify-content: flex-end;
-}
-
-.imageContainer img{
-    width: 230px;
-    height: 305px;
+    color: var(--jj-pink);
 }

@@ -1,16 +1,10 @@
 import * as React from 'react';
-
+import { Link } from 'gatsby';
 import Layout from '../components/Layout/Layout';
-
-import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
-
 import * as styles from './index.module.css';
 import { navigate } from 'gatsby';
 
 const IndexPage = () => {
-  const newArrivals = generateMockProductData(3, 'shirt');
-  const blogData = generateMockBlogData(3);
-
   const goToShop = () => {
     navigate('/shop');
   };
@@ -20,16 +14,6 @@ const IndexPage = () => {
       <main className={styles.home}>
         <section className={styles.main}>
           <div className={styles.overlap}>
-            <div className={styles.contenedorlogoy}>
-              <img
-                className={styles.logojuanjaramillo}
-                alt="Logo juan jaramillo"
-                src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/logo-juan-jaramillo@2x.png"
-              />
-              <p className={styles.taglinetienda}>
-                Tienda en Línea de Productos y Servicios de IA.
-              </p>
-            </div>
             <div className={styles.contenedorservicios}>
               <div className={styles.contenedorservicios2}>
                 <div className={styles.packsdeservicios}>

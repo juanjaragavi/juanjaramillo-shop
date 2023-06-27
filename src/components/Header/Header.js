@@ -132,9 +132,9 @@ const Header = (prop) => {
           showMenu === true ? styles.show : ''
         }`}
       >
-        <Container size={'large'} spacing={'min'}>
+        <div className={styles.subMenu}>
           <ExpandedMenu menu={menu} />
-        </Container>
+        </div>
       </div>
 
       {/* minicart container */}

@@ -20,7 +20,7 @@
   "paymentOptions": {
     "visa": true,
     "mastercard": true,
-    "amex": true
+    "amex": false
   },
   "footerLinks": [
     {
@@ -64,64 +64,86 @@
   ],
   "headerLinks": [
     {
-      "menuLabel": "Shop",
+      "menuLabel": "Inicio",
+      "menuLink": "/",
+      "category": null
+    },
+    {
+      "menuLabel": "Tienda",
       "menuLink": "/shop",
       "category": [
         {
-          "categoryLabel": "woman",
+          "categoryLabel": "servicios",
           "submenu": [
             {
-              "menuLabel": "All clothing",
+              "menuLabel": "Consultorías en IA (remoto)",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
+              "menuLabel": "Consultorías en IA (presencial)",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "jackets",
+              "menuLabel": "Packs de Servicios (remoto)",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "trousers",
+              "menuLabel": "Packs de Servicios (presencial)",
               "menuLink": "/shop"
             }
           ]
         },
         {
-          "categoryLabel": "men",
+          "categoryLabel": "prompts",
           "submenu": [
             {
-              "menuLabel": "All clothing",
+              "menuLabel": "Gratis",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
+              "menuLabel": "De pago",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "jackets",
+              "menuLabel": "Super Prompts",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "trousers",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "pants",
+              "menuLabel": "Prompts para crear imágenes",
               "menuLink": "/shop"
             }
           ]
         },
         {
-          "categoryLabel": "accessories",
+          "categoryLabel": "aprendizaje",
           "submenu": [
             {
-              "menuLabel": "caps & scarves",
+              "menuLabel": "Cursos gratuitos",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "bags",
+              "menuLabel": "Cursos de pago",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Tutoriales",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Capacitaciones personalizadas",
+              "menuLink": "/shop"
+            }
+          ]
+        },
+        {
+          "categoryLabel": "imágenes",
+          "submenu": [
+            {
+              "menuLabel": "Generación de imágenes",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Herramientas",
               "menuLink": "/shop"
             }
           ]
@@ -129,13 +151,13 @@
       ]
     },
     {
-      "menuLabel": "journal",
-      "menuLink": "/blog",
+      "menuLabel": "Blog",
+      "menuLink": "https://blog.juanjaramillo.tech/",
       "category": null
     },
     {
-      "menuLabel": "About",
-      "menuLink": "/about",
+      "menuLabel": "Contacto",
+      "menuLink": "https://bit.ly/3r3zf3V",
       "category": null
     }
   ],

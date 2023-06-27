@@ -94,7 +94,7 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   font-family: var(--standard-font);
-  color: var(--filter-purple);
+  color: var(--standard-white);
   font-size: 16px; /* BASE FONT SIZE */
   line-height: 1.5em;
   font-weight: 400;
