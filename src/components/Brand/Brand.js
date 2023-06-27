@@ -1,5 +1,4 @@
 import React from 'react';
-import { navigate } from 'gatsby';
 import { Link } from 'gatsby';
 import * as styles from './Brand.module.css';
 
@@ -8,13 +7,8 @@ const Brand = (props) => {
     <div
       className={styles.root}
       role={'presentation'}
-      onClick={() => navigate('/')}
     >
-      
-      <Link
-        className='linkLogoYTaglineJuanjaramillo'
-        href="/"
-      >
+      <Link className="linkLogoYTaglineJuanjaramillo" href="/">
         <img
           className={styles.logojuanjaramillo}
           alt="Logo juan jaramillo"

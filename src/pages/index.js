@@ -22,9 +22,9 @@ const IndexPage = () => {
                     alt="Brain illustration"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-4.svg"
                   />
-                  <div className={styles.textwrapper5}>
+                  <Link className={styles.textwrapper5} href="/">
                     Packs de Servicios (presencial)
-                  </div>
+                  </Link>
                 </div>
                 <div className={styles.packsdeservicios2}>
                   <img
@@ -32,9 +32,9 @@ const IndexPage = () => {
                     alt="Brain illustration"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-3.svg"
                   />
-                  <div className={styles.textwrapper6}>
+                  <Link className={styles.textwrapper6} href="/">
                     Packs de Servicios (remoto)
-                  </div>
+                  </Link>
                 </div>
                 <div className={styles.consultoriasenia}>
                   <img
@@ -42,9 +42,9 @@ const IndexPage = () => {
                     alt="Brain illustration"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-2.svg"
                   />
-                  <div className={styles.textwrapper7}>
+                  <Link className={styles.textwrapper7} href="/">
                     Consultorías en IA (presencial)
-                  </div>
+                  </Link>
                 </div>
                 <div className={styles.consultoriasenia2}>
                   <img
@@ -52,9 +52,9 @@ const IndexPage = () => {
                     alt="Brain illustration"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-1.svg"
                   />
-                  <div className={styles.textwrapper8}>
+                  <Link className={styles.textwrapper8} href="/">
                     Consultorías en IA (remoto)
-                  </div>
+                  </Link>
                 </div>
                 <div className={styles.contenedortitulo}>
                   <img
@@ -62,7 +62,9 @@ const IndexPage = () => {
                     alt="Line"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-3.svg"
                   />
-                  <div className={styles.textwrapper9}>SERVICIOS</div>
+                  <Link className={styles.textwrapper9} href="/">
+                    SERVICIOS
+                  </Link>
                   <img
                     className={styles.brainillustration4}
                     alt="Brain illustration"
@@ -77,9 +79,9 @@ const IndexPage = () => {
                     alt="Stars svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-4.svg"
                   />
-                  <div className={styles.textwrapper10}>
+                  <Link className={styles.textwrapper10} href="/">
                     Prompts para crear imágenes
-                  </div>
+                  </Link>
                 </div>
                 <div className={styles.superprompts}>
                   <img
@@ -87,7 +89,9 @@ const IndexPage = () => {
                     alt="Stars svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-3.svg"
                   />
-                  <div className={styles.textwrapper11}>Super Prompts</div>
+                  <Link className={styles.textwrapper11} href="/">
+                    Super Prompts
+                  </Link>
                 </div>
                 <div className={styles.promptsdepago}>
                   <img
@@ -95,7 +99,9 @@ const IndexPage = () => {
                     alt="Stars svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-2.svg"
                   />
-                  <div className={styles.textwrapper12}>De pago</div>
+                  <Link className={styles.textwrapper12} href="/">
+                    De pago
+                  </Link>
                 </div>
                 <div className={styles.promptsgratis}>
                   <img
@@ -103,11 +109,15 @@ const IndexPage = () => {
                     alt="Stars svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-1.svg"
                   />
-                  <div className={styles.textwrapper13}>Gratis</div>
+                  <Link className={styles.textwrapper13} href="/">
+                    Gratis
+                  </Link>
                 </div>
                 <div className={styles.contenedortitulo2}>
                   <div className={styles.overlapgroup}>
-                    <div className={styles.textwrapper14}>PROMPTS</div>
+                    <Link className={styles.textwrapper14} href="/">
+                      PROMPTS
+                    </Link>
                     <img
                       className={styles.starssvgrepocom5}
                       alt="Stars svgrepo com"
@@ -128,9 +138,9 @@ const IndexPage = () => {
                     alt="Graduate svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-4.svg"
                   />
-                  <div className={styles.textwrapper15}>
+                  <Link className={styles.textwrapper15} href="/">
                     Capacitaciones personalizadas
-                  </div>
+                  </Link>
                 </div>
                 <div className={styles.tutoriales}>
                   <img
@@ -138,7 +148,9 @@ const IndexPage = () => {
                     alt="Graduate svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-3.svg"
                   />
-                  <div className={styles.textwrapper16}>Tutoriales</div>
+                  <Link className={styles.textwrapper16} href="/">
+                    Tutoriales
+                  </Link>
                 </div>
                 <div className={styles.cursosdepago}>
                   <img
@@ -146,7 +158,9 @@ const IndexPage = () => {
                     alt="Graduate svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-2.svg"
                   />
-                  <div className={styles.textwrapper17}>Cursos de pago</div>
+                  <Link className={styles.textwrapper11} href="/">
+                    Cursos de pago
+                  </Link>
                 </div>
                 <div className={styles.cursosgratuitos}>
                   <img
@@ -154,10 +168,14 @@ const IndexPage = () => {
                     alt="Graduate svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-1.svg"
                   />
-                  <div className={styles.textwrapper18}>Cursos gratuitos</div>
+                  <Link className={styles.textwrapper18} href="/">
+                    Cursos gratuitos
+                  </Link>
                 </div>
                 <div className={styles.contenedortitulo3}>
-                  <div className={styles.textwrapper19}>APRENDIZAJE</div>
+                  <Link className={styles.textwrapper19} href="/">
+                    APRENDIZAJE
+                  </Link>
                   <img
                     className={styles.graduatesvgrepocom5}
                     alt="Graduate svgrepo com"
@@ -178,7 +196,9 @@ const IndexPage = () => {
                       alt="Vector"
                       src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/vector-2.svg"
                     />
-                    <div className={styles.textwrapper20}>Herramientas</div>
+                    <Link className={styles.textwrapper20} href="/">
+                      Herramientas
+                    </Link>
                   </div>
                   <div className={styles.generacionde}>
                     <img
@@ -186,13 +206,15 @@ const IndexPage = () => {
                       alt="Vector"
                       src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/vector-1.svg"
                     />
-                    <div className={styles.textwrapper21}>
+                    <Link className={styles.textwrapper21} href="/">
                       Generación de imágenes
-                    </div>
+                    </Link>
                   </div>
                   <div className={styles.overlapgroupwrapper}>
                     <div className={styles.overlapgroup2}>
-                      <div className={styles.textwrapper22}>IMÁGENES</div>
+                      <Link className={styles.textwrapper22} href="/">
+                        IMÁGENES
+                      </Link>
                       <img
                         className={styles.imagesvgrepocom}
                         alt="svgrepo com"

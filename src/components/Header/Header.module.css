@@ -67,6 +67,9 @@
     transition: border 0.3s ease-in-out;
     width: 100%;
 }
+.navLink:hover {
+    border-bottom: 2px solid var(--jj-pink);
+}
 
 .activeLink {
     border-bottom: 2px solid var(--jj-pink);
