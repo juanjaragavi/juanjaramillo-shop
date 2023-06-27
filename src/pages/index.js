@@ -1,20 +1,11 @@
 import * as React from 'react';
 
-import AttributeGrid from '../components/AttributeGrid';
-import Container from '../components/Container';
-import Hero from '../components/Hero';
-import BlogPreviewGrid from '../components/BlogPreviewGrid';
-import Highlight from '../components/Highlight';
 import Layout from '../components/Layout/Layout';
-import ProductCollectionGrid from '../components/ProductCollectionGrid';
-import ProductCardGrid from '../components/ProductCardGrid';
-import Quote from '../components/Quote';
-import Title from '../components/Title';
 
 import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
 
 import * as styles from './index.module.css';
-import { Link, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 
 const IndexPage = () => {
   const newArrivals = generateMockProductData(3, 'shirt');
@@ -26,120 +17,241 @@ const IndexPage = () => {
 
   return (
     <Layout disablePaddingBottom>
-      {/* Hero Container */}
-      <Hero
-        maxWidth={'500px'}
-        image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
-        ctaAction={goToShop}
-      />
-
-      {/* Message Container */}
-      <div className={styles.messageContainer}>
-        <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
-        </p>
-        <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
-        </p>
-      </div>
-
-      {/* Collection Container */}
-      <div className={styles.collectionContainer}>
-        <Container size={'large'}>
-          <Title name={'New Collection'} />
-          <ProductCollectionGrid />
-        </Container>
-      </div>
-
-      {/* New Arrivals */}
-      <div className={styles.newArrivalsContainer}>
-        <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
-          <ProductCardGrid
-            spacing={true}
-            showSlider
-            height={480}
-            columns={3}
-            data={newArrivals}
-          />
-        </Container>
-      </div>
-
-      {/* Highlight  */}
-      <div className={styles.highlightContainer}>
-        <Container size={'large'} fullMobile>
-          <Highlight
-            image={'/highlight.png'}
-            altImage={'highlight image'}
-            miniImage={'/highlightmin.png'}
-            miniImageAlt={'mini highlight image'}
-            title={'Luxury Knitwear'}
-            description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
-            textLink={'shop now'}
-            link={'/shop'}
-          />
-        </Container>
-      </div>
-
-      {/* Promotion */}
-      <div className={styles.promotionContainer}>
-        <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
-        <div className={styles.linkContainers}>
-          <Link to={'/shop'}>WOMAN</Link>
-          <Link to={'/shop'}>MAN</Link>
-        </div>
-      </div>
-
-      {/* Quote */}
-      <Quote
-        bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
-        quote={
-          '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
-        }
-      />
-
-      {/* Blog Grid */}
-      <div className={styles.blogsContainer}>
-        <Container size={'large'}>
-          <Title name={'Journal'} subtitle={'Notes on life and style'} />
-          <BlogPreviewGrid data={blogData} />
-        </Container>
-      </div>
-
-      {/* Promotion */}
-      <div className={styles.sustainableContainer}>
-        <Hero
-          image={'/banner3.png'}
-          title={'We are Sustainable'}
-          subtitle={
-            'From caring for our land to supporting our people, discover the steps we’re taking to do more for the world around us.'
-          }
-          ctaText={'read more'}
-          maxWidth={'660px'}
-          ctaStyle={styles.ctaCustomButton}
-        />
-      </div>
-
-      {/* Social Media */}
-      <div className={styles.socialContainer}>
-        <Title
-          name={'Styled by You'}
-          subtitle={'Tag @sydney to be featured.'}
-        />
-        <div className={styles.socialContentGrid}>
-          <img src={`/social/socialMedia1.png`} alt={'social media 1'} />
-          <img src={`/social/socialMedia2.png`} alt={'social media 2'} />
-          <img src={`/social/socialMedia3.png`} alt={'social media 3'} />
-          <img src={`/social/socialMedia4.png`} alt={'social media 4'} />
-        </div>
-      </div>
-      <AttributeGrid />
+      <main className={styles.home}>
+        <section className={styles.main}>
+          <div className={styles.overlap}>
+            <div className={styles.contenedorlogoy}>
+              <img
+                className={styles.logojuanjaramillo}
+                alt="Logo juan jaramillo"
+                src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/logo-juan-jaramillo@2x.png"
+              />
+              <p className={styles.taglinetienda}>
+                Tienda en Línea de Productos y Servicios de IA.
+              </p>
+            </div>
+            <div className={styles.contenedorservicios}>
+              <div className={styles.contenedorservicios2}>
+                <div className={styles.packsdeservicios}>
+                  <img
+                    className={styles.brainillustration}
+                    alt="Brain illustration"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-4.svg"
+                  />
+                  <div className={styles.textwrapper5}>
+                    Packs de Servicios (presencial)
+                  </div>
+                </div>
+                <div className={styles.packsdeservicios2}>
+                  <img
+                    className={styles.img}
+                    alt="Brain illustration"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-3.svg"
+                  />
+                  <div className={styles.textwrapper6}>
+                    Packs de Servicios (remoto)
+                  </div>
+                </div>
+                <div className={styles.consultoriasenia}>
+                  <img
+                    className={styles.brainillustration2}
+                    alt="Brain illustration"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-2.svg"
+                  />
+                  <div className={styles.textwrapper7}>
+                    Consultorías en IA (presencial)
+                  </div>
+                </div>
+                <div className={styles.consultoriasenia2}>
+                  <img
+                    className={styles.brainillustration3}
+                    alt="Brain illustration"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-1.svg"
+                  />
+                  <div className={styles.textwrapper8}>
+                    Consultorías en IA (remoto)
+                  </div>
+                </div>
+                <div className={styles.contenedortitulo}>
+                  <img
+                    className={styles.line}
+                    alt="Line"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-3.svg"
+                  />
+                  <div className={styles.textwrapper9}>SERVICIOS</div>
+                  <img
+                    className={styles.brainillustration4}
+                    alt="Brain illustration"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.contenedorservicios3}>
+                <div className={styles.promptsparacrear}>
+                  <img
+                    className={styles.starssvgrepocom}
+                    alt="Stars svgrepo com"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-4.svg"
+                  />
+                  <div className={styles.textwrapper10}>
+                    Prompts para crear imágenes
+                  </div>
+                </div>
+                <div className={styles.superprompts}>
+                  <img
+                    className={styles.starssvgrepocom2}
+                    alt="Stars svgrepo com"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-3.svg"
+                  />
+                  <div className={styles.textwrapper11}>Super Prompts</div>
+                </div>
+                <div className={styles.promptsdepago}>
+                  <img
+                    className={styles.starssvgrepocom3}
+                    alt="Stars svgrepo com"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-2.svg"
+                  />
+                  <div className={styles.textwrapper12}>De pago</div>
+                </div>
+                <div className={styles.promptsgratis}>
+                  <img
+                    className={styles.starssvgrepocom4}
+                    alt="Stars svgrepo com"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-1.svg"
+                  />
+                  <div className={styles.textwrapper13}>Gratis</div>
+                </div>
+                <div className={styles.contenedortitulo2}>
+                  <div className={styles.overlapgroup}>
+                    <div className={styles.textwrapper14}>PROMPTS</div>
+                    <img
+                      className={styles.starssvgrepocom5}
+                      alt="Stars svgrepo com"
+                      src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com.svg"
+                    />
+                  </div>
+                  <img
+                    className={styles.line2}
+                    alt="Line"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-3.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.contenedorservicios4}>
+                <div className={styles.capacitaciones}>
+                  <img
+                    className={styles.graduatesvgrepocom}
+                    alt="Graduate svgrepo com"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-4.svg"
+                  />
+                  <div className={styles.textwrapper15}>
+                    Capacitaciones personalizadas
+                  </div>
+                </div>
+                <div className={styles.tutoriales}>
+                  <img
+                    className={styles.graduatesvgrepocom2}
+                    alt="Graduate svgrepo com"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-3.svg"
+                  />
+                  <div className={styles.textwrapper16}>Tutoriales</div>
+                </div>
+                <div className={styles.cursosdepago}>
+                  <img
+                    className={styles.graduatesvgrepocom3}
+                    alt="Graduate svgrepo com"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-2.svg"
+                  />
+                  <div className={styles.textwrapper17}>Cursos de pago</div>
+                </div>
+                <div className={styles.cursosgratuitos}>
+                  <img
+                    className={styles.graduatesvgrepocom4}
+                    alt="Graduate svgrepo com"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-1.svg"
+                  />
+                  <div className={styles.textwrapper18}>Cursos gratuitos</div>
+                </div>
+                <div className={styles.contenedortitulo3}>
+                  <div className={styles.textwrapper19}>APRENDIZAJE</div>
+                  <img
+                    className={styles.graduatesvgrepocom5}
+                    alt="Graduate svgrepo com"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com.svg"
+                  />
+                  <img
+                    className={styles.line3}
+                    alt="Line"
+                    src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-1.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.overlapwrapper}>
+                <div className={styles.overlap2}>
+                  <div className={styles.herramientas}>
+                    <img
+                      className={styles.vector2}
+                      alt="Vector"
+                      src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/vector-2.svg"
+                    />
+                    <div className={styles.textwrapper20}>Herramientas</div>
+                  </div>
+                  <div className={styles.generacionde}>
+                    <img
+                      className={styles.vector3}
+                      alt="Vector"
+                      src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/vector-1.svg"
+                    />
+                    <div className={styles.textwrapper21}>
+                      Generación de imágenes
+                    </div>
+                  </div>
+                  <div className={styles.overlapgroupwrapper}>
+                    <div className={styles.overlapgroup2}>
+                      <div className={styles.textwrapper22}>IMÁGENES</div>
+                      <img
+                        className={styles.imagesvgrepocom}
+                        alt="svgrepo com"
+                        src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/image-01-svgrepo-com.svg"
+                      />
+                      <img
+                        className={styles.line4}
+                        alt="Line"
+                        src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-3.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.contenedorchat}>
+              <div className={styles.contenedorbarrade}>
+                <img
+                  className={styles.lupabuscadoria}
+                  alt="Lupa buscador ia"
+                  src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/lupa-buscador-ia.svg"
+                />
+                <div className={styles.barradebusqueda}>
+                  <input
+                    type="text"
+                    className={styles.searchexample}
+                    id="myInput"
+                    placeholder="Busca lo que quieras en lenguaje natural..."
+                  />
+                </div>
+                <input
+                  className={styles.flechaenviar}
+                  type="image"
+                  src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/flecha-enviar.svg"
+                  alt="Submit"
+                  width="21"
+                  height="24"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </Layout>
   );
 };

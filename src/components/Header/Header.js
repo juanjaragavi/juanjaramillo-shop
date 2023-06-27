@@ -23,32 +23,16 @@ const Header = (prop) => {
   const [menu, setMenu] = useState();
   const [activeMenu, setActiveMenu] = useState();
 
-  const [showSearch, setShowSearch] = useState(false);
-  const [search, setSearch] = useState('');
-
-  const searchRef = createRef();
   const bannerMessage = 'Free shipping worldwide';
-  const searchSuggestions = [
-    'Oversize sweaters',
-    'Lama Pajamas',
-    'Candles Cinnamon',
-  ];
 
   const handleHover = (navObject) => {
     if (navObject.category) {
       setShowMenu(true);
       setMenu(navObject.category);
-      setShowSearch(false);
     } else {
       setMenu(undefined);
     }
     setActiveMenu(navObject.menuLabel);
-  };
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    navigate(`/search?q=${search}`);
-    setShowSearch(false);
   };
 
   // disable active menu when show menu is hidden
@@ -60,7 +44,6 @@ const Header = (prop) => {
   useEffect(() => {
     const onScroll = () => {
       setShowMenu(false);
-      setShowSearch(false);
       setActiveMenu(undefined);
     };
     window.removeEventListener('scroll', onScroll);
@@ -68,21 +51,8 @@ const Header = (prop) => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  //listen for show search and delay trigger of focus due to CSS visiblity property
-  useEffect(() => {
-    if (showSearch === true) {
-      setTimeout(() => {
-        searchRef.current.focus();
-      }, 250);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showSearch]);
-
   return (
     <div className={styles.root}>
-      <div className={styles.headerMessageContainer}>
-        <span>{bannerMessage}</span>
-      </div>
       <Container size={'large'} spacing={'min'}>
         {/* header container */}
         <div className={styles.header}>
@@ -119,15 +89,6 @@ const Header = (prop) => {
           </div>
           <Brand />
           <div className={styles.actionContainers}>
-            <button
-              aria-label="Search"
-              className={`${styles.iconButton} ${styles.iconContainer}`}
-              onClick={() => {
-                setShowSearch(!showSearch);
-              }}
-            >
-              <Icon symbol={'search'}></Icon>
-            </button>
             <Link
               aria-label="Favorites"
               href="/account/favorites"
@@ -159,49 +120,6 @@ const Header = (prop) => {
               <AddNotification openCart={() => setShowMiniCart(true)} />
             </div>
           </div>
-        </div>
-
-        {/* search container */}
-        <div
-          className={`${styles.searchContainer} ${
-            showSearch === true ? styles.show : styles.hide
-          }`}
-        >
-          <h4>What are you looking for?</h4>
-          <form className={styles.searchForm} onSubmit={(e) => handleSearch(e)}>
-            <FormInputField
-              ref={searchRef}
-              icon={'arrow'}
-              id={'searchInput'}
-              value={search}
-              placeholder={''}
-              type={'text'}
-              handleChange={(_, e) => setSearch(e)}
-            />
-          </form>
-          <div className={styles.suggestionContianer}>
-            {searchSuggestions.map((suggestion, index) => (
-              <p
-                role={'presentation'}
-                onClick={() => {
-                  setShowSearch(false);
-                  navigate(`/search?q=${suggestion}`);
-                }}
-                key={index}
-                className={styles.suggestion}
-              >
-                {suggestion}
-              </p>
-            ))}
-          </div>
-          <div
-            role={'presentation'}
-            onClick={(e) => {
-              e.stopPropagation();
-              setShowSearch(false);
-            }}
-            className={styles.backdrop}
-          ></div>
         </div>
       </Container>
 

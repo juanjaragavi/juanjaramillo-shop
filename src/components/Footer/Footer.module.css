@@ -1,11 +1,10 @@
 .root {
-    background-color: var(--bg-dark);
+    background-color: transparent;
     padding-bottom: 50px;
 }
 
 .content {
-    padding-top: 72px;
-    padding-bottom: 40px;
+    padding: 0;
 }
 
 .contentTop {
