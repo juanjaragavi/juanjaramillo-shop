@@ -20,7 +20,7 @@ const Breadcrumbs = ({ crumbs }) => {
           <span key={crumbIndex}>
             {crumbIndex > 0 && (
               <span className={styles.spacer}>
-                <Icon symbol={'caret'}></Icon>
+                |
               </span>
             )}
             {typeof crumb === 'object' && 'link' in crumb && (

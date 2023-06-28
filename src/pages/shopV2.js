@@ -31,7 +31,7 @@ const ShopV2Page = (props) => {
       <div className={styles.root}>
         <Container size={'large'} spacing={'min'}>
           <Breadcrumbs
-            crumbs={[{ link: '/', label: 'Home' }, { label: 'Woman' }]}
+            crumbs={[{ link: '/', label: 'Inicio' }, { label: 'Woman' }]}
           />
         </Container>
         <Banner

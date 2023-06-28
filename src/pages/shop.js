@@ -8,7 +8,6 @@ import Container from '../components/Container';
 import Chip from '../components/Chip';
 import Icon from '../components/Icons/Icon';
 import Layout from '../components/Layout';
-import LayoutOption from '../components/LayoutOption';
 import ProductCardGrid from '../components/ProductCardGrid';
 import { generateMockProductData } from '../helpers/mock';
 import Button from '../components/Button';
@@ -35,16 +34,17 @@ const ShopPage = (props) => {
           <div className={styles.breadcrumbContainer}>
             <Breadcrumbs
               crumbs={[
-                { link: '/', label: 'Home' },
-                { link: '/', label: 'Woman' },
-                { label: 'Sweaters' },
+                { link: '/', label: 'Inicio' },
+                { link: '/', label: 'Servicios' },
+                { label: 'Consultorías en IA (Remoto)' },
               ]}
             />
           </div>
         </Container>
         <Banner
+          bgColor='transparent'
           maxWidth={'650px'}
-          name={`Woman's Sweaters`}
+          name={`Consultorías en Inteligencia Artificial`}
           subtitle={
             'Look to our women’s sweaters for modern takes on one-and-done dressing. From midis in bold prints to dramatic floor-sweeping styles and easy all-in-ones, our edit covers every mood.'
           }
@@ -59,12 +59,12 @@ const ShopPage = (props) => {
                 onClick={() => setShowFilter(!showFilter)}
               >
                 <Icon symbol={'filter'} />
-                <span>Filters</span>
+                <span>Filtros</span>
               </div>
               <div
                 className={`${styles.iconContainer} ${styles.sortContainer}`}
               >
-                <span>Sort by</span>
+                <span>Ordenar por</span>
                 <Icon symbol={'caret'} />
               </div>
             </div>
@@ -79,19 +79,17 @@ const ShopPage = (props) => {
             <Chip name={'S'} />
           </div>
           <div className={styles.productContainer}>
-            <span className={styles.mobileItemCount}>476 items</span>
+            <span className={styles.mobileItemCount}>476 ítems</span>
             <ProductCardGrid data={data}></ProductCardGrid>
           </div>
           <div className={styles.loadMoreContainer}>
-            <span>6 of 456</span>
+            <span>6 de 456</span>
             <Button fullWidth level={'secondary'}>
-              LOAD MORE
+              CARGAR MÁS
             </Button>
           </div>
         </Container>
       </div>
-
-      <LayoutOption />
     </Layout>
   );
 };

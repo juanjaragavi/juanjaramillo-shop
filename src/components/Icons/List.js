@@ -10,7 +10,7 @@ const List = () => (
   >
     <path
       d="M7 4a1 1 0 1 0 2 0 1 1 0 0 0-2 0ZM15 4a1 1 0 1 0 2 0 1 1 0 0 0-2 0ZM7 12a1 1 0 1 0 2 0 1 1 0 0 0-2 0ZM15 12a1 1 0 1 0 2 0 1 1 0 0 0-2 0ZM7 20a1 1 0 1 0 2 0 1 1 0 0 0-2 0ZM15 20a1 1 0 1 0 2 0 1 1 0 0 0-2 0Z"
-      stroke="currentColor"
+      stroke="var(--jj-pink)"
       strokeWidth={2}
     />
   </svg>
