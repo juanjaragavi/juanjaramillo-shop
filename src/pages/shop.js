@@ -51,7 +51,7 @@ const ShopPage = (props) => {
         />
         <Container size={'large'} spacing={'min'}>
           <div className={styles.metaContainer}>
-            <span className={styles.itemCount}>476 items</span>
+            <span className={styles.itemCount}>476 ítems</span>
             <div className={styles.controllerContainer}>
               <div
                 className={styles.iconContainer}

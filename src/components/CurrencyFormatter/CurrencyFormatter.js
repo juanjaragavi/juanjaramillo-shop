@@ -5,7 +5,7 @@ import { isNumeric } from '../../helpers/general';
 const CurrencyFormatter = ({
   amount,
   currency = 'COP',
-  appendZero = false,
+  appendZero = true,
   useDollar = false,
 }) => {
   let displayAmount =
@@ -50,7 +50,7 @@ const CurrencyFormatter = ({
     </>
   );
 
-  return isNumeric(amount) ? priceComponent : 'No price available';
+  return isNumeric(amount) ? priceComponent : 'No hay un precio disponible.';
 };
 
 export default CurrencyFormatter;

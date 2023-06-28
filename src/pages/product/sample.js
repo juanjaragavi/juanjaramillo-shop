@@ -2,7 +2,6 @@ import React, { useState, useContext } from 'react';
 import * as styles from './sample.module.css';
 
 import Accordion from '../../components/Accordion';
-import AdjustItem from '../../components/AdjustItem';
 import Button from '../../components/Button';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Container from '../../components/Container';
@@ -24,7 +23,6 @@ const ProductPage = (props) => {
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
   const showNotification = ctxAddItemNotification.showNotification;
   const sampleProduct = generateMockProductData(1, 'sample')[0];
-  const [qty, setQty] = useState(0);
   const [isWishlist, setIsWishlist] = useState(false);
   const [activeSwatch, setActiveSwatch] = useState(
     sampleProduct.colorOptions[0]
@@ -52,8 +50,8 @@ const ProductPage = (props) => {
               <h1>{sampleProduct.name}</h1>
               <span className={styles.vendor}> por {sampleProduct.vendor}</span>
 
-              <div className={styles.priceContainer}>
-                <CurrencyFormatter appendZero amount={sampleProduct.price} />
+              <div className={styles.description}>
+                <p>{sampleProduct.description}</p>
               </div>
 
               <div>
@@ -72,12 +70,17 @@ const ProductPage = (props) => {
                 />
               </div>
 
-              <div className={styles.quantityContainer}>
-                <span>Número de Horas:</span>
-                <AdjustItem qty={qty} setQty={setQty} />
-              </div>
-
               <div className={styles.actionContainer}>
+                <div className={styles.sizeLabelContainer}>
+                  <span className={styles.label}>
+                    <span className={styles.jjpink}>3.</span> Agrega el Servicio
+                    seleccionado a tu Carrito. Una vez finalices tu compra,
+                    recibirás un correo electrónico de confirmación.
+                  </span>
+                </div>
+                <div className={styles.priceContainer}>
+                  <span><CurrencyFormatter appendZero amount={sampleProduct.price} /> / Hora</span>
+                </div>
                 <div className={styles.addToButtonContainer}>
                   <Button
                     onClick={() => showNotification()}
@@ -104,7 +107,6 @@ const ProductPage = (props) => {
               </div>
 
               <div className={styles.description}>
-                <p>{sampleProduct.description}</p>
                 <span>SKU: {sampleProduct.productCode}</span>
               </div>
 

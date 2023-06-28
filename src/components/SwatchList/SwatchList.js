@@ -7,7 +7,7 @@ const SwatchList = (props) => {
   const { swatchList, activeSwatch, setActiveSwatch } = props;
   return (
     <div className={styles.root}>
-      <span className={styles.label}>Selecciona un tipo de Consultoría: {activeSwatch.title}</span>
+      <span className={styles.label}><span className={styles.jjpink}>1.</span> Selecciona un tipo de Consultoría:<br/><span className={styles.description}>{activeSwatch.title}</span></span>
       <div className={styles.swatchSelection}>
         {swatchList?.map((colorChoice, index) => {
           return (

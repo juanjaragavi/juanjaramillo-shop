@@ -27,6 +27,7 @@
 }
 
 .priceContainer {
+    width: 100%;
     margin: 32px 0px;
 }
 
@@ -196,4 +197,18 @@
     .wishlistActionContainer {
         margin-left: 8px;
     }
+}
+.sizeLabelContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.jjpink {
+    color: var(--jj-pink);
+}
+.label {
+    
+    font-size: 14px;
+    line-height: 17px;
 }

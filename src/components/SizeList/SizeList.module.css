@@ -2,6 +2,10 @@
     display: block;
 }
 
+.jjpink {
+    color: var(--jj-pink);
+}
+
 .sizeLabelContainer {
     display: flex;
     justify-content: space-between;
