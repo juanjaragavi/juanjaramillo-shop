@@ -20,7 +20,7 @@ const MiniCart = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.titleContainer}>
-        <h4>My Bag</h4>
+        <h4>Mis Ítems</h4>
       </div>
       <div className={styles.cartItemsContainer}>
         <MiniCartItem {...sampleCartItem} />
@@ -28,19 +28,19 @@ const MiniCart = (props) => {
       <div className={styles.summaryContainer}>
         <div className={styles.summaryContent}>
           <div className={styles.totalContainer}>
-            <span>Total (USD)</span>
+            <span>Total (COP)</span>
             <span>
               <CurrencyFormatter amount={220} appendZero />
             </span>
           </div>
           <span className={styles.taxNotes}>
-            Taxes and shipping will be calculated at checkout
+            Los impuestos serán calculados al pagar.
           </span>
           <Button onClick={() => navigate('/cart')} level={'primary'} fullWidth>
-            checkout
+            Completar Pedido
           </Button>
           <div className={styles.linkContainer}>
-            <Link to={'/shop'}>continue shopping</Link>
+            <Link to={'/shop'}>Continúa Comprando</Link>
           </div>
         </div>
       </div>

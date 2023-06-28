@@ -1,10 +1,15 @@
 .root {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid var(--bg-light-gray);
+    border-radius: 30px;
+    border: 1px solid var(--standard-white);
     width: 99px;
     padding: 12px;
-    background-color: var(--standard-white);
+    background-color: transparent;
+}
+.root:hover {
+    border: 1px solid var(--jj-pink);
+    transition: border 0.5s ease; 
 }
 
 .iconContainer {
@@ -12,6 +17,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: var(--jj-pink);
 }
 
 .root > span {
@@ -30,7 +36,9 @@
 
 /* Firefox */
 .inputContainer input[type=number] {
-  -moz-appearance: textfield;
+  color: var(--standard-white);  
+  appearance: textfield;
+  background-color: transparent;
 }
 
 .inputContainer {

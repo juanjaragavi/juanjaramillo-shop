@@ -5,7 +5,7 @@
 
 .titleContainer {
     padding-bottom: 24px;
-    border-bottom: 1px solid var(--bg-light-gray);
+    border-bottom: 1px solid var(--jj-pink);
     margin: 32px 16px 32px 16px;
 }
 
@@ -56,7 +56,7 @@
 .summaryContent {
     margin: 0px 16px;
     padding-top: 32px;
-    border-top: 1px solid var(--bg-light-gray);
+    border-top: 1px solid var(--jj-pink);
 }
 
 .linkContainer {
@@ -69,9 +69,9 @@
 
 .linkContainer a {
     text-transform: uppercase;
-    border-bottom: 1px solid var(--standard-black);
+    border-bottom: 1px solid var(--jj-pink);
     text-align: center;
-    color: var(--standard-black);
+    color: var(--jj-pink);
     transition: all ease-in-out 0.3s;
 
     font-size: 14px;

@@ -44,7 +44,7 @@
   --bg-dark: #383634;
   --bg-close-icon: #E9E7E3;
   --bg-light-gray: #e5e5e5;
-  --standard-gold: #B59F66;
+  --standard-gold: #EC4899;
   --sale: #902F15;
   --error: #9A3515;
   --filter-purple: #9900ff;
@@ -102,6 +102,8 @@ html, body {
 
 * [data-button] {
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
 }
 
@@ -679,6 +681,8 @@ ol {
 
 .disable-action {
   pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   cursor: not-allowed;
 }

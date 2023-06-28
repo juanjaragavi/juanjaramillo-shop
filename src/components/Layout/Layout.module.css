@@ -1,9 +1,8 @@
 .main {
-    padding: 0;
+    padding: 7% 0 15% 0;
 }
-
-.disablePaddingBottom {
-    padding-bottom: 0px !important;
+.disablePadding {
+    padding: 0 0 5% 0 !important;
 }
 
 @media (max-width: 800px) {

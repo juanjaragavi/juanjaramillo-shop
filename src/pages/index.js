@@ -10,7 +10,7 @@ const IndexPage = () => {
   };
 
   return (
-    <Layout disablePaddingBottom>
+    <Layout disablePadding>
       <main className={styles.home}>
         <section className={styles.main}>
           <div className={styles.overlap}>
