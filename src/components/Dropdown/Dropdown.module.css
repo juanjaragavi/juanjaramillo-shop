@@ -15,9 +15,8 @@
 }
 
 .selectContainer select {
-    width: 100%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    width: 105%;
+    appearance: none;
     padding: 12px 38px 12px 20px;
     background-color: transparent;
     border: 1px solid var(--standard-white);
