@@ -36,8 +36,8 @@
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    
-    border-bottom: 1px solid var(--standard-black);
+    color: var(--standard-white);
+    border-bottom: 1px solid var(--standard-white);
     padding-bottom: 1px;
 }
 

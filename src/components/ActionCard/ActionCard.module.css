@@ -1,5 +1,5 @@
 .root {
-    background-color: var(--standard-light-grey);
+    background-color: transparent;
     cursor: pointer;
     padding: 32px;
     display: flex;
@@ -7,6 +7,8 @@
     text-align: start;
     gap: 16px;
     transition: all ease-in-out 0.3s;
+    border: 1px solid var(--jj-pink);
+    border-radius: 20px;
 }
 
 .iconContainer, .iconContainer svg {

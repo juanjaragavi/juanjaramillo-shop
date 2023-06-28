@@ -24,11 +24,9 @@ const ForgotPage = (props) => {
   return (
     <Layout disablePaddingBottom>
       <div className={styles.root}>
-        <h1 className={styles.title}>Reset Password</h1>
+        <h1 className={styles.title}>Restablece tu Contraseña</h1>
         <p className={styles.message}>
-          Fill in your email below to request a new password. An email will be
-          sent to the address below containing a link to verify your email
-          address.
+        Introduce tu dirección de correo electrónico para solicitar una nueva contraseña. Se te enviará un enlace para verificar tu dirección de email.
         </p>
         <form
           className={styles.formContainer}
@@ -40,12 +38,12 @@ const ForgotPage = (props) => {
             value={email}
             handleChange={(_, e) => setEmail(e)}
             type={'email'}
-            labelName={'Email'}
+            labelName={'Correo electrónico'}
             error={error}
           />
           <div className={styles.buttonContainer}>
             <Button fullWidth level={'primary'} type={'submit'}>
-              reset password
+              restablece tu contraseña
             </Button>
           </div>
         </form>

@@ -25,9 +25,9 @@ const MiniCartItem = (props) => {
           <div className={styles.priceContainer}>
             <CurrencyFormatter amount={price} />
           </div>
-          <span className={styles.meta}>Color: {color}</span>
+          <span className={styles.meta}>Plan: {color}</span>
           <span className={styles.meta}>
-            Size:
+            Horas:
             <span className={styles.size}>{size}</span>
           </span>
         </div>

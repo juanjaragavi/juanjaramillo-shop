@@ -23,6 +23,7 @@
     background-color: transparent;
     font-family: var(--standard-font);
     letter-spacing: 0.4px;
+    color: var(--standard-white);
   }
   
   .formField input::placeholder {

@@ -7,10 +7,10 @@
         "alt": "Consultoría en IA (Remoto)",
         "image": "/products/pdp1.jpeg",
         "colorOptions": [
-            {"color": "#B88948", "title": "Bronce"},
-            {"color": "#D4D6D5", "title": "Plata"},
-            {"color": "#D2AC5A", "title": "Oro"},
-            {"color": "#6ED0FF", "title": "Diamante"}
+            {"color": "#B88948", "title": "Bronce", "description": "Descripción de Bronce"},
+            {"color": "#D4D6D5", "title": "Plata", "description": "Descripción de Plata"},
+            {"color": "#D2AC5A", "title": "Oro", "description": "Descripción de Oro"},
+            {"color": "#6ED0FF", "title": "Diamante", "description": "Descripción de Diamante"}
         ],
         "sizeOptions": ["1 hora", "2 horas", "3 horas", "+ horas"],
         "wishlist": true,

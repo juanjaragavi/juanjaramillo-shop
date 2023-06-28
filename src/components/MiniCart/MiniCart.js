@@ -11,10 +11,10 @@ const MiniCart = (props) => {
   const sampleCartItem = {
     image: '/products/pdp1.jpeg',
     alt: '',
-    name: 'Lambswool Crew Neck Jumper',
-    price: 220,
-    color: 'Anthracite Melange',
-    size: 'xs',
+    name: 'Consultoría en Inteligencia Artificial (Servicio Remoto)',
+    price: 120000,
+    color: 'Plan Bronce',
+    size: '1 Hora',
   };
 
   return (
@@ -30,7 +30,7 @@ const MiniCart = (props) => {
           <div className={styles.totalContainer}>
             <span>Total (COP)</span>
             <span>
-              <CurrencyFormatter amount={220} appendZero />
+              <CurrencyFormatter amount={120000} appendZero />
             </span>
           </div>
           <span className={styles.taxNotes}>

@@ -79,9 +79,9 @@ const LoginPage = (props) => {
 
       <div className={styles.root}>
         <div className={styles.loginFormContainer}>
-          <h1 className={styles.loginTitle}>Login</h1>
+          <h1 className={styles.loginTitle}>Inicia Sesión</h1>
           <span className={styles.subtitle}>
-            Please enter your e-mail and password
+            Por favor ingresa tu correo y contraseña
           </span>
           <form
             noValidate
@@ -93,7 +93,7 @@ const LoginPage = (props) => {
               value={loginForm.email}
               handleChange={(id, e) => handleChange(id, e)}
               type={'email'}
-              labelName={'Email'}
+              labelName={'Correo Electrónico'}
               error={errorForm.email}
             />
 
@@ -102,33 +102,30 @@ const LoginPage = (props) => {
               value={loginForm.password}
               handleChange={(id, e) => handleChange(id, e)}
               type={'password'}
-              labelName={'Password'}
+              labelName={'Contraseña'}
               error={errorForm.password}
             />
             <div className={styles.forgotPasswordContainer}>
               <Link to={'/forgot'} className={styles.forgotLink}>
-                Forgot Password
+                Olvidé mi Contraseña
               </Link>
             </div>
 
             <Button fullWidth type={'submit'} level={'primary'}>
-              LOG IN
+              INICIA SESIÓN
             </Button>
-            <span className={styles.createLink}>New Customer? </span>
+            <span className={styles.createLink}>¿Cliente Nuevo? </span>
             <Button
               type={'button'}
               onClick={() => navigate('/signup')}
               fullWidth
-              level={'secondary'}
+              level={'primary'}
             >
-              create an account
+              Crea una Cuenta
             </Button>
           </form>
         </div>
-
-        <div className={styles.attributeGridContainer}>
-          <AttributeGrid />
-        </div>
+        
       </div>
     </Layout>
   );
