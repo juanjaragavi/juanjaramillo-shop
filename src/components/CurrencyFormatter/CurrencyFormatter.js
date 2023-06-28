@@ -4,7 +4,7 @@ import { isNumeric } from '../../helpers/general';
 
 const CurrencyFormatter = ({
   amount,
-  currency = 'USD',
+  currency = 'COP',
   appendZero = false,
   useDollar = false,
 }) => {
@@ -14,8 +14,8 @@ const CurrencyFormatter = ({
   /* Set language display */
   const languageCode =
     typeof window !== 'undefined'
-      ? window.navigator.language || 'en-AU'
-      : 'en-AU';
+      ? window.navigator.language || 'es-CO'
+      : 'es-CO';
 
   /* Format and return */
   // isolate currency

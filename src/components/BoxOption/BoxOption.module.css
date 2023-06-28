@@ -1,6 +1,7 @@
 .root {
     padding: 8px 28px;
     border: 1px solid var(--bg-light-gray);
+    border-radius: 30px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
 

@@ -38,9 +38,9 @@ const ProductPage = (props) => {
         <Container size={'large'} spacing={'min'}>
           <Breadcrumbs
             crumbs={[
-              { link: '/', label: 'Home' },
-              { label: 'Men', link: '/shop' },
-              { label: 'Sweater', link: '/shop' },
+              { link: '/', label: 'Inicio' },
+              { label: 'Servicios', link: '/shop' },
+              { label: 'Consultorías en IA (Remoto)', link: '/shop' },
               { label: `${sampleProduct.name}` },
             ]}
           />
@@ -50,7 +50,7 @@ const ProductPage = (props) => {
             </div>
             <div className={styles.details}>
               <h1>{sampleProduct.name}</h1>
-              <span className={styles.vendor}> by {sampleProduct.vendor}</span>
+              <span className={styles.vendor}> por {sampleProduct.vendor}</span>
 
               <div className={styles.priceContainer}>
                 <CurrencyFormatter appendZero amount={sampleProduct.price} />
@@ -73,7 +73,7 @@ const ProductPage = (props) => {
               </div>
 
               <div className={styles.quantityContainer}>
-                <span>Quantity</span>
+                <span>Número de Horas:</span>
                 <AdjustItem qty={qty} setQty={setQty} />
               </div>
 
@@ -84,7 +84,7 @@ const ProductPage = (props) => {
                     fullWidth
                     level={'primary'}
                   >
-                    Add to Bag
+                    Agrégalo a tu Carrito
                   </Button>
                 </div>
                 <div
@@ -105,7 +105,7 @@ const ProductPage = (props) => {
 
               <div className={styles.description}>
                 <p>{sampleProduct.description}</p>
-                <span>Product code: {sampleProduct.productCode}</span>
+                <span>SKU: {sampleProduct.productCode}</span>
               </div>
 
               <div className={styles.informationContainer}>
@@ -136,7 +136,7 @@ const ProductPage = (props) => {
             </div>
           </div>
           <div className={styles.suggestionContainer}>
-            <h2>You may also like</h2>
+            <h2>No te lo pierdas:</h2>
             <ProductCardGrid
               spacing
               showSlider
@@ -151,13 +151,13 @@ const ProductPage = (props) => {
           <Split
             image={'/cloth.png'}
             alt={'attribute description'}
-            title={'Sustainability'}
+            title={'¿Por qué contratar un Experto en IA?'}
             description={
               'We design our products to look good and to be used on a daily basis. And our aim is to inspire people to live with few timeless objects made to last. This is why quality over quantity is a cornerstone of our ethos and we have no interest in trends or seasonal collections.'
             }
-            ctaText={'learn more'}
+            ctaText={'Conoce más'}
             cta={() => navigate('/blog')}
-            bgColor={'var(--standard-light-grey)'}
+            bgColor={'transparent'}
           />
         </div>
       </div>

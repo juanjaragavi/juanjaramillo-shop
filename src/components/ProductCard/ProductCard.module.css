@@ -21,7 +21,7 @@
 .productName {
     font-size: 14px;
     line-height: 17px;
-    color: var(--standard-black);
+    color: var(--standard-white);
 }
 
 .prices {
@@ -48,7 +48,7 @@
 .meta {
     font-size: 14px;
     line-height: 17px;
-    color: var(--grey-placeholder);
+    color: var(--jj-pink);
 }
 
 .prices > span:first-child {
