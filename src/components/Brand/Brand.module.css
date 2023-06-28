@@ -2,29 +2,29 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-}
+    }
 
-@media (max-width: 800px) {
+    @media (max-width: 800px) {
     .root svg {
         width: 90px;
         height: 16.67px;
     }
-}
-.linkLogoYTaglineJuanjaramillo {
+    }
+    .linkLogoYTaglineJuanjaramillo {
     position: absolute;
     top: 0vh;
     left: 40vw;
-}
-@media only screen and (max-width: 767px) {
+    }
+    @media only screen and (max-width: 767px) {
     .linkLogoYTaglineJuanjaramillo {
         position: absolute;
         top: 6vh;
-        left:9vw;
-    }    
-} 
-.taglinetienda {
+        left: 9vw;
+    }
+    }
+    .taglinetienda {
     color: #ffffff;
-    font-family: "League Spartan", Helvetica;
+    font-family: 'League Spartan', Helvetica;
     font-size: 16px;
     font-weight: 400;
     height: 15px;
@@ -34,13 +34,24 @@
     white-space: nowrap;
     width: 100%;
     position: relative;
-    
-}
-.logojuanjaramillo {
+    }
+    @media only screen and (max-width: 767px) {
+    .taglinetienda {
+        font-size: 12px;
+    }
+    }
+    .logojuanjaramillo {
     height: 49px;
     object-fit: cover;
     width: 218px;
     white-space: nowrap;
     position: relative;
     margin-left: 10%;
-}  
+    }
+    @media only screen and (max-width: 767px) {
+    .logojuanjaramillo {
+        height: 39px;
+        object-fit: cover;
+        width: 174px;
+    }
+}

@@ -109,7 +109,7 @@ const Header = (prop) => {
             >
               <Icon symbol={'bag'}></Icon>
               <div className={styles.bagNotification}>
-                <span>1</span>
+                <span>5</span>
               </div>
             </button>
             <div className={styles.notificationContainer}>
