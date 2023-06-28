@@ -1,21 +1,17 @@
 {
   "currencyList": [
-    { "value": "AUS", "label": "Australia (AUS $)" },
-    { "value": "CAD", "label": "Canada (CAD $)" },
-    { "value": "USD", "label": "United States (US $)" },
-    { "value": "EUR", "label": "Germany (EUR €)" },
-    { "value": "HKD", "label": "Hong Kong (HKD $)" }
+    { "value": "USD", "label": "Estados Unidos (US $)" },
+    { "value": "EUR", "label": "Unión Europea (EUR €)" },
+    { "value": "COP", "label": "Colombia (COP $)" }
   ],
   "languageList": [
     { "value": "english", "label": "English" },
-    { "value": "german", "label": "Deutsch" },
-    { "value": "mandarin", "label": "普通话" }
+    { "value": "spanish", "label": "Español" }
   ],
   "social": {
-    "facebook": "https://www.facebook.com/MatterDesign/",
-    "instagram": "https://www.instagram.com/p/CVwMlChIWmW",
-    "twitter": "https://twitter.com/hellomatter",
-    "youtube": "https://www.youtube.com/channel/UCEOu94Haa--QmltsSawflXg"
+    "instagram": "https://www.instagram.com/juanjaramilloai",
+    "twitter": "https://twitter.com/juanjaragavi",
+    "youtube": "https://www.youtube.com/@juanamillo"
   },
   "paymentOptions": {
     "visa": true,
@@ -24,39 +20,39 @@
   },
   "footerLinks": [
     {
-      "subTitle": "Info",
+      "subTitle": "Información",
       "links": [
         {
-          "text": "About Us",
-          "link": "/about"
+          "text": "Conóceme",
+          "link": "https://juanjaramillo.tech/"
         },
         {
-          "text": "Journal",
-          "link": "/blog"
+          "text": "Blog",
+          "link": "https://blog.juanjaramillo.tech/"
         },
         {
-          "text": "Privacy Policy",
+          "text": "Política de Privacidad",
           "link": "/support#policy"
         }
       ]
     },
     {
-      "subTitle": "Support",
+      "subTitle": "Soporte",
       "links": [
         {
           "text": "FAQ",
           "link": "/faq"
         },
         {
-          "text": "Contact Us",
-          "link": "/support#contact"
+          "text": "Contacto",
+          "link": "https://bit.ly/3r3zf3V"
         },
         {
-          "text": "Shipping & Returns",
+          "text": "Política de Envíos y Devoluciones",
           "link": "/support#returns"
         },
         {
-          "text": "How to use this theme",
+          "text": "Aviso Legal",
           "link": "/how-to-use"
         }
       ]

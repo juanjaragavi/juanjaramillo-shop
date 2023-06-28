@@ -20,10 +20,16 @@
     -moz-appearance: none;
     padding: 12px 38px 12px 20px;
     background-color: transparent;
-    border: 1px solid var(--standard-dark-grey);
+    border: 1px solid var(--standard-white);
+    border-radius: 20px;
     color: var(--standard-white);
     font-size: 12px;
     line-height: 14px;
+}
+.selectContainer select:hover {
+    cursor: pointer;
+    transition: border 0.5s ease;
+    border: 1px solid var(--jj-pink);
 }
 
 .selectContainer select:focus {

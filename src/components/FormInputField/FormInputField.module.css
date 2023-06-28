@@ -19,12 +19,14 @@
   }
   
   .input {
+    border-radius: 30px;
+    background-color: transparent;
     font-family: var(--standard-font);
     letter-spacing: 0.4px;
   }
   
   .formField input::placeholder {
-    color: var(--grey-placeholder);
+    color: var(--standard-white);
     font-size: 14px;
   }
   

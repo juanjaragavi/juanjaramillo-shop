@@ -16,7 +16,7 @@ const Footer = (prop) => {
   const subscribeHandler = (e) => {
     e.preventDefault();
     setEmail('');
-    console.log('Subscribe this email: ', email);
+    console.log('Inscribe este correo electrónico: ', email);
   };
 
   const handleSocialClick = (platform) => {
@@ -69,10 +69,10 @@ const Footer = (prop) => {
             })}
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
-                <span className={styles.linkTitle}>Newsletter</span>
+                <span className={styles.linkTitle}>Boletín de Noticias de IA</span>
                 <p className={styles.promoMessage}>
-                  Get 15% off your first purchase! Plus, be the first to know
-                  about sales, new product launches and exclusive offers!
+                ¡Consigue un 15% de descuento en tu primera compra! Además, sé el primero en enterarte
+                  sobre rebajas, lanzamientos de nuevos productos y ofertas exclusivas.
                 </p>
                 <form
                   className={styles.newsLetterForm}
@@ -82,7 +82,7 @@ const Footer = (prop) => {
                     icon={'arrow'}
                     id={'newsLetterInput'}
                     value={email}
-                    placeholder={'Email'}
+                    placeholder={'Ingresa tu Correo Electrónico'}
                     handleChange={(_, e) => setEmail(e)}
                   />
                 </form>
@@ -137,10 +137,10 @@ const Footer = (prop) => {
           <div className={styles.contentBottom}>
             <div className={styles.settings}>
               <Dropdown
-                label={'Country/Region'}
+                label={'País/Región'}
                 optionList={Config.currencyList}
               />
-              <Dropdown label={'Language'} optionList={Config.languageList} />
+              <Dropdown label={'Idioma'} optionList={Config.languageList} />
             </div>
             <div className={styles.copyrightContainer}>
               <div className={styles.creditCardContainer}>
@@ -167,13 +167,13 @@ const Footer = (prop) => {
                 )}
               </div>
               <span>
-                {new Date().getFullYear()} (c) . Built by{' '}
-                <Button target={true} href="https://www.matterdesign.com.au/">
-                  Matter.
+                {new Date().getFullYear()} (c) . Diseño y desarrollo por{' '}
+                <Button target={true} href="https://juanjaramillo.tech/">
+                  Juan Jaramillo
                 </Button>{' '}
                 Powered by{' '}
-                <Button target={true} href="https://jamm.matter.design/">
-                  JAMM.™
+                <Button target={true} href="https://www.gatsbyjs.com/">
+                  GatsbyJS
                 </Button>
               </span>
             </div>

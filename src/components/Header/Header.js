@@ -1,5 +1,5 @@
-import React, { useState, useEffect, createRef } from 'react';
-import { Link, navigate } from 'gatsby';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
 
 import { isAuth } from '../../helpers/general';
 
@@ -9,7 +9,6 @@ import Container from '../Container';
 import Config from '../../config.json';
 import Drawer from '../Drawer';
 import ExpandedMenu from '../ExpandedMenu';
-import FormInputField from '../FormInputField/FormInputField';
 import Icon from '../Icons/Icon';
 import MiniCart from '../MiniCart';
 import MobileNavigation from '../MobileNavigation';
@@ -22,9 +21,6 @@ const Header = (prop) => {
 
   const [menu, setMenu] = useState();
   const [activeMenu, setActiveMenu] = useState();
-
-  const bannerMessage = 'Free shipping worldwide';
-
   const handleHover = (navObject) => {
     if (navObject.category) {
       setShowMenu(true);
