@@ -8,20 +8,35 @@
 }
 
 .webLink {
-    padding: 12px;
+    padding: 14px 12px 12px 12px;
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: normal;
     cursor: pointer;
+    color: var(--standard-light-grey);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .webLink:hover {
     background-color: var(--standard-light-grey);
+    color: var(--standard-black);
+    border-top: 1px solid var(--jj-pink);
+    border-left: 1px solid var(--jj-pink);
+    border-bottom: 1px solid var(--jj-pink);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all 0.5s ease;
 }
 
 .activeLink {
-    background-color: var(--standard-light-grey);
+    background-color: transparent;
     font-weight: 500;
+    border-top: 1px solid var(--jj-pink);
+    border-left: 1px solid var(--jj-pink);
+    border-bottom: 1px solid var(--jj-pink);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 @media (max-width: 800px) {

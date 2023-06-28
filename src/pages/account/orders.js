@@ -15,36 +15,36 @@ const OrderPage = (props) => {
 
   const sampleOrder1 = {
     id: '2',
-    orderPlaced: 'Oct 12, 2021',
-    lastUpdate: 'Oct 12, 2021',
-    status: 'pending',
+    orderPlaced: 'Jun 12, 2023',
+    lastUpdate: 'Jun 23, 2023',
+    status: 'pendiente',
     items: [
       {
         image: '/products/shirt1.jpg',
         alt: 'order 1 product 1',
         name: 'Lambswool Crew Neck Jumper',
         quantity: '2',
-        price: '100',
+        price: '120000',
       },
       {
         image: '/products/shirt2.jpg',
         alt: 'order 1 product 2',
         name: 'Lambswool Crew Neck Jumper',
         quantity: '1',
-        price: '300',
+        price: '300000',
       },
     ],
     shippingAddress: {
       name: 'John Doe',
       address: '1 Steam Mill Lane, Haymerket',
-      postal: '2000',
+      postal: '200000',
       state: 'NSW',
       country: 'Australia',
     },
     billingAddress: {
       name: 'John Doe',
       address: '1 Steam Mill Lane, Haymerket',
-      postal: '2000',
+      postal: '200000',
       state: 'NSW',
       country: 'Australia',
     },
@@ -52,29 +52,29 @@ const OrderPage = (props) => {
 
   const sampleOrder2 = {
     id: '1',
-    orderPlaced: 'Oct 11, 2021',
-    lastUpdate: 'Oct 11, 2021',
-    status: 'pending',
+    orderPlaced: 'May 11, 2023',
+    lastUpdate: 'Jun 28, 2023',
+    status: 'pendiente',
     items: [
       {
         image: '/products/shirt1.jpg',
         alt: 'order 1 product 1',
         name: 'Lambswool Crew Neck Jumper',
         quantity: '2',
-        price: '100',
+        price: '100000',
       },
     ],
     shippingAddress: {
       name: 'John Doe',
       address: '1 Steam Mill Lane, Haymerket',
-      postal: '2000',
+      postal: '200000',
       state: 'NSW',
       country: 'Australia',
     },
     billingAddress: {
       name: 'John Doe',
       address: '1 Steam Mill Lane, Haymerket',
-      postal: '2000',
+      postal: '200000',
       state: 'NSW',
       country: 'Australia',
     },
@@ -85,17 +85,17 @@ const OrderPage = (props) => {
       <AccountLayout>
         <Breadcrumbs
           crumbs={[
-            { link: '/', label: 'Home' },
-            { link: '/account', label: 'Account' },
-            { link: '/account/orders/', label: 'Orders' },
+            { link: '/', label: 'Tienda' },
+            { link: '/account', label: 'Mi Cuenta' },
+            { link: '/account/orders/', label: 'Mis Pedidos' },
           ]}
         />
-        <h1>Orders</h1>
+        <h1>Mis Pedidos</h1>
         <div className={`${styles.tableHeaderContainer} ${styles.gridStyle}`}>
-          <span className={styles.tableHeader}>Order #</span>
-          <span className={styles.tableHeader}>Order Placed</span>
-          <span className={styles.tableHeader}>Last Update</span>
-          <span className={styles.tableHeader}>Status</span>
+          <span className={styles.tableHeader}>Pedido #</span>
+          <span className={styles.tableHeader}>Fecha de Compra</span>
+          <span className={styles.tableHeader}>Última Aztualización</span>
+          <span className={styles.tableHeader}>Estado</span>
         </div>
 
         <OrderItem order={sampleOrder1} headerStyling={styles.gridStyle} />

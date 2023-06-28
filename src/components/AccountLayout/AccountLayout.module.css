@@ -1,5 +1,6 @@
 .root {
     margin-top: 8px;
+    max-width: 100vw;
 }
 
 .layout {
