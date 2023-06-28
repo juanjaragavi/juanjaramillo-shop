@@ -242,7 +242,7 @@ const IndexPage = () => {
                     type="text"
                     className={styles.searchexample}
                     id="myInput"
-                    placeholder="Busca lo que quieras en lenguaje natural..."
+                    placeholder="O busca lo que quieras en lenguaje natural..."
                   />
                 </div>
                 <input

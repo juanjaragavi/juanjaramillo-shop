@@ -1,15 +1,15 @@
 .root {
+    
 
 }
 
 .headerAuth {
-    background-color: var(--standard-light-grey);
     padding: 16px 24px;
     margin-bottom: 8px;
 }
 
 .authLinkContainer a {
-    color: var(--standard-gold);
+    color: var(--jj-pink);
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -25,20 +25,20 @@
     transform: rotate(-90deg);
     width: 12px;
     height: 12px;
-    color: var(--standard-gold);
+    color: var(--jj-pink);
 }
 
 .welcomeMessage {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: var(--standard-gold);
+    color: var(--jj-pink);
 } 
 
 .authLinkContainer a:first-child{
     margin-right: 24px;
     padding-right: 24px;
-    border-right: 1px solid var(--standard-gold);
+    border-right: 1px solid var(--jj-pink);
 }
 
 .previousLinkContainer {
@@ -50,7 +50,7 @@
 }
 
 .previousLinkContainer span {
-    color: var(--standard-gold);
+    color: var(--jj-pink);
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -66,7 +66,7 @@
 
 .previousLinkContainer svg {
     transform: rotate(90deg);
-    color: var(--standard-gold);
+    color: var(--jj-pink);
     width: 12px;
     height: 12px;
 }
@@ -82,7 +82,7 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: var(--standard-black);
+    color: var(--standard-white);
 
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    color: var(--standard-black);
+    color: var(--standard-white);
 
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@
 }
 
 .navFooter {
-    border-top: 1px solid var(--bg-light-gray);
+    border-top: 1px solid var(--jj-pink);
     padding-top: 16px;
     margin: 16px 16px 0px 16px;
 }
@@ -117,7 +117,7 @@
 .navFooter a, .logoutContainer {
     display: flex;
     align-items: center;
-    color: var(--standard-black);
+    color: var(--standard-white);
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -127,5 +127,6 @@
     margin-right: 24px;
     width: 20px;
     height: 20px;
+    color: var(--jj-pink);
 }
 

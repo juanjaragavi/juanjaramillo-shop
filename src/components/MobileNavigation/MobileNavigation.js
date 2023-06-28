@@ -30,8 +30,8 @@ const MobileNavigation = (props) => {
         <div className={styles.headerAuth}>
           {depth === 0 && isAuth() === false && (
             <div className={styles.authLinkContainer}>
-              <Link to={'/signup'}>Sign Up</Link>
-              <Link to={'/login'}>Login</Link>
+              <Link to={'/signup'}>Regístrate</Link>
+              <Link to={'/login'}>Inicia Sesión</Link>
             </div>
           )}
 
@@ -41,7 +41,7 @@ const MobileNavigation = (props) => {
               role={'presentation'}
               onClick={() => setDepth(-1)}
             >
-              <span className={styles.welcomeMessage}>Welcome, John</span>
+              <span className={styles.welcomeMessage}>Bienvenido, Juan</span>
               <Icon symbol={'caret'}></Icon>
             </div>
           )}
@@ -55,7 +55,7 @@ const MobileNavigation = (props) => {
               <div className={styles.previousIcon}>
                 <Icon symbol={'caret'}></Icon>
               </div>
-              <span>my account</span>
+              <span>mi cuenta</span>
             </div>
           )}
 
@@ -113,7 +113,7 @@ const MobileNavigation = (props) => {
               <div className={styles.navFooter}>
                 <Link to={'/favorites'}>
                   <Icon symbol={'heart'} />
-                  Favorites (0)
+                  Favoritos (0)
                 </Link>
               </div>
             </div>
@@ -154,16 +154,16 @@ const MobileNavigation = (props) => {
             <>
               <div>
                 <Link to={'/account/orders/'} className={styles.mobileLink}>
-                  Orders
+                  Pedidos
                 </Link>
                 <Link to={'/account/address/'} className={styles.mobileLink}>
-                  Addresses
+                  Direcciones
                 </Link>
                 <Link to={'/account/settings/'} className={styles.mobileLink}>
-                  Settings
+                  Configuración
                 </Link>
                 <Link to={'/account/viewed/'} className={styles.mobileLink}>
-                  Recently Viewed
+                  Visto Recientemente
                 </Link>
               </div>
               <div className={styles.navFooter}>
@@ -173,7 +173,7 @@ const MobileNavigation = (props) => {
                   onClick={handleLogout}
                 >
                   <Icon symbol={'logout'} />
-                  <span>Sign out </span>
+                  <span>Cerrar Sesión </span>
                 </div>
               </div>
             </>

@@ -8,7 +8,7 @@ const Cross = () => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox={'0 0 12 12'}
   >
-    <path d="m1.2 1.2 9.6 9.6m-9.6 0 9.6-9.6" stroke="currentColor" />
+    <path d="m1.2 1.2 9.6 9.6m-9.6 0 9.6-9.6" stroke="var(--jj-pink)" />
   </svg>
 );
 
