@@ -164,6 +164,10 @@
     color: var(--standard-white);
 }
 
+.copyrightContainer a:hover {
+    color: var(--jj-pink);
+}
+
 .mobileFooterLinks {
     display: none;
 }
@@ -182,7 +186,7 @@
 
 @media (hover: hover) {
     .socialIconContainer:hover {
-        background-color: var(--standard-dark-grey)
+        background-color: var(--jj-pink)
     }
 }
 

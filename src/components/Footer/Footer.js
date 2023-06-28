@@ -69,10 +69,13 @@ const Footer = (prop) => {
             })}
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
-                <span className={styles.linkTitle}>Boletín de Noticias de IA</span>
+                <span className={styles.linkTitle}>
+                  Boletín de Noticias de IA
+                </span>
                 <p className={styles.promoMessage}>
-                ¡Consigue un 15% de descuento en tu primera compra! Además, sé el primero en enterarte
-                  sobre rebajas, lanzamientos de nuevos productos y ofertas exclusivas.
+                  ¡Consigue un 15% de descuento en tu primera compra! Además, sé
+                  el primero en enterarte sobre rebajas, lanzamientos de nuevos
+                  productos y ofertas exclusivas.
                 </p>
                 <form
                   className={styles.newsLetterForm}
@@ -167,7 +170,7 @@ const Footer = (prop) => {
                 )}
               </div>
               <span>
-                {new Date().getFullYear()} (c) . Diseño y desarrollo por{' '}
+                &copy; {new Date().getFullYear()}. Diseño y desarrollo por{' '}
                 <Button target={true} href="https://juanjaramillo.tech/">
                   Juan Jaramillo
                 </Button>{' '}
