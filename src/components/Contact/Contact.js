@@ -28,25 +28,22 @@ const Contact = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.section}>
-        <h4>Send Us A Message</h4>
+        <h4>Envíanos un Mensaje</h4>
         <p>
-          Our Customer Service team are here for all enquiries Monday to Friday,
-          9am - 5pm AEDT (Australian Eastern Daylight Savings Time).
+          Te responderemos en el menor tiempo posible.
         </p>
-        <p>We look forward to hearing from you.</p>
       </div>
 
       <div className={styles.section}>
-        <h4>Phone</h4>
-        <p>+1 424 280 4971</p>
-        <p>Monday to Friday - 9am - 5pm AEDT</p>
+        <h4>Teléfono</h4>
+        <p>+57 (321) 885 6199</p>
+        <p>Lúnes a Viernes - 9am - 5pm</p>
       </div>
 
       <div className={styles.section}>
-        <h4>Email</h4>
+        <h4>Correo Electrónico</h4>
         <p>
-          You can email our Customer Service team at customerservice@example.com
-          or via the contact form below:
+        Puedes enviar un correo electrónico a nuestro equipo de Servicio al Cliente a <a href='mailto:info@juanjaramillo.tech' target="_blank">info@juanjaramillo.tech</a> o a través del formulario de contacto que está a continuación:
         </p>
       </div>
 
@@ -58,7 +55,7 @@ const Contact = (props) => {
               value={contactForm.name}
               handleChange={(id, e) => handleChange(id, e)}
               type={'text'}
-              labelName={'Full Name'}
+              labelName={'Nombre Completo'}
               required
             />
             <FormInputField
@@ -66,7 +63,7 @@ const Contact = (props) => {
               value={contactForm.phone}
               handleChange={(id, e) => handleChange(id, e)}
               type={'number'}
-              labelName={'Phone Number'}
+              labelName={'Número de Teléfono'}
               required
             />
             <FormInputField
@@ -74,7 +71,7 @@ const Contact = (props) => {
               value={contactForm.email}
               handleChange={(id, e) => handleChange(id, e)}
               type={'email'}
-              labelName={'Email'}
+              labelName={'Correo Electrónico'}
               required
             />
             <div className={styles.commentInput}>
@@ -83,7 +80,7 @@ const Contact = (props) => {
                 value={contactForm.comment}
                 handleChange={(id, e) => handleChange(id, e)}
                 type={'textarea'}
-                labelName={'Comments / Questions'}
+                labelName={'Comentarios / Preguntas'}
                 required
               />
             </div>
@@ -93,7 +90,7 @@ const Contact = (props) => {
             level={'primary'}
             type={'buttonSubmit'}
           >
-            submit
+            enviar
           </Button>
         </form>
       </div>

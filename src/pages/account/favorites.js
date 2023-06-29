@@ -49,7 +49,7 @@ const FavoritesPage = (props) => {
               { link: '/account/favorites', label: 'Favorites' },
             ]}
           />
-          <h1>Favorites</h1>
+          <h1>Mis Favoritos</h1>
           <div className={styles.favoriteListContainer}>
             <FavoriteCard
               showConfirmDialog={() => setShowDelete(true)}
@@ -72,17 +72,16 @@ const FavoritesPage = (props) => {
       </div>
       <Modal visible={showDelete} close={() => setShowDelete(false)}>
         <div className={styles.confirmDeleteContainer}>
-          <h4>Remove from Favorites?</h4>
+          <h4>¿Borrar este ítem de los Favoritos?</h4>
           <p>
-            Are you sure you want to remove this from your favorites? You cannot
-            undo this action once you press <strong>'Delete'</strong>
+          ¿Estás seguro de que quieres eliminar esto de tus favoritos? No podrás deshacer esta acción una vez que presiones <strong>'Borrar'</strong>
           </p>
           <div className={styles.actionContainer}>
             <Button onClick={() => setShowDelete(false)} level={'primary'}>
-              Delete
+              Borrar
             </Button>
             <Button onClick={() => setShowDelete(false)} level={'secondary'}>
-              Cancel
+              Cancelar
             </Button>
           </div>
         </div>

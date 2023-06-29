@@ -11,16 +11,16 @@ const FaqPage = (props) => {
       <div className={styles.root}>
         <Banner
           maxWidth={'650px'}
-          name={`Frequently Asked Questions`}
+          name={`Preguntas Frecuentes`}
           bgImage={'/faqCover.png'}
           color={'var(--standard-white)'}
           height={'350px'}
         />
         <Container>
           <div className={styles.section}>
-            <span>Your Orders</span>
+            <span>Tus Pedidos</span>
             <div className={styles.subSection}>
-              <h3>Deliveries</h3>
+              <h3>Entregas de Servicios</h3>
               <p>
                 To review the status of your order please visit the "My Orders"
                 section of your Sunspel Account. You should receive an email
@@ -40,7 +40,7 @@ const FaqPage = (props) => {
               </p>
             </div>
             <div className={styles.subSection}>
-              <h3>Returns & Exchanges</h3>
+              <h3>Cambios y Devoluciones</h3>
               <p>
                 To review the status of your order please visit the "My Orders"
                 section of your Sunspel Account. You should receive an email
@@ -57,9 +57,9 @@ const FaqPage = (props) => {
           </div>
 
           <div className={styles.section}>
-            <span>Payment</span>
+            <span>Pago</span>
             <div className={styles.subSection}>
-              <h3>Shipping Rates</h3>
+              <h3>Tarifas de Envío</h3>
               <p>
                 To review the status of your order please visit the "My Orders"
                 section of your Sunspel Account. You should receive an email
@@ -79,7 +79,7 @@ const FaqPage = (props) => {
               </p>
             </div>
             <div className={styles.subSection}>
-              <h3>Currency</h3>
+              <h3>Moneda</h3>
               <p>
                 Our website automatically selects the currency that matches your
                 delivery location. You can change this manually in the top left
@@ -98,7 +98,7 @@ const FaqPage = (props) => {
               </p>
             </div>
             <div className={styles.subSection}>
-              <h3>Suspect Fraud?</h3>
+              <h3>¿Sospecha de Fraude?</h3>
               <p>
                 Given our high levels of security, it’s very unlikely fraudulent
                 use of your card will take place on our website. But if a

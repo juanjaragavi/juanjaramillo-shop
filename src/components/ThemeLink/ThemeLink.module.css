@@ -6,15 +6,15 @@
 }
 
 .link {
-    color: var(--standard-black);
+    color: var(--standard-white);
     text-transform: uppercase;
     
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px; 
     white-space: nowrap;
 }
 
 .root:hover, .active {
-    border-bottom: 2px solid var(--standard-black); 
+    border-bottom: 2px solid var(--jj-pink); 
 }
