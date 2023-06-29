@@ -1,4 +1,6 @@
 .addressListContainer {
+    width: auto;
+    max-width: 70vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 40px;
@@ -6,15 +8,15 @@
 }
 
 .addCard {
-    background-color: var(--bg-grey);
+    background-color: transparent;
     min-height: 180px;
     padding: 40px;
-
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    border: 1px solid var(--jj-pink);
     cursor: pointer;
     transition: all ease-in-out 0.3s;
 }

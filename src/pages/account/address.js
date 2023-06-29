@@ -45,12 +45,12 @@ const AddressPage = (props) => {
       <AccountLayout>
         <Breadcrumbs
           crumbs={[
-            { link: '/', label: 'Home' },
-            { link: '/account', label: 'Account' },
-            { link: '/account/address', label: 'Addresses' },
+            { link: '/', label: 'Tienda' },
+            { link: '/account', label: 'Mi Cuenta' },
+            { link: '/account/address', label: 'Direcciones' },
           ]}
         />
-        <h1>Addresses</h1>
+        <h1>Direcciones</h1>
 
         {showForm === false && (
           <div className={styles.addressListContainer}>
@@ -69,7 +69,7 @@ const AddressPage = (props) => {
               onClick={() => setShowForm(true)}
             >
               <Icon symbol={'plus'}></Icon>
-              <span>new address</span>
+              <span>nueva dirección</span>
             </div>
           </div>
         )}
@@ -80,17 +80,16 @@ const AddressPage = (props) => {
       </AccountLayout>
       <Modal visible={showDelete} close={() => setShowDelete(false)}>
         <div className={styles.confirmDeleteContainer}>
-          <h4>Delete Address?</h4>
+          <h4>¿Borrar Dirección?</h4>
           <p>
-            Are you sure you want to delete this address? You cannot undo this
-            action once you press <strong>'Delete'</strong>
+          ¿Estás seguro/a de que quieres eliminar esta dirección? No podrás deshacer esta acción una vez que presiones <strong>'Borrar'</strong>
           </p>
           <div className={styles.actionContainer}>
             <Button onClick={() => setShowDelete(false)} level={'primary'}>
-              Delete
+              Borrar
             </Button>
             <Button onClick={() => setShowDelete(false)} level={'secondary'}>
-              Cancel
+              Cancelar
             </Button>
           </div>
         </div>

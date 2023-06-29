@@ -4,10 +4,6 @@ input:focus {
 }
 .home {
   align-items: center;
-  background-color: #0a0b10;
-  background: url(https://juanjaramillo.s3.amazonaws.com/assets/fondo-hero-dark-1440.jpg);
-  background-position: top center;
-  background-size: cover;
   border: 1px none;
   display: flex;
   flex-direction: column;

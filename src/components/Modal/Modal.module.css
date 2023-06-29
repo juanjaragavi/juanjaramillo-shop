@@ -1,7 +1,7 @@
 .root {
     position: fixed;
     top: 0px;
-
+    
     width: 100vw;
     height: 100vh;
     z-index: 51;
@@ -26,11 +26,12 @@
 }
 
 .contentContainer {
-    border-radius: 4px;
+    border-radius: 20px;
     overflow: hidden;
-    background-color: var(--standard-white);
+    --tw-bg-opacity: 0.8;
+    background-color: rgb(0 0 0/var(--tw-bg-opacity));
     z-index: 53;
-
+    border: 1px solid var(--jj-pink);
     position: absolute;
     top: 50%;
     left: 50%;

@@ -47,7 +47,7 @@ const AddressForm = (props) => {
           value={form.name}
           handleChange={(id, e) => handleChange(id, e)}
           type={'input'}
-          labelName={'Name'}
+          labelName={'Nombre'}
           error={errorForm.name}
         />
         <FormInputField
@@ -55,7 +55,7 @@ const AddressForm = (props) => {
           value={form.address}
           handleChange={(id, e) => handleChange(id, e)}
           type={'input'}
-          labelName={'Address'}
+          labelName={'Dirección'}
           error={errorForm.address}
         />
         <FormInputField
@@ -63,7 +63,7 @@ const AddressForm = (props) => {
           value={form.country}
           handleChange={(id, e) => handleChange(id, e)}
           type={'input'}
-          labelName={'Country'}
+          labelName={'País'}
           error={errorForm.country}
         />
         <FormInputField
@@ -71,7 +71,7 @@ const AddressForm = (props) => {
           value={form.state}
           handleChange={(id, e) => handleChange(id, e)}
           type={'input'}
-          labelName={'State'}
+          labelName={'Departamento o Estado'}
           error={errorForm.state}
         />
         <FormInputField
@@ -79,7 +79,7 @@ const AddressForm = (props) => {
           value={form.postal}
           handleChange={(id, e) => handleChange(id, e)}
           type={'number'}
-          labelName={'Postal Code'}
+          labelName={'Código Postal'}
           error={errorForm.postal}
         />
         <FormInputField
@@ -87,12 +87,12 @@ const AddressForm = (props) => {
           value={form.address}
           handleChange={(id, e) => handleChange(id, e)}
           type={'input'}
-          labelName={'Street'}
+          labelName={'Indicaciones o Notas'}
           error={errorForm.address}
         />
         <div className={styles.actionContainers}>
           <Button fullWidth type={'submit'} level={'primary'}>
-            Save
+            Guardar
           </Button>
           <Button
             fullWidth
@@ -100,7 +100,7 @@ const AddressForm = (props) => {
             onClick={closeForm}
             level={'secondary'}
           >
-            Cancel
+            Cancelar
           </Button>
         </div>
       </form>

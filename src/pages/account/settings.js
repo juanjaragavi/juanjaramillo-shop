@@ -83,12 +83,12 @@ const SettingsPage = (props) => {
       <AccountLayout>
         <Breadcrumbs
           crumbs={[
-            { link: '/', label: 'Home' },
-            { link: '/account', label: 'Account' },
-            { link: '/account/settings', label: 'Settings' },
+            { link: '/', label: 'Tienda' },
+            { link: '/account', label: 'Mi Cuenta' },
+            { link: '/account/settings', label: 'Configuración' },
           ]}
         />
-        <h1>Settings</h1>
+        <h1>Configuración</h1>
         <div>
           <form onSubmit={(e) => handleSubmit(e)} noValidate>
             <div className={styles.nameSection}>
@@ -97,33 +97,33 @@ const SettingsPage = (props) => {
                 value={updateForm.firstName}
                 handleChange={(id, e) => handleChange(id, e)}
                 type={'input'}
-                labelName={'First Name'}
+                labelName={'Nombres'}
               />
               <FormInputField
                 id={'lastName'}
                 value={updateForm.lastName}
                 handleChange={(id, e) => handleChange(id, e)}
                 type={'input'}
-                labelName={'Last Name'}
+                labelName={'Apellidos'}
               />
               <FormInputField
                 id={'email'}
                 value={updateForm.email}
                 handleChange={(id, e) => handleChange(id, e)}
                 type={'email'}
-                labelName={'Email'}
+                labelName={'Correo Electrónico'}
                 error={error.email}
               />
             </div>
             <div className={styles.passwordContainer}>
-              <h2>Change Password</h2>
+              <h2>Cambiar Contraseña</h2>
               <div className={styles.passwordSection}>
                 <FormInputField
                   id={'password'}
                   value={updateForm.password}
                   handleChange={(id, e) => handleChange(id, e)}
                   type={'password'}
-                  labelName={'New Password'}
+                  labelName={'Nueva Contraseña'}
                   error={error.password}
                 />
                 <FormInputField
@@ -131,11 +131,11 @@ const SettingsPage = (props) => {
                   value={updateForm.confirmPassword}
                   handleChange={(id, e) => handleChange(id, e)}
                   type={'password'}
-                  labelName={'Confirm Password'}
+                  labelName={'Confirmar Contraseña'}
                   error={error.confirmPassword}
                 />
                 <Button level={'primary'} type={'submit'}>
-                  update
+                  actualizar
                 </Button>
               </div>
             </div>

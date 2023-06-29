@@ -1,9 +1,11 @@
 .root {
-    background-color: var(--bg-grey);
+    max-width: 80vw;
+    background-color: var(--jj-pink);
     padding: 30px 40px 50px 40px;
     min-height: 180px;
     position: relative;
     transition: all ease-in-out 0.3s;
+    border-radius: 20px;
 }
 
 .root > span {

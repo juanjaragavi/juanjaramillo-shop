@@ -14,7 +14,7 @@ const ForgotPage = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateEmail(email) !== true) {
-      setError('Not a valid email address');
+      setError('Ingresa una dirección de correo válida');
       return;
     }
     setEmail('');
@@ -47,9 +47,6 @@ const ForgotPage = (props) => {
             </Button>
           </div>
         </form>
-      </div>
-      <div className={styles.gridContainer}>
-        <AttributeGrid />
       </div>
     </Layout>
   );

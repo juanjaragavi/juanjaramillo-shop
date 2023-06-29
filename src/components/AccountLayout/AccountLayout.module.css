@@ -1,6 +1,5 @@
 .root {
     margin-top: 8px;
-    max-width: 100vw;
 }
 
 .layout {
@@ -14,6 +13,8 @@
 }
 
 .childrenContainer {
+    width: 70vw !important;
+    min-width: 60vw !important;
     flex-grow: 1;
     margin-left: 16px;
 }

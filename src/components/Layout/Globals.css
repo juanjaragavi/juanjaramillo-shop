@@ -88,7 +88,6 @@
 html, body {
   background: url(https://juanjaramillo.s3.amazonaws.com/assets/fondo-hero-dark-1440.jpg);
   background-repeat: no-repeat;
-  background-position: top center;
   background-size: cover;
   background-color: rgb(21, 12, 29);
   box-sizing: border-box;

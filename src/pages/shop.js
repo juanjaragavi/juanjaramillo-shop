@@ -71,12 +71,6 @@ const ShopPage = (props) => {
             <span className={styles.mobileItemCount}>476 ítems</span>
             <ProductCardGrid data={data}></ProductCardGrid>
           </div>
-          <div className={styles.loadMoreContainer}>
-            <span>6 de 456</span>
-            <Button fullWidth level={'secondary'}>
-              CARGAR MÁS
-            </Button>
-          </div>
         </Container>
       </div>
     </Layout>
