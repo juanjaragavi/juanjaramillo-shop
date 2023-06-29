@@ -62,7 +62,8 @@
 
     width: 70px;
     height: 70px;
-    background-color: var(--standard-white);
+    background-color: transparent;
+    color: var(--jj-pink);
 
     display: flex;
     align-items: center;

@@ -74,14 +74,14 @@ const CardController = (props) => {
             className={styles.customButtonStyling}
             level={'primary'}
           >
-            view items
+            ver ítems
           </Button>
           <Button
             onClick={closeFilter}
             className={styles.customButtonStyling}
             level={'secondary'}
           >
-            close
+            cerrar
           </Button>
         </div>
       </div>

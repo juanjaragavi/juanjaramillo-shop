@@ -11,7 +11,7 @@ import AddItemNotificationContext from '../../context/AddItemNotificationProvide
 import * as styles from './QuickView.module.css';
 
 const QuickView = (props) => {
-  const { close, buttonTitle = 'Add to Bag' } = props;
+  const { close, buttonTitle = 'Agrégalo a tu Carrito' } = props;
   const sampleProduct = generateMockProductData(1, 'sample')[0];
 
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
@@ -29,7 +29,8 @@ const QuickView = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.titleContainer}>
-        <h4>Select Options</h4>
+        <h4>Debes configurar el servicio</h4>
+        <p>Sigue los pasos para hacerlo, debajo</p>
       </div>
       <div className={styles.contentContainer}>
         <div className={styles.productContainer}>

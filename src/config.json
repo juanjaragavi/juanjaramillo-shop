@@ -159,36 +159,27 @@
   ],
   "filters": [
     {
-      "category": "colour",
+      "category": "tipo de servicio",
       "items": [
-        { "name": "Black", "value": true },
-        { "name": "Green", "value": false },
-        { "name": "Dark Blue", "value": false },
-        { "name": "Blue", "value": true },
-        { "name": "Grey", "value": false },
-        { "name": "Red", "value": false }
+        { "name": "Remoto", "value": true },
+        { "name": "Presencial", "value": false }
       ]
     },
 
     {
-      "category": "size",
+      "category": "costo",
       "items": [
-        { "name": "XXS", "value": false },
-        { "name": "XS", "value": false },
-        { "name": "S", "value": false },
-        { "name": "M", "value": false },
-        { "name": "L", "value": false },
-        { "name": "XL", "value": false },
-        { "name": "XXL", "value": false },
-        { "name": "Onesize", "value": false }
+        { "name": "Gratis", "value": false },
+        { "name": "De pago", "value": true }
       ]
     },
     {
-      "category": "gender",
+      "category": "tipo de producto",
       "items": [
-        { "name": "Male", "value": false },
-        { "name": "Female", "value": false },
-        { "name": "Unisex", "value": false }
+        { "name": "Servicios de Consultoría", "value": true },
+        { "name": "Prompts", "value": false },
+        { "name": "Aprendizaje y Capacitación", "value": false },
+        { "name": "Imágenes", "value": false }
       ]
     }
   ]

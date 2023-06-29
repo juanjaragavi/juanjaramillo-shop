@@ -16,35 +16,35 @@ const AccountNav = (props) => {
           to={'/account/orders/'}
           className={styles.webLink}
         >
-          Orders
+          Mis Pedidos
         </Link>
         <Link
           activeClassName={styles.activeLink}
           to={'/account/address/'}
           className={styles.webLink}
         >
-          Addresses
+          Direcciones
         </Link>
         <Link
           activeClassName={styles.activeLink}
           to={'/account/settings/'}
           className={styles.webLink}
         >
-          Settings
+          Configuración
         </Link>
         <Link
           activeClassName={styles.activeLink}
           to={'/account/viewed/'}
           className={styles.webLink}
         >
-          Recently Viewed
+          Visto Recientemente
         </Link>
         <span
           role={'presentation'}
           onClick={handleLogout}
           className={styles.webLink}
         >
-          Logout
+          Cerrar Sesión
         </span>
       </div>
     </div>

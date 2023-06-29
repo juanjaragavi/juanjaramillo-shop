@@ -5,7 +5,6 @@ import Banner from '../components/Banner';
 import Breadcrumbs from '../components/Breadcrumbs';
 import CardController from '../components/CardController';
 import Container from '../components/Container';
-import Chip from '../components/Chip';
 import Icon from '../components/Icons/Icon';
 import Layout from '../components/Layout';
 import ProductCardGrid from '../components/ProductCardGrid';
@@ -61,12 +60,6 @@ const ShopPage = (props) => {
                 <Icon symbol={'filter'} />
                 <span>Filtros</span>
               </div>
-              <div
-                className={`${styles.iconContainer} ${styles.sortContainer}`}
-              >
-                <span>Ordenar por</span>
-                <Icon symbol={'caret'} />
-              </div>
             </div>
           </div>
           <CardController
@@ -74,10 +67,6 @@ const ShopPage = (props) => {
             visible={showFilter}
             filters={Config.filters}
           />
-          <div className={styles.chipsContainer}>
-            <Chip name={'XS'} />
-            <Chip name={'S'} />
-          </div>
           <div className={styles.productContainer}>
             <span className={styles.mobileItemCount}>476 ítems</span>
             <ProductCardGrid data={data}></ProductCardGrid>

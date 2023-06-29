@@ -32,16 +32,16 @@ const OrderItem = (props) => {
         onClick={() => setCollapsed(!collapsed)}
       >
         <div className={styles.orderMeta}>
-          <span className={styles.orderId}>Order #{pad(order.id, 5)}</span>
+          <span className={styles.orderId}>Pedido #{pad(order.id, 5)}</span>
           <span
             className={styles.orderTotalMeta}
-          >{`${order.items.length} products totaling `}</span>
+          >{`${order.items.length} productos por un total de `}</span>
           <span className={styles.total}>
             <CurrencyFormatter amount={computedTotal}></CurrencyFormatter>
           </span>
         </div>
         <div className={styles.od}>
-          <span className={styles.mobileLabel}>Order Date</span>
+          <span className={styles.mobileLabel}>Fecha de Pedido</span>
           <span className={styles.orderDate}>{order.orderPlaced}</span>
         </div>
         <span className={styles.lastUpdate}>{order.lastUpdate}</span>
@@ -64,7 +64,7 @@ const OrderItem = (props) => {
       >
         <div className={styles.addressDetailContainer}>
           <div className={styles.addressContainer}>
-            <span className={styles.addressMeta}>Ship to</span>
+            <span className={styles.addressMeta}>Enviar a</span>
             <span className={styles.address}>
               {order.shippingAddress?.name}
             </span>
@@ -79,7 +79,7 @@ const OrderItem = (props) => {
             </span>
           </div>
           <div className={styles.addressContainer}>
-            <span className={styles.addressMeta}>Bill to</span>
+            <span className={styles.addressMeta}>Facturar a</span>
             <span className={styles.address}>{order.billingAddress?.name}</span>
             <span className={styles.address}>
               {order.billingAddress?.address}
@@ -108,7 +108,7 @@ const OrderItem = (props) => {
                   <span className={styles.itemName}>{item.name}</span>
                   <div className={styles.orderItemMeta}>
                     <span className={styles.itemQuantity}>
-                      Qty: {item.quantity}
+                      Horas: {item.quantity}
                     </span>
                     <div className={styles.itemTotalMobile}>
                       <CurrencyFormatter amount={item.quantity * item.price} />
@@ -129,11 +129,11 @@ const OrderItem = (props) => {
             <span>
               <CurrencyFormatter amount={computedTotal} />
             </span>
-            <span>GST: </span>
+            <span>IVA: </span>
             <span>
               <CurrencyFormatter amount={0} />
             </span>
-            <span className={styles.bold}>Grand Total </span>
+            <span className={styles.bold}>Total </span>
             <span className={styles.grandTotal}>
               <CurrencyFormatter amount={computedTotal} />
             </span>

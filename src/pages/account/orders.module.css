@@ -9,6 +9,8 @@
     minmax(0, 0.4fr)
     minmax(0, 0.05fr);
     padding: 24px 42px;
+    width: auto;
+    max-width: 64vw;
 }
 
 .tableHeader {
