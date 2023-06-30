@@ -5,45 +5,32 @@ import FormInputField from '../FormInputField/FormInputField';
 
 import * as styles from './Contact.module.css';
 
-const Contact = () => {
-
-  const [form, setForm] = useState({
+const Contact = (props) => {
+  const initialState = {
     name: '',
-    lastName: '',
     phone: '',
     email: '',
     comment: '',
-  });
-
-  const handleChange = e => {
-    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = e => {
+  const [contactForm, setContactForm] = useState(initialState);
+
+  const handleChange = (id, e) => {
+    const tempForm = { ...contactForm, [id]: e };
+    setContactForm(tempForm);
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    
-    const formData = new URLSearchParams();
-    for (const key in form) {
-      formData.append(key, form[key]);
-    }
-    
-    fetch('https://hooks.zapier.com/hooks/catch/15793138/3ds9uwv/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: formData.toString()
-    })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch((error) => console.error('Error:', error));
+    setContactForm(initialState);
   };
-  
 
   return (
     <div className={styles.root}>
       <div className={styles.section}>
         <h4>Envíanos un Mensaje</h4>
         <p>
-          Te responderemos en menos de un minuto. ¡En serio, compruébalo! 😉
+          Te responderemos en el menor tiempo posible.
         </p>
       </div>
 
@@ -61,36 +48,28 @@ const Contact = () => {
       </div>
 
       <div className={styles.contactContainer}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(e) => handleSubmit(e)}>
           <div className={styles.contactForm}>
             <FormInputField
               id={'name'}
-              value={form.name}
-              onChange={handleChange}
+              value={contactForm.name}
+              handleChange={(id, e) => handleChange(id, e)}
               type={'text'}
-              labelName={'Nombre'}
-              required
-            />
-            <FormInputField
-              id={'lastName'}
-              value={form.lastName}
-              onChange={handleChange}
-              type={'text'}
-              labelName={'Apellido'}
+              labelName={'Nombre Completo'}
               required
             />
             <FormInputField
               id={'phone'}
-              value={form.phone}
-              onChange={handleChange}
+              value={contactForm.phone}
+              handleChange={(id, e) => handleChange(id, e)}
               type={'number'}
               labelName={'Número de Teléfono'}
               required
             />
             <FormInputField
               id={'email'}
-              value={form.email}
-              onChange={handleChange}
+              value={contactForm.email}
+              handleChange={(id, e) => handleChange(id, e)}
               type={'email'}
               labelName={'Correo Electrónico'}
               required
@@ -98,8 +77,8 @@ const Contact = () => {
             <div className={styles.commentInput}>
               <FormInputField
                 id={'comment'}
-                value={form.comment}
-              onChange={handleChange}
+                value={contactForm.comment}
+                handleChange={(id, e) => handleChange(id, e)}
                 type={'textarea'}
                 labelName={'Comentarios / Preguntas'}
                 required
