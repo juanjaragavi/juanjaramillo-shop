@@ -62,7 +62,7 @@ function Contact() {
 
       <div className={styles.contactContainer}>
         <form onSubmit={handleSubmit}>
-          <label htmlFor={id} className={styles.label}>
+          <label className={styles.label}>
             Nombres <span>*</span>
           </label>
           <input
@@ -71,7 +71,7 @@ function Contact() {
             value={form.nombres}
             onChange={handleChange}
           />
-          <label htmlFor={id} className={styles.label}>
+          <label className={styles.label}>
             Apellidos <span>*</span>
           </label>
           <input
@@ -80,7 +80,7 @@ function Contact() {
             value={form.apellidos}
             onChange={handleChange}
           />
-          <label htmlFor={id} className={styles.label}>
+          <label className={styles.label}>
             Correo Electrónico <span>*</span>
           </label>
           <input
@@ -89,7 +89,7 @@ function Contact() {
             value={form.email}
             onChange={handleChange}
           />
-          <label htmlFor={id} className={styles.label}>
+          <label className={styles.label}>
             Teléfono <span>*</span>
           </label>
           <input
@@ -98,7 +98,7 @@ function Contact() {
             value={form.telefono}
             onChange={handleChange}
           />
-          <label htmlFor={id} className={styles.label}>
+          <label className={styles.label}>
             Comentarios o Dudas <span>*</span>
           </label>
           <input
@@ -107,7 +107,13 @@ function Contact() {
             value={form.comentarios}
             onChange={handleChange}
           />
-          <button type="submit">Enviar</button>
+          <Button
+            className={styles.customButton}
+            level={'primary'}
+            type="submit"
+          >
+            enviar
+          </Button>
         </form>
       </div>
     </div>
