@@ -2,6 +2,9 @@ input:focus {
   outline: none;
   background-color: #ddd; /* light gray */
 }
+input::placeholder {
+  color: var(--standard-white);
+}
 .home {
   align-items: center;
   border: 1px none;
