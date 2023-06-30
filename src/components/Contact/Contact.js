@@ -117,7 +117,7 @@ function Contact() {
                 name="comentarios"
                 value={form.comentarios}
                 onChange={handleChange}
-                className={styles.input}
+                className={styles.textarea}
               />
             </div>
 

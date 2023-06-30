@@ -35,6 +35,14 @@ color: var(--sale);
     color: var(--standard-black);
 }
 
+.textarea {
+    min-height: 150px;
+    background-color: transparent;
+    color: var(--standard-white);
+    border: 1px solid var(--jj-pink);
+    border-radius: 20px;
+}
+
 .section:first-child {
     margin-top: 0px;
 }
