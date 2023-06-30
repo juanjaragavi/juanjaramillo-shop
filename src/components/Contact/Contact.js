@@ -25,9 +25,9 @@ const Contact = (props) => {
     fetch('https://hooks.zapier.com/hooks/catch/15793138/3ds9uwv/', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: JSON.stringify(contactForm),
+      body: formData.toString(),
     })
       .then((response) => response.json())
       .then((data) => {
