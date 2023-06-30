@@ -68,6 +68,7 @@ function Contact() {
               name="nombres"
               value={form.nombres}
               onChange={handleChange}
+              className={styles.input}
             />
           </div>
           <div className={styles.formField}>
@@ -79,6 +80,7 @@ function Contact() {
               name="apellidos"
               value={form.apellidos}
               onChange={handleChange}
+              className={styles.input}
             />
           </div>
           <div className={styles.formField}>
@@ -90,6 +92,7 @@ function Contact() {
               name="email"
               value={form.email}
               onChange={handleChange}
+              className={styles.input}
             />
           </div>
           <div className={styles.formField}>
@@ -101,6 +104,7 @@ function Contact() {
               name="telefono"
               value={form.telefono}
               onChange={handleChange}
+              className={styles.input}
             />
           </div>
           <div className={styles.formField}>
@@ -112,6 +116,7 @@ function Contact() {
               name="comentarios"
               value={form.comentarios}
               onChange={handleChange}
+              className={styles.input}
             />
           </div>
 
