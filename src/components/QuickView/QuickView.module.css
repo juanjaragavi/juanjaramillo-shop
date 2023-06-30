@@ -56,6 +56,10 @@
     max-width: 550px;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: var(--jj-pink);
+    border-style: solid;
 }
 
 .sectionContainer {

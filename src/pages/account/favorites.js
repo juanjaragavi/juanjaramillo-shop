@@ -45,8 +45,8 @@ const FavoritesPage = (props) => {
         <Container size={'large'}>
           <Breadcrumbs
             crumbs={[
-              { link: '/', label: 'Home' },
-              { link: '/account/favorites', label: 'Favorites' },
+              { link: '/', label: 'Tienda' },
+              { link: '/account/favorites', label: 'Favoritos' },
             ]}
           />
           <h1>Mis Favoritos</h1>
