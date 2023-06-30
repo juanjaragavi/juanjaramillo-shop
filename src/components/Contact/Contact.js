@@ -42,7 +42,7 @@ const handleChange = (e) => {
       <div className={styles.section}>
         <h4>Envíanos un Mensaje</h4>
         <p>
-          Te responderemos en el menor tiempo posible.
+          Te responderemos en menos de un minuto. (¡De verdad!) 😉  
         </p>
       </div>
 
@@ -60,47 +60,48 @@ const handleChange = (e) => {
       </div>
 
       <div className={styles.contactContainer}>
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={handleSubmit} netlify>
           <div className={styles.contactForm}>
             <FormInputField
-              id={'name'}
-              value={contactForm.name}
-              handleChange={(id, e) => handleChange(id, e)}
-              type={'text'}
-              labelName={'Nombre Completo'}
+              value={form.nombres}
+              onChange={handleChange}
+              type="text"
+              name="nombres"
+              id="nombres"
+              labelName={'Nombres'}
               required
             />
             <FormInputField
-              id={'name'}
-              value={contactForm.name}
-              handleChange={(id, e) => handleChange(id, e)}
-              type={'text'}
-              labelName={'Nombre Completo'}
+              value={form.apellidos} 
+              onChange={handleChange}
+              type="text"
+              name="apellidos"
+              id="apellidos"
               required
             />
             <FormInputField
-              id={'phone'}
-              value={contactForm.phone}
-              handleChange={(id, e) => handleChange(id, e)}
-              type={'number'}
-              labelName={'Número de Teléfono'}
+              value={form.email}
+              onChange={handleChange}
+              type="email"
+              name="email"
+              id="email"
               required
             />
             <FormInputField
-              id={'email'}
-              value={contactForm.email}
-              handleChange={(id, e) => handleChange(id, e)}
-              type={'email'}
-              labelName={'Correo Electrónico'}
+              value={form.telefono} 
+              onChange={handleChange}
+              type="number"
+              name="telefono"
+              id="telefono"
               required
             />
             <div className={styles.commentInput}>
               <FormInputField
-                id={'comment'}
-                value={contactForm.comment}
-                handleChange={(id, e) => handleChange(id, e)}
-                type={'textarea'}
-                labelName={'Comentarios / Preguntas'}
+                value={form.telefono} 
+                onChange={handleChange}
+                type="textarea"
+                name="telefono"
+                id="telefono"
                 required
               />
             </div>
