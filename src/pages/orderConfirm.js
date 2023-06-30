@@ -30,38 +30,37 @@ const OrderConfirmPage = (props) => {
       </Helmet>
       <Container size={'medium'}>
         <div className={styles.root}>
-          <h1>Thank You!</h1>
+          <h1>¡Muchas Gracias por tu Compra!</h1>
           <p>
-            We are now processing your order. If you have any concerns feel free
-            to email us at customerservice@example.com
+          Ahora estamos procesando tu pedido. Si tienes alguna inquietud, no dudes en enviarnos un correo electrónico a <a href='mailto:info@juanjaramillo.tech' target="_blank">info@juanjaramillo.tech</a>
           </p>
           <div className={styles.actionContainer}>
             <ActionCard
-              title={'Order Status'}
+              title={'Status del Pedido'}
               icon={'delivery'}
-              subtitle={'Check your order status'}
+              subtitle={'Revisa el estado de tu Pedido aquí.'}
               link={'/account/orders'}
               size={'lg'}
             />
 
             <ActionCard
-              title={'Shop'}
+              title={'Comprar'}
               icon={'bag'}
-              subtitle={'Continue Shopping'}
+              subtitle={'Continúa tus Compras en la tienda.'}
               link={'/shop'}
             />
 
             <ActionCard
               title={'FAQs'}
               icon={'question'}
-              subtitle={'Check out FAQs page'}
+              subtitle={'¿Dudas? Revisa nuestras FAQ.s'}
               link={'/faq'}
             />
 
             <ActionCard
-              title={'Contact Us'}
+              title={'Contacto'}
               icon={'phone'}
-              subtitle={'Reach out to us'}
+              subtitle={'Escríbenos y obtén respuesta en segundos.'}
               link={'/support#contact'}
             />
           </div>
