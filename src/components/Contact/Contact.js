@@ -5,7 +5,8 @@ import FormInputField from '../FormInputField/FormInputField';
 
 import * as styles from './Contact.module.css';
 
-const Contact = (props) => {
+const Contact = () => {
+/*  
   const initialState = {
     name: '',
     phone: '',
@@ -24,13 +25,44 @@ const Contact = (props) => {
     e.preventDefault();
     setContactForm(initialState);
   };
+*/
+
+const [form, setForm] = useState({
+  nombres: "",
+  apellidos: "",
+  email: "",
+  telefono: "",
+  comentario: "",
+});
+
+const handleChange = (e) => {
+  setForm({ ...form, [e.target.name]: e.target.value });
+};
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    
+    const formData = new URLSearchParams();
+    for (const key in form) {
+        formData.append(key, form[key]);
+        }
+        
+        fetch('https://hooks.zapier.com/hooks/catch/15793138/3dstwhg/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formData.toString()
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch((error) => console.error('Error:', error));
+};
 
   return (
     <div className={styles.root}>
       <div className={styles.section}>
         <h4>Envíanos un Mensaje</h4>
         <p>
-          Te responderemos en el menor tiempo posible.
+          Te responderemos en un minuto (¡es literal!). 😉
         </p>
       </div>
 
@@ -48,39 +80,44 @@ const Contact = (props) => {
       </div>
 
       <div className={styles.contactContainer}>
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={handleSubmit} netlify>
           <div className={styles.contactForm}>
             <FormInputField
-              id={'name'}
-              value={contactForm.name}
-              handleChange={(id, e) => handleChange(id, e)}
+              value={form.nombres}
+              onChange={handleChange}
               type={'text'}
+              name={'nombres'}
+              id={'nombres'}
               labelName={'Nombre Completo'}
               required
             />
             <FormInputField
-              id={'phone'}
-              value={contactForm.phone}
-              handleChange={(id, e) => handleChange(id, e)}
+              value={form.telefono}
+              onChange={handleChange}
               type={'number'}
+              name={'telefono'}
+              id={'telefono'}
               labelName={'Número de Teléfono'}
               required
             />
             <FormInputField
-              id={'email'}
-              value={contactForm.email}
-              handleChange={(id, e) => handleChange(id, e)}
+              value={form.email} 
+              onChange={handleChange}
               type={'email'}
+              name={'email'}
+              id={'email'}
               labelName={'Correo Electrónico'}
               required
             />
             <div className={styles.commentInput}>
               <FormInputField
-                id={'comment'}
-                value={contactForm.comment}
-                handleChange={(id, e) => handleChange(id, e)}
+                value={form.email} 
+                onChange={handleChange}
                 type={'textarea'}
+                name={'comentario'}
+                id={'comentario'}
                 labelName={'Comentarios / Preguntas'}
+                placeholder={'¿Tienes una pregunta o comentario puntual con respecto a productos o servicios de la tienda? Formúlala en lenguaje natural. Por ejemplo: "¿En cuánto tiempo recibiré mi pedido?"'}
                 required
               />
             </div>
