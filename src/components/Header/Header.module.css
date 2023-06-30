@@ -17,15 +17,15 @@
     background-color: rgb(0 0 0/var(--tw-bg-opacity));
 }
 .iconButton {
-  border: none;
-  background-color: unset;
-  overflow: visible;
-  text-transform: none;
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  -webkit-appearance: button;
+    border: none;
+    background-color: unset;
+    overflow: visible;
+    text-transform: none;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    appearance: button;
 }
 
 .header {
@@ -76,15 +76,15 @@
 }
 
 .actionContainers {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 .actionContainers > * {
-  margin-right: 32px;
-  cursor: pointer;
-  color: var(--jj-pink);
+    margin-right: 32px;
+    cursor: pointer;
+    color: var(--jj-pink);
 }
 
 .iconContainer {
@@ -231,7 +231,7 @@
     }
 
     .linkContainer {
-      display: none;
+        display: none;
     }
 
     .burgerIcon {
