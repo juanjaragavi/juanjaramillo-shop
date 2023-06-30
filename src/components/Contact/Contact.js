@@ -5,44 +5,32 @@ import FormInputField from '../FormInputField/FormInputField';
 
 import * as styles from './Contact.module.css';
 
-const Contact = () => {
+const Contact = (props) => {
+  const initialState = {
+    name: '',
+    phone: '',
+    email: '',
+    comment: '',
+  };
 
-const [form, setForm] = useState({
-  nombres: "",
-  apellidos: "",
-  email: "",
-  telefono: "",
-  comentario: "",
-});
+  const [contactForm, setContactForm] = useState(initialState);
 
-const handleChange = (e) => {
-  setForm({ ...form, [e.target.name]: e.target.value });
-};
+  const handleChange = (id, e) => {
+    const tempForm = { ...contactForm, [id]: e };
+    setContactForm(tempForm);
+  };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    
-    const formData = new URLSearchParams();
-    for (const key in form) {
-        formData.append(key, form[key]);
-        }
-        
-        fetch('https://hooks.zapier.com/hooks/catch/15793138/3dstwhg/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: formData.toString()
-        })
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch((error) => console.error('Error:', error));
-};
+    setContactForm(initialState);
+  };
 
   return (
     <div className={styles.root}>
       <div className={styles.section}>
         <h4>Envíanos un Mensaje</h4>
         <p>
-          Te responderemos en menos de un minuto. (¡De verdad!) 😉  
+          Te responderemos en el menor tiempo posible.
         </p>
       </div>
 
@@ -60,48 +48,39 @@ const handleChange = (e) => {
       </div>
 
       <div className={styles.contactContainer}>
-        <form onSubmit={handleSubmit} netlify>
+        <form onSubmit={(e) => handleSubmit(e)}>
           <div className={styles.contactForm}>
             <FormInputField
-              value={form.nombres}
-              onChange={handleChange}
-              type="text"
-              name="nombres"
-              id="nombres"
-              labelName={'Nombres'}
+              id={'name'}
+              value={contactForm.name}
+              handleChange={(id, e) => handleChange(id, e)}
+              type={'text'}
+              labelName={'Nombre Completo'}
               required
             />
             <FormInputField
-              value={form.apellidos} 
-              onChange={handleChange}
-              type="text"
-              name="apellidos"
-              id="apellidos"
+              id={'phone'}
+              value={contactForm.phone}
+              handleChange={(id, e) => handleChange(id, e)}
+              type={'number'}
+              labelName={'Número de Teléfono'}
               required
             />
             <FormInputField
-              value={form.email}
-              onChange={handleChange}
-              type="email"
-              name="email"
-              id="email"
-              required
-            />
-            <FormInputField
-              value={form.telefono} 
-              onChange={handleChange}
-              type="number"
-              name="telefono"
-              id="telefono"
+              id={'email'}
+              value={contactForm.email}
+              handleChange={(id, e) => handleChange(id, e)}
+              type={'email'}
+              labelName={'Correo Electrónico'}
               required
             />
             <div className={styles.commentInput}>
               <FormInputField
-                value={form.telefono} 
-                onChange={handleChange}
-                type="textarea"
-                name="comentario"
-                id="comentario"
+                id={'comment'}
+                value={contactForm.comment}
+                handleChange={(id, e) => handleChange(id, e)}
+                type={'textarea'}
+                labelName={'Comentarios / Preguntas'}
                 required
               />
             </div>
