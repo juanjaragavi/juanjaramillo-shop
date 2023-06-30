@@ -62,51 +62,62 @@ function Contact() {
 
       <div className={styles.contactContainer}>
         <form onSubmit={handleSubmit}>
-          <label className={styles.label}>
-            Nombres <span>*</span>
-          </label>
-          <input
-            type="text"
-            name="nombres"
-            value={form.nombres}
-            onChange={handleChange}
-          />
-          <label className={styles.label}>
-            Apellidos <span>*</span>
-          </label>
-          <input
-            type="text"
-            name="apellidos"
-            value={form.apellidos}
-            onChange={handleChange}
-          />
-          <label className={styles.label}>
-            Correo Electrónico <span>*</span>
-          </label>
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-          />
-          <label className={styles.label}>
-            Teléfono <span>*</span>
-          </label>
-          <input
-            type="tel"
-            name="telefono"
-            value={form.telefono}
-            onChange={handleChange}
-          />
-          <label className={styles.label}>
-            Comentarios o Dudas <span>*</span>
-          </label>
-          <input
-            type="textarea"
-            name="comentarios"
-            value={form.comentarios}
-            onChange={handleChange}
-          />
+          <div className={styles.formField}>
+            <label className={styles.label}>
+              Nombres <span>*</span>
+            </label>
+            <input
+              type="text"
+              name="nombres"
+              value={form.nombres}
+              onChange={handleChange}
+            />
+          </div>
+          <div className={styles.formField}>
+            <label className={styles.label}>
+              Apellidos <span>*</span>
+            </label>
+            <input
+              type="text"
+              name="apellidos"
+              value={form.apellidos}
+              onChange={handleChange}
+            />
+          </div>
+          <div className={styles.formField}>
+            <label className={styles.label}>
+              Correo Electrónico <span>*</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div className={styles.formField}>
+            <label className={styles.label}>
+              Teléfono <span>*</span>
+            </label>
+            <input
+              type="tel"
+              name="telefono"
+              value={form.telefono}
+              onChange={handleChange}
+            />
+          </div>
+          <div className={styles.formField}>
+            <label className={styles.label}>
+              Comentarios o Dudas <span>*</span>
+            </label>
+            <input
+              type="textarea"
+              name="comentarios"
+              value={form.comentarios}
+              onChange={handleChange}
+            />
+          </div>
+
           <Button
             className={styles.customButton}
             level={'primary'}
