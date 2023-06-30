@@ -1,3 +1,6 @@
+.linkDestacado {
+    text-decoration: underline;
+}
 .root {
 }
 
@@ -39,7 +42,11 @@
     letter-spacing: 0.4px;
     color: var(--standard-white);
     font-size: 18px;
-    transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-out;
+}
+.input:hover {
+    background-color: transparent;
+    border: 1px solid var(--jj-pink);
 }
 .input:focus {
     background-color: transparent;
@@ -56,6 +63,11 @@
     color: var(--standard-white);
     border: 1px solid var(--standard-white);
     border-radius: 20px;
+    transition: all 0.5s ease-out;
+}
+.textarea:hover {
+    background-color: transparent;
+    border: 1px solid var(--jj-pink);
 }
 .textarea:focus {
     background-color: transparent;

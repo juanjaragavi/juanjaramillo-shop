@@ -37,7 +37,11 @@ function Contact() {
     <div className={styles.root}>
       <div className={styles.section}>
         <h4>Teléfono</h4>
-        <p>+57 (321) 885 6199</p>
+        <p>
+        <a className={styles.linkDestacado} href="tel:+57 (321) 885 6199" target="_blank">
+          +57 (321) 885 6199
+          </a>
+        </p>
         <p>Lúnes a Viernes - 9am - 5pm</p>
       </div>
 
@@ -46,7 +50,7 @@ function Contact() {
         <p>
           Puedes enviar un correo electrónico a nuestro equipo de Servicio al
           Cliente a{' '}
-          <a href="mailto:info@juanjaramillo.tech" target="_blank">
+          <a className={styles.linkDestacado} href="mailto:info@juanjaramillo.tech" target="_blank">
             info@juanjaramillo.tech
           </a>
         </p>
