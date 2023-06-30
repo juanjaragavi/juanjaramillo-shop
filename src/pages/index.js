@@ -1,13 +1,33 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout/Layout';
 import * as styles from './index.module.css';
 import { navigate } from 'gatsby';
 
 const IndexPage = () => {
-
   return (
     <Layout disablePadding>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Boost your business with AI! Shop at Juan Jaramillo's premier AI services store for top-tier consulting, comprehensive courses, and innovative generative image solutions."
+        />
+        <meta
+          name="keywords"
+          content="Juan Jaramillo, artificial intelligence, machine learning, prompt engineer, AI projects, developer, digital marketing, AI expert"
+        />
+        <meta
+          property="og:image"
+          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+        />
+        <link rel="canonical" href="http://shop.juanjaramillo.tech/" />
+        <title>
+        Tienda en Línea de Productos y Servicios de IA | Juan Jaramillo | Prompt Engineer · Developer · AI · Machine Learning Expert
+        </title>
+      </Helmet>
       <main className={styles.home}>
         <section className={styles.main}>
           <div className={styles.overlap}>
