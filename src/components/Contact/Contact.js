@@ -22,6 +22,20 @@ const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    fetch('https://hooks.zapier.com/hooks/catch/15793138/3ds9uwv/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(contactForm),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
     setContactForm(initialState);
   };
 
