@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Sydney Ecommerce Theme`,
-        short_name: `Sydney`,
+        name: `Tienda en Línea de Servicios de Inteligencia Artificial | Juan Jaramillo`,
+        short_name: `Juan Jaramillo`,
         start_url: `/`,
         background_color: `#000000`,
-        theme_color: `#ffffff`,
+        theme_color: `#EC4899`,
         display: `standalone`,
         icon: 'src/assets/favicon.png',
       },

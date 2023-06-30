@@ -1,4 +1,6 @@
 .root {
+    margin: 0;
+    padding: 0;
 }
 
 .navContainer {
@@ -16,7 +18,6 @@
     padding-left: 32px;
     padding-right: 32px;
     -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 /* special case with the image */
