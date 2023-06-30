@@ -8,11 +8,12 @@ import * as styles from './Contact.module.css';
 const Contact = () => {
 
   const [form, setForm] = useState({
-    nombres: "",
-    apellidos: "",
-    email: "",
-    telefono: "",
-});
+    name: '',
+    lastName: '',
+    phone: '',
+    email: '',
+    comment: '',
+  });
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -42,7 +43,7 @@ const Contact = () => {
       <div className={styles.section}>
         <h4>Envíanos un Mensaje</h4>
         <p>
-          Te responderemos en el menor tiempo posible.
+          Te responderemos en menos de un minuto. ¡En serio, compruébalo! 😉
         </p>
       </div>
 
