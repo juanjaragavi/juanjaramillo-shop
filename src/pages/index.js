@@ -22,14 +22,6 @@ const IndexPage = () => {
           property="og:image"
           content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NH5HQX0BL"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-6NH5HQX0BL');
-        </script>
         <link rel="canonical" href="http://shop.juanjaramillo.tech/" />
         <title>
         Tienda en Línea de Productos y Servicios de IA | Juan Jaramillo | Prompt Engineer · Developer · AI · Machine Learning Expert
