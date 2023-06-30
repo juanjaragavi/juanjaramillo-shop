@@ -50,7 +50,7 @@ function Contact() {
         <p>
           Puedes enviar un correo electrónico a nuestro equipo de Servicio al
           Cliente a{' '}
-          <a className={styles.linkDestacado} href="mailto:info@juanjaramillo.tech" target="_blank">
+          <a className={styles.linkDestacado} href="mailto:info@juanjaramillo.tech?subject=Consulta desde Contacto&body=Hola, soy" target="_blank">
             info@juanjaramillo.tech
           </a>
         </p>
