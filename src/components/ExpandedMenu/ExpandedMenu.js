@@ -13,7 +13,13 @@ const ExpandedMenu = (props) => {
         {menu?.map((item, index) => {
           return (
             <div key={index} className={styles.categoryContainer}>
-              <span className={styles.categoryName}>{item.categoryLabel}</span>
+              <a
+                aria-current="page"
+                className={styles.categoryName}
+                href="/shop"
+              >
+                {item.categoryLabel}
+              </a>
               <ul>
                 {item.submenu.map((link, linkIndex) => {
                   return (

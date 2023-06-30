@@ -70,6 +70,7 @@
       "category": [
         {
           "categoryLabel": "servicios",
+          "categoryLink": "/shop",
           "submenu": [
             {
               "menuLabel": "Consultorías en IA (remoto)",

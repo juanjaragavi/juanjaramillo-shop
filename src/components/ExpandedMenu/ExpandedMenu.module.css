@@ -9,12 +9,18 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+.linkContainers a {
+    transition: all 0.3s ease-in-out;
+}
+.linkContainers a:hover {
+    text-decoration: underline;
+}
 
 .categoryName {
     color: var(--jj-pink);
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18px;
     margin-bottom: 10px;
     display: inline-block;
