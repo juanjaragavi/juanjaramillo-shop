@@ -11,7 +11,7 @@ module.exports = {
         head: true,
         anonymize: true,
         respectDNT: true,
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        exclude: ["/preview/**"],
         pageTransitionDelay: 0,
         defer: false,
       },
