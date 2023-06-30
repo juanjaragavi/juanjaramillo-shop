@@ -9,11 +9,19 @@
     width: 100%;
     object-fit: cover;
     height: 320px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--standard-white);
+    transition: all 0.3s ease-in-out;
+}
+.blogPreviewImage:hover {
+    border-color: var(--jj-pink);
 }
 
 .category {
     text-transform: uppercase;
-    color: var(--grey-crumb);
+    color: var(--jj-pink);
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;

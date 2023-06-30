@@ -45,12 +45,17 @@
 .ctaLink {
     
     text-transform: uppercase;
-    color: var(--standard-white);
-    border-bottom: 1px solid var(--standard-white);
+    color: var(--jj-pink);
+    border-bottom: 1px solid var(--jj-pink);
 
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    transition: all 0.3s ease-in-out;
+}
+.ctaLink:hover {
+    color: var(--standard-white);
+    border-bottom: 1px solid var(--standard-white);
 }
 
 .header {

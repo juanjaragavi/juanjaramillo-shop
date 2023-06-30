@@ -5,11 +5,12 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
-    border-bottom: 1px solid var(--bg-light-gray);
+    border-bottom: 1px solid var(--jj-pink);
     position: sticky;
     gap: 48px;
-    top: 150px;
-    background-color: var(--standard-white);
+    top: 0px;
+    --tw-bg-opacity: 0.8;
+    background-color: rgb(0 0 0/var(--tw-bg-opacity));
     z-index: 1;
     overflow-x: auto;
     padding-left: 32px;
