@@ -22,6 +22,12 @@ const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const formData = new URLSearchParams();
+      for (const key in form) {
+      formData.append(key, form[key]);
+    }
+
     fetch('https://hooks.zapier.com/hooks/catch/15793138/3ds9uwv/', {
       method: 'POST',
       headers: {
