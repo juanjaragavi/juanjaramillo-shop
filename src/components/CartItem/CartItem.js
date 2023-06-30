@@ -25,15 +25,15 @@ const CartItem = (props) => {
       <div className={styles.itemContainer}>
         <span className={styles.name}>{name}</span>
         <div className={styles.metaContainer}>
-          <span>Color: {color}</span>
-          <span>Size: {size}</span>
+          <span>Plan: {color}</span>
+          <span>Horas: {size}</span>
         </div>
         <div
           className={styles.editContainer}
           role={'presentation'}
           onClick={() => setShowQuickView(true)}
         >
-          <span>Edit</span>
+          <span>Editar</span>
         </div>
       </div>
       <div className={styles.adjustItemContainer}>

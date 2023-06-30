@@ -14,7 +14,7 @@ const OrderSummary = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.orderSummary}>
-        <span className={styles.title}>order summary</span>
+        <span className={styles.title}>Resumen de tu Pedido</span>
         <div className={styles.calculationContainer}>
           <div className={styles.labelContainer}>
             <span>Subtotal</span>
@@ -23,25 +23,25 @@ const OrderSummary = (props) => {
             </span>
           </div>
           <div className={styles.labelContainer}>
-            <span>Shipping</span>
+            <span>Envío</span>
             <span>---</span>
           </div>
           <div className={styles.labelContainer}>
-            <span>Tax</span>
+            <span>IVA</span>
             <span>
               <CurrencyFormatter amount={0} appendZero />
             </span>
           </div>
         </div>
         <div className={styles.couponContainer}>
-          <span>Coupon Code</span>
+          <span>Código de Cupón</span>
           <FormInputField
             value={coupon}
             handleChange={(_, coupon) => setCoupon(coupon)}
             id={'couponInput'}
             icon={'arrow'}
           />
-          <span>Gift Card</span>
+          <span>Tarjeta de Regalo</span>
           <FormInputField
             value={giftCard}
             handleChange={(_, giftCard) => setGiftCard(giftCard)}
@@ -62,10 +62,10 @@ const OrderSummary = (props) => {
           fullWidth
           level={'primary'}
         >
-          checkout
+          finaliza tu compra
         </Button>
         <div className={styles.linkContainer}>
-          <Link to={'/shop'}>CONTINUE SHOPPING</Link>
+          <Link to={'/shop'}>CONTINÚA COMPRANDO</Link>
         </div>
       </div>
     </div>

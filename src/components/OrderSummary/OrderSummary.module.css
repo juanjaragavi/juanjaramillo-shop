@@ -3,13 +3,17 @@
 }
 
 .orderSummary {
-    border: 1px solid var(--standard-gold);
-    background-color: var(--standard-white);
+    border: 1px solid var(--standard-white);
+    border-radius: 20px;
+    background-color: var(--jj-pink);
     padding: 30px;
 }
 
 .actionContainer {
     margin-top: 24px;
+}
+.actionContainer button {
+    font-size: 18px;
 }
 
 .calculationContainer {
@@ -49,7 +53,6 @@
 
 .couponContainer > div {
     margin-bottom: 0px;
-    border: 1px solid var(--bg-light-gray);
 }
 
 .couponContainer > span {

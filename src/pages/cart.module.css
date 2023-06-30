@@ -4,9 +4,15 @@
 }
 
 .contentContainer {
-    width: 100%;
+    width: 99%;
+    margin: 10px;
     min-height: 70vh;
-    background-color: var(--standard-light-grey);
+    border-width: 1px;
+    border-color: var(--jj-pink);
+    border-style: solid;
+    border-radius: 20px;
+    --tw-bg-opacity: 0.6;
+    background-color: rgb(0 0 0/var(--tw-bg-opacity));
     padding-top: 32px;
     padding-bottom: 88px;
 }
@@ -45,14 +51,15 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-
+    transition: all 0.5s ease;
     display: flex;
     align-items: center;
-    color: var(--standard-black);
+    color: var(--standard-white);
 }
 
 .shopLink:hover {
     color: var(--standard-gold);
+    text-decoration: underline;
 }
 
 .shopLink svg {
@@ -72,7 +79,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: var(--standard-black);
+    color: var(--standard-white);
     transition: color ease-in-out 0.3s;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
@@ -80,6 +87,7 @@
 
 .loginContainer a:hover {
     color: var(--standard-gold);
+    text-decoration: underline;
 }
 
 @media (max-width: 1150px) {
