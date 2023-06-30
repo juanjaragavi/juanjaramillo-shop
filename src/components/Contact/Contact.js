@@ -100,8 +100,8 @@ const handleChange = (e) => {
                 value={form.telefono} 
                 onChange={handleChange}
                 type="textarea"
-                name="telefono"
-                id="telefono"
+                name="comentario"
+                id="comentario"
                 required
               />
             </div>
