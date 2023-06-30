@@ -36,13 +36,6 @@ function Contact() {
   return (
     <div className={styles.root}>
       <div className={styles.section}>
-        <h4>Envíanos un Mensaje</h4>
-        <p>
-          Te responderemos en menos de un minuto. ¡En serio, compruébalo! 😉
-        </p>
-      </div>
-
-      <div className={styles.section}>
         <h4>Teléfono</h4>
         <p>+57 (321) 885 6199</p>
         <p>Lúnes a Viernes - 9am - 5pm</p>
@@ -51,15 +44,19 @@ function Contact() {
       <div className={styles.section}>
         <h4>Correo Electrónico</h4>
         <p>
-          Puedes enviar un correo electrónico a nuestro equipo de Servicio al
-          Cliente a{' '}
+          Puedes enviar un correo electrónico{' '}
+          a nuestro equipo de Servicio al Cliente a{' '}
           <a href="mailto:info@juanjaramillo.tech" target="_blank">
             info@juanjaramillo.tech
-          </a>{' '}
-          o a través del formulario de contacto que está a continuación:
+          </a>
         </p>
       </div>
-
+      <div className={styles.section}>
+        <h4>Envíanos un Mensaje</h4>
+        <p>
+          Te responderemos en menos de un minuto. ¡En serio, compruébalo! 😉
+        </p>
+      </div>
       <div className={styles.contactContainer}>
         <form onSubmit={handleSubmit}>
           <div className={styles.formField}>
