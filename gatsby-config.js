@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Sydney Ecommerce Theme`,
-    siteUrl: `https://jamm.matter.design`,
+    title: `Tienda en Línea de Servicios de Inteligencia Artificial | Juan Jaramillo`,
+    siteUrl: `https://juanjaramillo.tech`,
   },
   plugins: [
     {
