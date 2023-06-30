@@ -20,28 +20,22 @@ const Contact = (props) => {
     setContactForm(tempForm);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
-
+    
     const formData = new URLSearchParams();
-      for (const key in form) {
+    for (const key in form) {
       formData.append(key, form[key]);
     }
-
+    
     fetch('https://hooks.zapier.com/hooks/catch/15793138/3ds9uwv/', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: formData.toString(),
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: formData.toString()
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Success:', data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => console.error('Error:', error));
     setContactForm(initialState);
   };
 
