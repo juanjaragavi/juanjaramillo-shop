@@ -5,9 +5,6 @@ import * as styles from './index.module.css';
 import { navigate } from 'gatsby';
 
 const IndexPage = () => {
-  const goToShop = () => {
-    navigate('/shop');
-  };
 
   return (
     <Layout disablePadding>
@@ -22,7 +19,7 @@ const IndexPage = () => {
                     alt="Brain illustration"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-4.svg"
                   />
-                  <Link className={styles.textwrapper5} href="/">
+                  <Link className={styles.textwrapper5} href="/shop">
                     Packs de Servicios (presencial)
                   </Link>
                 </div>
@@ -32,7 +29,7 @@ const IndexPage = () => {
                     alt="Brain illustration"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-3.svg"
                   />
-                  <Link className={styles.textwrapper6} href="/">
+                  <Link className={styles.textwrapper6} href="/shop">
                     Packs de Servicios (remoto)
                   </Link>
                 </div>
@@ -42,7 +39,7 @@ const IndexPage = () => {
                     alt="Brain illustration"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-2.svg"
                   />
-                  <Link className={styles.textwrapper7} href="/">
+                  <Link className={styles.textwrapper7} href="/shop">
                     Consultorías en IA (presencial)
                   </Link>
                 </div>
@@ -52,7 +49,7 @@ const IndexPage = () => {
                     alt="Brain illustration"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-1.svg"
                   />
-                  <Link className={styles.textwrapper8} href="/">
+                  <Link className={styles.textwrapper8} href="/shop">
                     Consultorías en IA (remoto)
                   </Link>
                 </div>
@@ -62,7 +59,7 @@ const IndexPage = () => {
                     alt="Line"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-3.svg"
                   />
-                  <Link className={styles.textwrapper9} href="/">
+                  <Link className={styles.textwrapper9} href="/shop">
                     SERVICIOS
                   </Link>
                   <img
@@ -79,7 +76,7 @@ const IndexPage = () => {
                     alt="Stars svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-4.svg"
                   />
-                  <Link className={styles.textwrapper10} href="/">
+                  <Link className={styles.textwrapper10} href="/shop">
                     Prompts para crear imágenes
                   </Link>
                 </div>
@@ -89,7 +86,7 @@ const IndexPage = () => {
                     alt="Stars svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-3.svg"
                   />
-                  <Link className={styles.textwrapper11} href="/">
+                  <Link className={styles.textwrapper11} href="/shop">
                     Super Prompts
                   </Link>
                 </div>
@@ -99,7 +96,7 @@ const IndexPage = () => {
                     alt="Stars svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-2.svg"
                   />
-                  <Link className={styles.textwrapper12} href="/">
+                  <Link className={styles.textwrapper12} href="/shop">
                     De pago
                   </Link>
                 </div>
@@ -109,13 +106,13 @@ const IndexPage = () => {
                     alt="Stars svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-1.svg"
                   />
-                  <Link className={styles.textwrapper13} href="/">
+                  <Link className={styles.textwrapper13} href="/shop">
                     Gratis
                   </Link>
                 </div>
                 <div className={styles.contenedortitulo2}>
                   <div className={styles.overlapgroup}>
-                    <Link className={styles.textwrapper14} href="/">
+                    <Link className={styles.textwrapper14} href="/shop">
                       PROMPTS
                     </Link>
                     <img
@@ -138,7 +135,7 @@ const IndexPage = () => {
                     alt="Graduate svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-4.svg"
                   />
-                  <Link className={styles.textwrapper15} href="/">
+                  <Link className={styles.textwrapper15} href="/shop">
                     Capacitaciones personalizadas
                   </Link>
                 </div>
@@ -148,7 +145,7 @@ const IndexPage = () => {
                     alt="Graduate svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-3.svg"
                   />
-                  <Link className={styles.textwrapper16} href="/">
+                  <Link className={styles.textwrapper16} href="/shop">
                     Tutoriales
                   </Link>
                 </div>
@@ -158,7 +155,7 @@ const IndexPage = () => {
                     alt="Graduate svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-2.svg"
                   />
-                  <Link className={styles.textwrapper11} href="/">
+                  <Link className={styles.textwrapper11} href="/shop">
                     Cursos de pago
                   </Link>
                 </div>
@@ -168,12 +165,12 @@ const IndexPage = () => {
                     alt="Graduate svgrepo com"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-1.svg"
                   />
-                  <Link className={styles.textwrapper18} href="/">
+                  <Link className={styles.textwrapper18} href="/shop">
                     Cursos gratuitos
                   </Link>
                 </div>
                 <div className={styles.contenedortitulo3}>
-                  <Link className={styles.textwrapper19} href="/">
+                  <Link className={styles.textwrapper19} href="/shop">
                     APRENDIZAJE
                   </Link>
                   <img
@@ -196,7 +193,7 @@ const IndexPage = () => {
                       alt="Vector"
                       src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/vector-2.svg"
                     />
-                    <Link className={styles.textwrapper20} href="/">
+                    <Link className={styles.textwrapper20} href="/shop">
                       Herramientas
                     </Link>
                   </div>
@@ -206,13 +203,13 @@ const IndexPage = () => {
                       alt="Vector"
                       src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/vector-1.svg"
                     />
-                    <Link className={styles.textwrapper21} href="/">
+                    <Link className={styles.textwrapper21} href="/shop">
                       Generación de imágenes
                     </Link>
                   </div>
                   <div className={styles.overlapgroupwrapper}>
                     <div className={styles.overlapgroup2}>
-                      <Link className={styles.textwrapper22} href="/">
+                      <Link className={styles.textwrapper22} href="/shop">
                         IMÁGENES
                       </Link>
                       <img

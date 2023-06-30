@@ -62,7 +62,7 @@ function Contact() {
           <div className={styles.contactForm}>
             <div className={styles.formField}>
               <label className={styles.label}>
-                Nombres <span>*</span>
+                <span>*</span>
               </label>
               <input
                 type="text"
@@ -70,11 +70,12 @@ function Contact() {
                 value={form.nombres}
                 onChange={handleChange}
                 className={styles.input}
+                placeholder="Nombres"
               />
             </div>
             <div className={styles.formField}>
               <label className={styles.label}>
-                Apellidos <span>*</span>
+                <span>*</span>
               </label>
               <input
                 type="text"
@@ -82,11 +83,12 @@ function Contact() {
                 value={form.apellidos}
                 onChange={handleChange}
                 className={styles.input}
+                placeholder="Apellidos"
               />
             </div>
             <div className={styles.formField}>
               <label className={styles.label}>
-                Correo Electrónico <span>*</span>
+                <span>*</span>
               </label>
               <input
                 type="email"
@@ -94,11 +96,12 @@ function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 className={styles.input}
+                placeholder="Correo Electrónico"
               />
             </div>
             <div className={styles.formField}>
               <label className={styles.label}>
-                Teléfono <span>*</span>
+                <span>*</span>
               </label>
               <input
                 type="tel"
@@ -106,21 +109,24 @@ function Contact() {
                 value={form.telefono}
                 onChange={handleChange}
                 className={styles.input}
+                placeholder="Teléfono"
               />
             </div>
-            <div className={styles.formField}>
-              <label className={styles.label}>
-                Comentarios o Dudas <span>*</span>
-              </label>
-              <input
-                type="textarea"
-                name="comentarios"
-                value={form.comentarios}
-                onChange={handleChange}
-                className={styles.textarea}
-              />
-            </div>
-
+          </div>
+          <div className={styles.formField}>
+            <label className={styles.label}>
+              <span></span>
+            </label>
+            <input
+              type="textarea"
+              name="comentarios"
+              value={form.comentarios}
+              onChange={handleChange}
+              className={styles.textarea}
+              placeholder="¿Preguntas, dudas o sugerencias acerca de productos o servicios de la Tienda?"
+            />
+          </div>
+          <div className={styles.marginTop}>
             <Button
               className={styles.customButton}
               level={'primary'}
