@@ -62,7 +62,7 @@ function Contact() {
         </p>
       </div>
       <div className={styles.contactContainer}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} netlify>
           <div className={styles.contactForm}>
             <div className={styles.formField}>
               <label className={styles.label}>
