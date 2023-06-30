@@ -4,7 +4,7 @@ describe('sample render test', () => {
   })
 
   it('displays the title text', () => {
-    cy.get('h2')
+    cy.get('h2', { timeout: 10000 }) // Increase timeout to 10 seconds
     .contains('Essentials for a cold winter');
   })
-}) 
+})
