@@ -4,7 +4,7 @@ describe('sample render test', () => {
   })
 
   it('displays the title text', () => {
-    cy.get('p', { timeout: 10000 }) // Increase timeout to 10 seconds
+    cy.get('p') // Increase timeout to 10 seconds
     .contains('Tienda en Línea de Productos y Servicios de IA.');
   })
 })
