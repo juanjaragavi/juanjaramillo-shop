@@ -6,11 +6,11 @@
 .subMenu {
     box-sizing: border-box;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: -8px auto 0 auto;
     width: 100%;
     background-color: transparent;
+    border-top-width: 2px;
     border-width: 1px;
-    border-color: #EC4899;
     border-style: solid;
     border-radius: 20px;
     --tw-bg-opacity: 0.8;

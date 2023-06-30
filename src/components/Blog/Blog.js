@@ -17,7 +17,7 @@ const Blog = (props) => {
       </div>
       <div>{children}</div>
       <div className={styles.footerContainer}>
-        <span>Share with:</span>
+        <span>¡Compártelo!</span>
         <div className={styles.socialMediaListContainer}>
           <div className={styles.socialMediaIconContainer}>
             <Icon symbol={'twitterinverse'}></Icon>
@@ -30,7 +30,7 @@ const Blog = (props) => {
           </div>
         </div>
         <Button onClick={() => navigate('/blog')} level={'secondary'}>
-          back to blog
+          Volver al Blog
         </Button>
       </div>
     </div>
