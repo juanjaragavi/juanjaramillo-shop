@@ -16,7 +16,7 @@ const IndexPage = () => {
                 <div className={styles.packsdeservicios}>
                   <img
                     className={styles.brainillustration}
-                    alt="Brain illustration"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-4.svg"
                   />
                   <Link className={styles.textwrapper5} href="/shop">
@@ -26,7 +26,7 @@ const IndexPage = () => {
                 <div className={styles.packsdeservicios2}>
                   <img
                     className={styles.img}
-                    alt="Brain illustration"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-3.svg"
                   />
                   <Link className={styles.textwrapper6} href="/shop">
@@ -36,7 +36,7 @@ const IndexPage = () => {
                 <div className={styles.consultoriasenia}>
                   <img
                     className={styles.brainillustration2}
-                    alt="Brain illustration"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-2.svg"
                   />
                   <Link className={styles.textwrapper7} href="/shop">
@@ -46,7 +46,7 @@ const IndexPage = () => {
                 <div className={styles.consultoriasenia2}>
                   <img
                     className={styles.brainillustration3}
-                    alt="Brain illustration"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com-1.svg"
                   />
                   <Link className={styles.textwrapper8} href="/shop">
@@ -64,7 +64,7 @@ const IndexPage = () => {
                   </Link>
                   <img
                     className={styles.brainillustration4}
-                    alt="Brain illustration"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com.svg"
                   />
                 </div>
@@ -73,7 +73,7 @@ const IndexPage = () => {
                 <div className={styles.promptsparacrear}>
                   <img
                     className={styles.starssvgrepocom}
-                    alt="Stars svgrepo com"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-4.svg"
                   />
                   <Link className={styles.textwrapper10} href="/shop">
@@ -83,7 +83,7 @@ const IndexPage = () => {
                 <div className={styles.superprompts}>
                   <img
                     className={styles.starssvgrepocom2}
-                    alt="Stars svgrepo com"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-3.svg"
                   />
                   <Link className={styles.textwrapper11} href="/shop">
@@ -93,7 +93,7 @@ const IndexPage = () => {
                 <div className={styles.promptsdepago}>
                   <img
                     className={styles.starssvgrepocom3}
-                    alt="Stars svgrepo com"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-2.svg"
                   />
                   <Link className={styles.textwrapper12} href="/shop">
@@ -103,7 +103,7 @@ const IndexPage = () => {
                 <div className={styles.promptsgratis}>
                   <img
                     className={styles.starssvgrepocom4}
-                    alt="Stars svgrepo com"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com-1.svg"
                   />
                   <Link className={styles.textwrapper13} href="/shop">
@@ -117,13 +117,13 @@ const IndexPage = () => {
                     </Link>
                     <img
                       className={styles.starssvgrepocom5}
-                      alt="Stars svgrepo com"
+                      alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                       src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com.svg"
                     />
                   </div>
                   <img
                     className={styles.line2}
-                    alt="Line"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-3.svg"
                   />
                 </div>
@@ -132,7 +132,7 @@ const IndexPage = () => {
                 <div className={styles.capacitaciones}>
                   <img
                     className={styles.graduatesvgrepocom}
-                    alt="Graduate svgrepo com"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-4.svg"
                   />
                   <Link className={styles.textwrapper15} href="/shop">
@@ -142,7 +142,7 @@ const IndexPage = () => {
                 <div className={styles.tutoriales}>
                   <img
                     className={styles.graduatesvgrepocom2}
-                    alt="Graduate svgrepo com"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-3.svg"
                   />
                   <Link className={styles.textwrapper16} href="/shop">
@@ -152,7 +152,7 @@ const IndexPage = () => {
                 <div className={styles.cursosdepago}>
                   <img
                     className={styles.graduatesvgrepocom3}
-                    alt="Graduate svgrepo com"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-2.svg"
                   />
                   <Link className={styles.textwrapper11} href="/shop">
@@ -162,7 +162,7 @@ const IndexPage = () => {
                 <div className={styles.cursosgratuitos}>
                   <img
                     className={styles.graduatesvgrepocom4}
-                    alt="Graduate svgrepo com"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com-1.svg"
                   />
                   <Link className={styles.textwrapper18} href="/shop">
@@ -175,12 +175,12 @@ const IndexPage = () => {
                   </Link>
                   <img
                     className={styles.graduatesvgrepocom5}
-                    alt="Graduate svgrepo com"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com.svg"
                   />
                   <img
                     className={styles.line3}
-                    alt="Line"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-1.svg"
                   />
                 </div>
@@ -190,7 +190,7 @@ const IndexPage = () => {
                   <div className={styles.herramientas}>
                     <img
                       className={styles.vector2}
-                      alt="Vector"
+                      alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                       src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/vector-2.svg"
                     />
                     <Link className={styles.textwrapper20} href="/shop">
@@ -200,7 +200,7 @@ const IndexPage = () => {
                   <div className={styles.generacionde}>
                     <img
                       className={styles.vector3}
-                      alt="Vector"
+                      alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                       src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/vector-1.svg"
                     />
                     <Link className={styles.textwrapper21} href="/shop">
@@ -214,12 +214,12 @@ const IndexPage = () => {
                       </Link>
                       <img
                         className={styles.imagesvgrepocom}
-                        alt="svgrepo com"
+                        alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                         src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/image-01-svgrepo-com.svg"
                       />
                       <img
                         className={styles.line4}
-                        alt="Line"
+                        alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                         src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-3.svg"
                       />
                     </div>
@@ -231,7 +231,7 @@ const IndexPage = () => {
               <div className={styles.contenedorbarrade}>
                 <img
                   className={styles.lupabuscadoria}
-                  alt="Lupa buscador ia"
+                  alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                   src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/lupa-buscador-ia.svg"
                 />
                 <div className={styles.barradebusqueda}>
@@ -246,7 +246,7 @@ const IndexPage = () => {
                   className={styles.flechaenviar}
                   type="image"
                   src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/flecha-enviar.svg"
-                  alt="Submit"
+                  alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                   width="21"
                   height="24"
                 />

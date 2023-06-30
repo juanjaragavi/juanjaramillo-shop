@@ -71,6 +71,7 @@
         {
           "categoryLabel": "servicios",
           "categoryLink": "/shop",
+          "categoryImg": "https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/brain-illustration-1-svgrepo-com.svg",
           "submenu": [
             {
               "menuLabel": "Consultorías en IA (remoto)",
@@ -92,6 +93,8 @@
         },
         {
           "categoryLabel": "prompts",
+          "categoryLink": "/shop",
+          "categoryImg": "https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/stars-svgrepo-com.svg",
           "submenu": [
             {
               "menuLabel": "Gratis",
@@ -113,6 +116,8 @@
         },
         {
           "categoryLabel": "aprendizaje",
+          "categoryLink": "/shop",
+          "categoryImg": "https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/graduate-svgrepo-com.svg",
           "submenu": [
             {
               "menuLabel": "Cursos gratuitos",
@@ -134,6 +139,8 @@
         },
         {
           "categoryLabel": "imágenes",
+          "categoryLink": "/shop",
+          "categoryImg": "https://juanjaramillo.s3.amazonaws.com/assets/image-menu.svg",
           "submenu": [
             {
               "menuLabel": "Generación de imágenes",

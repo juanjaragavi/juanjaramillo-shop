@@ -13,6 +13,11 @@ const ExpandedMenu = (props) => {
         {menu?.map((item, index) => {
           return (
             <div key={index} className={styles.categoryContainer}>
+              <img
+                className={styles.brainillustration}
+                alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
+                src={item.categoryImg}
+              />
               <a
                 aria-current="page"
                 className={styles.categoryName}
