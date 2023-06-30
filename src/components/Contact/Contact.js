@@ -29,7 +29,6 @@ const Contact = () => {
 
 const [form, setForm] = useState({
   nombres: "",
-  apellidos: "",
   email: "",
   telefono: "",
   comentario: "",
