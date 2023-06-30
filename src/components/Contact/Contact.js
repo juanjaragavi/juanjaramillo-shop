@@ -5,24 +5,31 @@ import FormInputField from '../FormInputField/FormInputField';
 
 import * as styles from './Contact.module.css';
 
-const Contact = (props) => {
-  const initialState = {
+const Contact = () => {
+
+  const [form, setForm] = useState({
     name: '',
+    lastName: '',
     phone: '',
     email: '',
     comment: '',
+  });
+
+  const handleChange = e => {
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const [contactForm, setContactForm] = useState(initialState);
-
-  const handleChange = (id, e) => {
-    const tempForm = { ...contactForm, [id]: e };
-    setContactForm(tempForm);
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
-    setContactForm(initialState);
+    
+    fetch('https://hooks.zapier.com/hooks/catch/15793138/3ds9uwv/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form)
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => console.error('Error:', error));
   };
 
   return (
@@ -48,28 +55,36 @@ const Contact = (props) => {
       </div>
 
       <div className={styles.contactContainer}>
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={handleSubmit}>
           <div className={styles.contactForm}>
             <FormInputField
               id={'name'}
-              value={contactForm.name}
-              handleChange={(id, e) => handleChange(id, e)}
+              value={form.name}
+              onChange={handleChange}
               type={'text'}
-              labelName={'Nombre Completo'}
+              labelName={'Nombre'}
+              required
+            />
+            <FormInputField
+              id={'lastName'}
+              value={form.lastName}
+              onChange={handleChange}
+              type={'text'}
+              labelName={'Apellido'}
               required
             />
             <FormInputField
               id={'phone'}
-              value={contactForm.phone}
-              handleChange={(id, e) => handleChange(id, e)}
+              value={form.phone}
+              onChange={handleChange}
               type={'number'}
               labelName={'Número de Teléfono'}
               required
             />
             <FormInputField
               id={'email'}
-              value={contactForm.email}
-              handleChange={(id, e) => handleChange(id, e)}
+              value={form.email}
+              onChange={handleChange}
               type={'email'}
               labelName={'Correo Electrónico'}
               required
@@ -77,8 +92,8 @@ const Contact = (props) => {
             <div className={styles.commentInput}>
               <FormInputField
                 id={'comment'}
-                value={contactForm.comment}
-                handleChange={(id, e) => handleChange(id, e)}
+                value={form.comment}
+              onChange={handleChange}
                 type={'textarea'}
                 labelName={'Comentarios / Preguntas'}
                 required
