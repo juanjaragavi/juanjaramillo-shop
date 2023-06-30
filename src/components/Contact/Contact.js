@@ -57,57 +57,57 @@ const Contact = () => {
         <form onSubmit={handleSubmit}>
           <div className={styles.contactForm}>
             <FormInputField
-              id={'nombres'}
-              name={'nombres'}
+              id="nombres"
+              name="nombres"
               value={form.nombres}
               onChange={handleChange}
-              type={'text'}
-              labelName={'Nombre Completo'}
+              type="text"
+              labelName="Nombre Completo"
               required
             />
             <FormInputField
-              id={'apellidos'}
-              name={'apellidos'}
+              id="apellidos"
+              name="apellidos"
               value={form.apellidos}
               onChange={handleChange}
-              type={'text'}
-              labelName={'Apellidos'}
+              type="text"
+              labelName="Apellidos"
               required
             />
             <FormInputField
-              id={'email'}
-              name={'email'}
+              id="email"
+              name="email"
               value={form.email}
               onChange={handleChange}
-              type={'email'}
-              labelName={'Correo Electrónico'}
+              type="email"
+              labelName="Correo Electrónico"
               required
             />
             <FormInputField
-              id={'telefono'}
-              name={'telefono'}
+              id="telefono"
+              name="telefono"
               value={form.telefono}
               onChange={handleChange}
-              type={'number'}
-              labelName={'Teléfono'}
+              type="number"
+              labelName="Teléfono"
               required
             />
             <div className={styles.commentInput}>
               <FormInputField
-                id={'comentario'}
-                name={'comentario'}
+                id="comentario"
+                name="comentario"
                 value={form.comentario}
                 onChange={handleChange}
-                type={'textarea'}
-                labelName={'Comentarios / Preguntas'}
+                type="textarea"
+                labelName="Comentarios / Preguntas"
                 required
               />
             </div>
           </div>
           <Button
             className={styles.customButton}
-            level={'primary'}
-            type={'submit'}
+            level="primary"
+            type="submit"
           >
             enviar
           </Button>
