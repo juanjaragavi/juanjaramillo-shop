@@ -9,7 +9,7 @@ import Icon from '../components/Icons/Icon';
 import Layout from '../components/Layout';
 import ProductCardGrid from '../components/ProductCardGrid';
 import { generateMockProductData } from '../helpers/mock';
-import Button from '../components/Button';
+import { Helmet } from 'react-helmet';
 import Config from '../config.json';
 
 const ShopPage = (props) => {
@@ -28,6 +28,26 @@ const ShopPage = (props) => {
 
   return (
     <Layout>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="¡Impulsa tu negocio con IA! Compra en la tienda de servicios de IA de Juan Jaramillo para obtener consultoría de primer nivel, cursos integrales y soluciones innovadoras de generación de imágenes."
+        />
+        <meta
+          name="keywords"
+          content="Juan Jaramillo, artificial intelligence, machine learning, prompt engineer, AI projects, developer, digital marketing, AI expert"
+        />
+        <meta
+          property="og:image"
+          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+        />
+        <link rel="canonical" href="http://shop.juanjaramillo.tech/shop" />
+        <title>
+          Tienda | Juan Jaramillo | Productos y Servicios de IA · Prompt Engineer · Developer · AI · Machine Learning Expert
+        </title>
+      </Helmet>
       <div className={styles.root}>
         <Container size={'large'} spacing={'min'}>
           <div className={styles.breadcrumbContainer}>
@@ -41,7 +61,7 @@ const ShopPage = (props) => {
           </div>
         </Container>
         <Banner
-          bgColor='transparent'
+          bgColor="transparent"
           maxWidth={'650px'}
           name={`Consultorías en Inteligencia Artificial`}
           subtitle={

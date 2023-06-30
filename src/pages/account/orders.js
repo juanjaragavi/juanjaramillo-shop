@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './orders.module.css';
-
+import { Helmet } from 'react-helmet';
 import AccountLayout from '../../components/AccountLayout/AccountLayout';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Layout from '../../components/Layout/Layout';
@@ -82,6 +82,26 @@ const OrderPage = (props) => {
 
   return (
     <Layout>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="¡Impulsa tu negocio con IA! Compra en la tienda de servicios de IA de Juan Jaramillo para obtener consultoría de primer nivel, cursos integrales y soluciones innovadoras de generación de imágenes."
+        />
+        <meta
+          name="keywords"
+          content="Juan Jaramillo, artificial intelligence, machine learning, prompt engineer, AI projects, developer, digital marketing, AI expert"
+        />
+        <meta
+          property="og:image"
+          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+        />
+        <link rel="canonical" href="http://shop.juanjaramillo.tech/account/orders" />
+        <title>
+          Mi Cuenta | Juan Jaramillo | Productos de Inteligencia Artificial · Prompt Engineer · Developer · AI · Machine Learning Expert
+        </title>
+      </Helmet>
       <AccountLayout>
         <Breadcrumbs
           crumbs={[

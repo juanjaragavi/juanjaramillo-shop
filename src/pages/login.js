@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, navigate } from 'gatsby';
 import { validateEmail, isEmpty } from '../helpers/general';
 import * as styles from './login.module.css';
-
+import { Helmet } from 'react-helmet';
 import AttributeGrid from '../components/AttributeGrid/AttributeGrid';
 import Layout from '../components/Layout/Layout';
 import FormInputField from '../components/FormInputField/FormInputField';
@@ -69,6 +69,26 @@ const LoginPage = (props) => {
 
   return (
     <Layout disablePaddingBottom={true}>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="¡Impulsa tu negocio con IA! Compra en la tienda de servicios de IA de Juan Jaramillo para obtener consultoría de primer nivel, cursos integrales y soluciones innovadoras de generación de imágenes."
+        />
+        <meta
+          name="keywords"
+          content="Juan Jaramillo, artificial intelligence, machine learning, prompt engineer, AI projects, developer, digital marketing, AI expert"
+        />
+        <meta
+          property="og:image"
+          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+        />
+        <link rel="canonical" href="http://shop.juanjaramillo.tech/login" />
+        <title>
+          Inicia Sesión | Juan Jaramillo | Productos y Servicios de IA · Prompt Engineer · Developer · AI · Machine Learning Expert
+        </title>
+      </Helmet>
       <div
         className={`${styles.errorContainer} ${
           errorMessage !== '' ? styles.show : ''

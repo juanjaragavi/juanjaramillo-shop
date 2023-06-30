@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout/Layout';
 import * as styles from './index.module.css';
-import { navigate } from 'gatsby';
 
 const IndexPage = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { navigate } from 'gatsby';
 import * as styles from './favorites.module.css';
-
+import { Helmet } from 'react-helmet';
 import Button from '../../components/Button';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Container from '../../components/Container';
@@ -41,6 +41,30 @@ const FavoritesPage = (props) => {
 
   return (
     <Layout>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="¡Impulsa tu negocio con IA! Compra en la tienda de servicios de IA de Juan Jaramillo para obtener consultoría de primer nivel, cursos integrales y soluciones innovadoras de generación de imágenes."
+        />
+        <meta
+          name="keywords"
+          content="Juan Jaramillo, artificial intelligence, machine learning, prompt engineer, AI projects, developer, digital marketing, AI expert"
+        />
+        <meta
+          property="og:image"
+          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+        />
+        <link
+          rel="canonical"
+          href="http://shop.juanjaramillo.tech/account/favorites"
+        />
+        <title>
+          Mis Favoritos | Juan Jaramillo | Productos y Servicios de IA · Prompt
+          Engineer · Developer · AI · Machine Learning Expert
+        </title>
+      </Helmet>
       <div className={styles.root}>
         <Container size={'large'}>
           <Breadcrumbs
@@ -74,7 +98,9 @@ const FavoritesPage = (props) => {
         <div className={styles.confirmDeleteContainer}>
           <h4>¿Borrar este ítem de los Favoritos?</h4>
           <p>
-          ¿Estás seguro de que quieres eliminar esto de tus favoritos? No podrás deshacer esta acción una vez que presiones <strong>'Borrar'</strong>
+            ¿Estás seguro de que quieres eliminar esto de tus favoritos? No
+            podrás deshacer esta acción una vez que presiones{' '}
+            <strong>'Borrar'</strong>
           </p>
           <div className={styles.actionContainer}>
             <Button onClick={() => setShowDelete(false)} level={'primary'}>

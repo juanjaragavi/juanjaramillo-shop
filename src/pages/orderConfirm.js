@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './accountSuccess.module.css';
-
+import { Helmet } from 'react-helmet';
 import ActionCard from '../components/ActionCard';
 import Container from '../components/Container';
 import Layout from '../components/Layout/Layout';
@@ -8,6 +8,26 @@ import Layout from '../components/Layout/Layout';
 const OrderConfirmPage = (props) => {
   return (
     <Layout disablePaddingBottom>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Boost your business with AI! Shop at Juan Jaramillo's premier AI services store for top-tier consulting, comprehensive courses, and innovative generative image solutions."
+        />
+        <meta
+          name="keywords"
+          content="Juan Jaramillo, artificial intelligence, machine learning, prompt engineer, AI projects, developer, digital marketing, AI expert"
+        />
+        <meta
+          property="og:image"
+          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+        />
+        <link rel="canonical" href="http://shop.juanjaramillo.tech/orderConfirm" />
+        <title>
+          ¡Gracias! | Juan Jaramillo | Productos y Servicios de IA · Prompt Engineer · Developer · AI · Machine Learning Expert
+        </title>
+      </Helmet>
       <Container size={'medium'}>
         <div className={styles.root}>
           <h1>Thank You!</h1>
