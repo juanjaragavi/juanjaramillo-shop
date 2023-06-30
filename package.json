@@ -24,7 +24,9 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
-    "react-slick": "^0.29.0"
+    "react-hook-form": "^7.45.1",
+    "react-slick": "^0.29.0",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "gatsby-plugin-netlify": "^5.0.0",

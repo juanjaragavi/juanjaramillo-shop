@@ -8,12 +8,11 @@ import * as styles from './Contact.module.css';
 const Contact = () => {
 
   const [form, setForm] = useState({
-    name: '',
-    lastName: '',
-    phone: '',
-    email: '',
-    comment: '',
-  });
+    nombres: "",
+    apellidos: "",
+    email: "",
+    telefono: "",
+});
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -22,15 +21,21 @@ const Contact = () => {
   const handleSubmit = e => {
     e.preventDefault();
     
+    const formData = new URLSearchParams();
+    for (const key in form) {
+      formData.append(key, form[key]);
+    }
+    
     fetch('https://hooks.zapier.com/hooks/catch/15793138/3ds9uwv/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form)
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: formData.toString()
     })
     .then(response => response.json())
     .then(data => console.log(data))
     .catch((error) => console.error('Error:', error));
   };
+  
 
   return (
     <div className={styles.root}>
@@ -107,6 +112,122 @@ const Contact = () => {
           >
             enviar
           </Button>
+        </form>
+        <form onSubmit={handleSubmit} netlify>
+            <div className="contenedor-campo-formulario-contacto">
+            <input
+                {...register("nombres", {
+                required: true,
+                })}
+                className="spartan-medium campo-formulario-contacto transiciones peer"
+                value={form.nombres}
+                onChange={handleChange}
+                type="text"
+                name="nombres"
+                id="nombres"
+                placeholder={t("NombresFormContacto.title", { framework: "React" })}
+            />
+            {errors.nombres?.type === "required" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            </div>
+            <div className="contenedor-campo-formulario-contacto">
+            <input
+                {...register("apellidos", {
+                required: true,
+                })}
+                className="spartan-medium campo-formulario-contacto transiciones peer"
+                value={form.apellidos} 
+                onChange={handleChange}
+                type="text"
+                name="apellidos"
+                id="apellidos"
+                placeholder={t("ApellidosFormContacto.title", {
+                framework: "React",
+                })}
+            />
+            {errors.apellidos?.type === "required" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            </div>
+            <div className="contenedor-campo-formulario-contacto">
+            <input
+                {...register("email", {
+                required: true,
+                pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
+                })}
+                className="spartan-medium campo-formulario-contacto transiciones peer"
+                value={form.email} 
+                onChange={handleChange}
+                type="email"
+                name="email"
+                id="email"
+                placeholder={t("EmailFormContacto.title", { framework: "React" })}
+            />
+            {errors.email?.type === "required" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            {errors.email?.type === "pattern" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            </div>
+            <div className="contenedor-campo-formulario-contacto">
+            <input
+                {...register("telefono", {
+                maxLength: 10,
+                minLength: 10,
+                required: true,
+                type: number,
+                })}
+                className="spartan-medium campo-formulario-contacto transiciones peer"
+                value={form.telefono} 
+                onChange={handleChange}
+                type="number"
+                name="telefono"
+                id="telefono"
+                placeholder={t("TelefonoFormContacto.title", {
+                framework: "React",
+                })}
+            />
+            {errors.telefono?.type === "required" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            {errors.telefono?.type === "minLength" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("MinCharFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            {errors.telefono?.type === "maxLength" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("MaxCharFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            </div>
+            <div className="contenedor-botones-formulario-contacto">
+            <button
+                className="spartan-medium boton-enviar-formulario-contacto boton-idioma transiciones estilos-interactivos-botones borde-redondeado"
+                type="submit"
+            >
+                {t("BtnEnviarFormContacto.title", { framework: "React" })}
+            </button>
+            <button
+                className="spartan-medium boton-restablecer-formulario-contacto boton-idioma transiciones estilos-interactivos-botones borde-redondeado"
+                type="button"
+                onClick={handleResetClick}
+            >
+                {t("BtnResetFormContacto.title", { framework: "React" })}
+            </button>
+            </div>
         </form>
       </div>
     </div>
