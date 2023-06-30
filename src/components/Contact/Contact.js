@@ -9,6 +9,7 @@ const Contact = () => {
 
 const [form, setForm] = useState({
   nombres: "",
+  apellidos: "",
   email: "",
   telefono: "",
   comentario: "",
@@ -61,6 +62,14 @@ const handleChange = (e) => {
       <div className={styles.contactContainer}>
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className={styles.contactForm}>
+            <FormInputField
+              id={'name'}
+              value={contactForm.name}
+              handleChange={(id, e) => handleChange(id, e)}
+              type={'text'}
+              labelName={'Nombre Completo'}
+              required
+            />
             <FormInputField
               id={'name'}
               value={contactForm.name}
