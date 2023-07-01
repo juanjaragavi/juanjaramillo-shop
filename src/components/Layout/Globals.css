@@ -519,7 +519,7 @@ ol {
 .formField select {
   width: 100%;
   border: 1px solid var(--bg-light-gray);
-  font-size: 14px;
+  font-size: 18px;
   padding: 12px 20px 12px 12px;
   line-height: 1;
   box-sizing: border-box;

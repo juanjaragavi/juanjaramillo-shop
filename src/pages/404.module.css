@@ -1,4 +1,5 @@
 .root {
+    margin-top: 15vh;
     min-height: 50vh;
     text-align: center;
     display: flex;
@@ -32,7 +33,16 @@
 }
 
 .searchContainer input {
+    color: var(--standard-white);
     height: 52px;
+    transition: all 0.5s ease;
+}
+
+.searchContainer input:focus {
+    background-color: transparent;
+    border: 1px;
+    border-style: solid;
+    border-color: var(--jj-pink);
 }
 
 .searchContainer > button {

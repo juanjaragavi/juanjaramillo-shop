@@ -65,7 +65,7 @@ const ShopPage = (props) => {
           maxWidth={'650px'}
           name={`Consultorías en Inteligencia Artificial`}
           subtitle={
-            'Look to our women’s sweaters for modern takes on one-and-done dressing. From midis in bold prints to dramatic floor-sweeping styles and easy all-in-ones, our edit covers every mood.'
+            'Transforma tu negocio con nuestra asesoría en inteligencia artificial. Te ayudamos a diseñar e implementar soluciones de IA personalizadas, optimizando operaciones y estrategias para impulsar el crecimiento. Desbloquea el potencial de la IA y obtén una ventaja competitiva en el mercado. ¡Innova y crece con nosotros!'
           }
         />
         <Container size={'large'} spacing={'min'}>

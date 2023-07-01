@@ -39,11 +39,10 @@ const NotFoundPage = () => {
       </Helmet>
       <Container size={'medium'}>
         <div className={styles.root}>
-          <h1>404 Error</h1>
-          <h2>Page not found</h2>
+          <h1>404</h1>
+          <h2>Ya sabes que significa esto, ¿no? 🤷🏻‍♂️</h2>
           <p>
-            Uh oh, looks like the page you are looking for has moved or no
-            longer exists.
+            Pero no te preocupes, aquí abajo puedes buscar lo que necesitas.
           </p>
           <form onSubmit={(e) => handleSubmit(e)}>
             <div className={styles.searchContainer}>
@@ -54,7 +53,7 @@ const NotFoundPage = () => {
                 type={'text'}
               />
               <Button type={'submit'} level={'primary'}>
-                search
+                buscar
               </Button>
             </div>
           </form>
