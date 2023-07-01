@@ -151,7 +151,7 @@ const ProductPage = (props) => {
 
         <div className={styles.attributeContainer}>
           <Split
-            image={'/cloth.png'}
+            image={'https://s3.amazonaws.com/juanjaramillo/assets/7-tienda-online-de-juan-jaramillo.webp'}
             alt={'attribute description'}
             title={'¿Por qué contratar un Experto en IA?'}
             description={
