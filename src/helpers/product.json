@@ -71,44 +71,5 @@
         "alt": "relaxed t shirt woman",
         "image": "https://s3.amazonaws.com/juanjaramillo/assets/4-tienda-online-de-juan-jaramillo.webp",
         "tags": ["woman"]
-    },
-    {
-        "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
-        "price": 80000,
-        "alt": "relaxed t shirt woman",
-        "image": "https://s3.amazonaws.com/juanjaramillo/assets/5-tienda-online-de-juan-jaramillo.webp",
-        "tags": ["woman"],
-        "originalPrice": 120000
-
-    },
-    {
-        "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
-        "price": 155000,
-        "alt": "relaxed t shirt woman",
-        "image": "https://s3.amazonaws.com/juanjaramillo/assets/6-tienda-online-de-juan-jaramillo.webp",
-        "tags": ["woman"]
-    },
-    {
-        "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
-        "price": 135000,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman3.jpeg",
-        "tags": ["woman"]
-    },
-    {
-        "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman2.jpeg",
-        "tags": ["woman"],
-        "originalPrice": 31.50
-
-    },
-    {
-        "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
-        "price": 21,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman1.jpeg",
-        "tags": ["woman"]
     }
-  ]
+]
