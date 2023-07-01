@@ -155,10 +155,10 @@ const ProductPage = (props) => {
             alt={'attribute description'}
             title={'¿Por qué contratar un Experto en IA?'}
             description={
-              'We design our products to look good and to be used on a daily basis. And our aim is to inspire people to live with few timeless objects made to last. This is why quality over quantity is a cornerstone of our ethos and we have no interest in trends or seasonal collections.'
+              'La Inteligencia Artificial (IA) se está convirtiendo rápidamente en una parte esencial de las empresas modernas. Sin embargo, su implementación requiere conocimientos especializados que sólo un experto y consultor en IA puede proporcionar.'
             }
             ctaText={'Conoce más'}
-            cta={() => navigate('/blog')}
+            cta={() => navigate('https://blog.juanjaramillo.tech/posts/desbloquea-el-poder-de-la-ia-por-que-tu-empresa-necesita-hoy-un-consultor-experto')}
             bgColor={'transparent'}
           />
         </div>
