@@ -92,7 +92,7 @@ const SupportPage = (props) => {
         <Banner
           maxWidth={'650px'}
           name={current.title}
-          bgImage={'/support.png'}
+          bgImage={'https://s3.amazonaws.com/juanjaramillo/assets/fondo-header-contacto-tienda-online-de-juan-jaramillo.webp'}
           color={'var(--standard-white)'}
           height={'350px'}
         />

@@ -33,7 +33,7 @@ const FaqPage = (props) => {
         <Banner
           maxWidth={'650px'}
           name={`Preguntas Frecuentes`}
-          bgImage={'/faqCover.png'}
+          bgImage={'https://s3.amazonaws.com/juanjaramillo/assets/fondo-header-faq-tienda-online-de-juan-jaramillo.webp'}
           color={'var(--standard-white)'}
           height={'350px'}
         />
