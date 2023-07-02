@@ -5,7 +5,7 @@
         "vendor": "Juan Jaramillo",
         "price": 120000,
         "alt": "Consultoría en IA (Remoto)",
-        "image": "/products/pdp1.jpeg",
+        "image": "https://s3.amazonaws.com/juanjaramillo/assets/4-tienda-online-de-juan-jaramillo.webp",
         "colorOptions": [
             {"color": "#B88948", "title": "Bronce", "description": "Descripción de Bronce"},
             {"color": "#D4D6D5", "title": "Plata", "description": "Descripción de Plata"},

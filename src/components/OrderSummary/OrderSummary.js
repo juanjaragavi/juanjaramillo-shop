@@ -19,12 +19,12 @@ const OrderSummary = (props) => {
           <div className={styles.labelContainer}>
             <span>Subtotal</span>
             <span>
-              <CurrencyFormatter amount={440} appendZero />
+              <CurrencyFormatter amount={240000} appendZero />
             </span>
           </div>
           <div className={styles.labelContainer}>
             <span>Envío</span>
-            <span>---</span>
+            <span>GRATIS</span>
           </div>
           <div className={styles.labelContainer}>
             <span>IVA</span>
@@ -52,7 +52,7 @@ const OrderSummary = (props) => {
         <div className={styles.totalContainer}>
           <span>Total: </span>
           <span>
-            <CurrencyFormatter amount={440} appendZero />
+            <CurrencyFormatter amount={240000} appendZero />
           </span>
         </div>
       </div>

@@ -10,12 +10,12 @@ import * as styles from './AddNotification.module.css';
 
 const AddNotification = (props) => {
   const sampleCartItem = {
-    image: '/products/pdp1.jpeg',
+    image: 'https://s3.amazonaws.com/juanjaramillo/assets/4-tienda-online-de-juan-jaramillo.webp',
     alt: '',
-    name: 'Lambswool Crew Neck Jumper',
-    price: 220,
-    color: 'Anthracite Melange',
-    size: 'XS',
+    name: 'Consultoría en Inteligencia Artificial (Servicio Remoto)',
+    price: 120000,
+    color: 'Diamante',
+    size: '1',
   };
 
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
