@@ -27,7 +27,11 @@
     background-color: transparent;
     font-family: var(--standard-font);
     letter-spacing: 0.4px;
-    color: var(--standard-black);
+    color: var(--standard-white);
+  }
+  .input:focus {
+    border: 1px solid var(--jj-pink);
+    background-color: transparent;
   }
   
   .formField input::placeholder {
