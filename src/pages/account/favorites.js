@@ -13,24 +13,30 @@ import { isAuth } from '../../helpers/general';
 
 const FavoritesPage = (props) => {
   const sampleFavorite1 = {
-    color: 'Anthracite Melange',
-    size: 'XS',
-    img: '/products/shirt1.jpg',
+    color: 'Bronce',
+    size: '2',
+    img: 'https://files.juanjaramillo.tech/1-tienda-online-de-juan-jaramillo.webp',
     alt: 'favorite 1',
   };
 
   const sampleFavorite2 = {
-    color: 'Purple Pale',
-    size: 'XS',
-    img: '/products/shirt2.jpg',
+    color: 'Plata',
+    size: '1',
+    img: 'https://files.juanjaramillo.tech/2-tienda-online-de-juan-jaramillo.webp',
     alt: 'favorite 2',
   };
 
   const sampleFavorite3 = {
-    color: 'Moss Green',
-    size: 'S',
-    img: '/products/shirt3.jpg',
+    color: 'Oro',
+    size: '1',
+    img: 'https://files.juanjaramillo.tech/3-tienda-online-de-juan-jaramillo.webp',
     alt: 'favorite 3',
+  };
+  const sampleFavorite4 = {
+    color: 'Bronce',
+    size: '1',
+    img: 'https://files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp',
+    alt: 'favorite 4',
   };
 
   if (isAuth() === false) {
@@ -54,7 +60,7 @@ const FavoritesPage = (props) => {
         />
         <meta
           property="og:image"
-          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+          content="https://files.juanjaramillo.tech/og-image.webp"
         />
         <link
           rel="canonical"
@@ -89,7 +95,7 @@ const FavoritesPage = (props) => {
             />
             <FavoriteCard
               showConfirmDialog={() => setShowDelete(true)}
-              {...sampleFavorite2}
+              {...sampleFavorite4}
             />
           </div>
         </Container>

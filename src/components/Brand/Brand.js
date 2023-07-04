@@ -11,8 +11,8 @@ const Brand = (props) => {
       <Link className="linkLogoYTaglineJuanjaramillo" href="/">
         <img
           className={styles.logojuanjaramillo}
-          alt="Logo juan jaramillo"
-          src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/logo-juan-jaramillo@2x.png"
+          alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
+          src="https://files.juanjaramillo.tech/logo-juan-jaramillo.webp"
         />
         <p className={styles.taglinetienda}>
           Tienda en Línea de Productos y Servicios de IA.

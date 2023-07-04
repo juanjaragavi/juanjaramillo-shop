@@ -21,7 +21,7 @@ const FaqPage = (props) => {
         />
         <meta
           property="og:image"
-          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+          content="https://files.juanjaramillo.tech/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/faq" />
         <title>
@@ -33,7 +33,7 @@ const FaqPage = (props) => {
         <Banner
           maxWidth={'650px'}
           name={`Preguntas Frecuentes`}
-          bgImage={'https://s3.amazonaws.com/juanjaramillo/assets/fondo-header-faq-tienda-online-de-juan-jaramillo.webp'}
+          bgImage={'https://files.juanjaramillo.tech/fondo-header-faq-tienda-online-de-juan-jaramillo.webp'}
           color={'var(--standard-white)'}
           height={'350px'}
         />

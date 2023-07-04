@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Tienda en Línea de Servicios de Inteligencia Artificial | Juan Jaramillo`,
-    siteUrl: `https://juanjaramillo.tech`,
+    siteUrl: `https://shop.juanjaramillo.tech`,
   },
   plugins: [
     {
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#EC4899`,
         display: `standalone`,
-        icon: 'src/assets/favicon.png',
+        icon: 'https://files.juanjaramillo.tech/favicon.webp',
       },
     },
     'gatsby-plugin-netlify',

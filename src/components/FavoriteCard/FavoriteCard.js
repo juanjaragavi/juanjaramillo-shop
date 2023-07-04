@@ -30,7 +30,7 @@ const FavoriteCard = (props) => {
 
       <Drawer visible={showQuickView} close={() => setShowQuickView(false)}>
         <QuickView
-          buttonTitle={'update favorite'}
+          buttonTitle={'actualizar favorito'}
           close={() => setShowQuickView(false)}
         />
       </Drawer>

@@ -5,7 +5,7 @@
         "vendor": "Juan Jaramillo",
         "price": 120000,
         "alt": "Consultoría en IA (Remoto)",
-        "image": "https://s3.amazonaws.com/juanjaramillo/assets/4-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp",
         "colorOptions": [
             {"color": "#B88948", "title": "Bronce", "description": "Descripción de Bronce"},
             {"color": "#D4D6D5", "title": "Plata", "description": "Descripción de Plata"},
@@ -16,60 +16,39 @@
         "wishlist": true,
         "tags": ["sample"],
         "gallery": [
-            {"image": "https://s3.amazonaws.com/juanjaramillo/assets/4-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
-            {"image": "https://s3.amazonaws.com/juanjaramillo/assets/5-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
-            {"image": "https://s3.amazonaws.com/juanjaramillo/assets/2-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
-            {"image": "https://s3.amazonaws.com/juanjaramillo/assets/1-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"}
+            {"image": "https://files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
+            {"image": "https://files.juanjaramillo.tech/5-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
+            {"image": "https://files.juanjaramillo.tech/2-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
+            {"image": "https://files.juanjaramillo.tech/1-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"}
         ],
         "description": "This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife. Once knitted, the garment is washed in Scottish spring water to make it beautifully soft."
-    },
-    {
-        "name": "Classic T-Shirt",
-        "price": 75,
-        "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "/products/shirt1.jpg",
-        "tags": ["shirt", "men"]
-    },
-    {
-        "name": "Classic T-Shirt",
-        "price": 75,
-        "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "/products/shirt2.jpg",
-        "tags": ["shirt", "men"]
-    },
-    {
-        "name": "Classic T-Shirt",
-        "price": 75,
-        "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "/products/shirt3.jpg",
-        "tags": ["shirt", "men"]
     },
     {
         "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
         "price": 120000,
         "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "https://s3.amazonaws.com/juanjaramillo/assets/4-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp",
         "tags": ["woman"]
     },
     {
         "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
         "price": 120000,
         "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "https://s3.amazonaws.com/juanjaramillo/assets/5-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://files.juanjaramillo.tech/5-tienda-online-de-juan-jaramillo.webp",
         "tags": ["woman"]
     },    
     {
         "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
         "price": 120000,
         "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "https://s3.amazonaws.com/juanjaramillo/assets/2-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://files.juanjaramillo.tech/2-tienda-online-de-juan-jaramillo.webp",
         "tags": ["woman"]
     },
     {
         "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
         "price": 120000,
         "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "https://s3.amazonaws.com/juanjaramillo/assets/1-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://files.juanjaramillo.tech/1-tienda-online-de-juan-jaramillo.webp",
         "tags": ["woman"]
     }
 ]

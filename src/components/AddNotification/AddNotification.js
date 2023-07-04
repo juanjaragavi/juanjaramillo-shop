@@ -10,7 +10,7 @@ import * as styles from './AddNotification.module.css';
 
 const AddNotification = (props) => {
   const sampleCartItem = {
-    image: 'https://s3.amazonaws.com/juanjaramillo/assets/4-tienda-online-de-juan-jaramillo.webp',
+    image: 'https://files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp',
     alt: '',
     name: 'Consultoría en Inteligencia Artificial (Servicio Remoto)',
     price: 120000,

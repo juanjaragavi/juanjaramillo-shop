@@ -151,8 +151,8 @@ const ProductPage = (props) => {
 
         <div className={styles.attributeContainer}>
           <Split
-            image={'https://s3.amazonaws.com/juanjaramillo/assets/7-tienda-online-de-juan-jaramillo.webp'}
-            alt={'attribute description'}
+            image={'https://files.juanjaramillo.tech/7-tienda-online-de-juan-jaramillo.webp'}
+            alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
             title={'¿Por qué contratar un Experto en IA?'}
             description={
               'La Inteligencia Artificial (IA) se está convirtiendo rápidamente en una parte esencial de las empresas modernas. Sin embargo, su implementación requiere conocimientos especializados que sólo un experto y consultor en IA puede proporcionar.'

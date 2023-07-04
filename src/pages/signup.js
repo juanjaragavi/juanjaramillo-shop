@@ -86,7 +86,7 @@ const SignupPage = (props) => {
         />
         <meta
           property="og:image"
-          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+          content="https://files.juanjaramillo.tech/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/signup" />
         <title>

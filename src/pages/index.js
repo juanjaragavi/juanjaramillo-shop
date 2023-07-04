@@ -20,7 +20,7 @@ const IndexPage = () => {
         />
         <meta
           property="og:image"
-          content="https://juanjaramillo.s3.amazonaws.com/assets/og-image.png"
+          content="https://files.juanjaramillo.tech/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/" />
         <title>
@@ -75,7 +75,7 @@ const IndexPage = () => {
                 <div className={styles.contenedortitulo}>
                   <img
                     className={styles.line}
-                    alt="Line"
+                    alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
                     src="https://generation-sessions.s3.amazonaws.com/7239e843ae9846c8aa9398eec9cc5734/img/line-1-3.svg"
                   />
                   <Link className={styles.textwrapper9} href="/shop">

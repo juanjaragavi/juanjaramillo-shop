@@ -140,7 +140,7 @@
         {
           "categoryLabel": "imágenes",
           "categoryLink": "/shop",
-          "categoryImg": "https://juanjaramillo.s3.amazonaws.com/assets/image-menu.svg",
+          "categoryImg": "https://files.juanjaramillo.tech/image-menu.svg",
           "submenu": [
             {
               "menuLabel": "Generación de imágenes",
