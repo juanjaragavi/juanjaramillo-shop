@@ -16,27 +16,27 @@ const FavoritesPage = (props) => {
     color: 'Bronce',
     size: '2',
     img: 'https://files.juanjaramillo.tech/1-tienda-online-de-juan-jaramillo.webp',
-    alt: 'favorite 1',
+    alt: 'Juan Jaramillo | Experto en IA · Prompt Engineer',
   };
 
   const sampleFavorite2 = {
     color: 'Plata',
     size: '1',
     img: 'https://files.juanjaramillo.tech/2-tienda-online-de-juan-jaramillo.webp',
-    alt: 'favorite 2',
+    alt: 'Juan Jaramillo | Experto en IA · Prompt Engineer',
   };
 
   const sampleFavorite3 = {
     color: 'Oro',
     size: '1',
     img: 'https://files.juanjaramillo.tech/3-tienda-online-de-juan-jaramillo.webp',
-    alt: 'favorite 3',
+    alt: 'Juan Jaramillo | Experto en IA · Prompt Engineer',
   };
   const sampleFavorite4 = {
     color: 'Bronce',
     size: '1',
     img: 'https://files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp',
-    alt: 'favorite 4',
+    alt: 'Juan Jaramillo | Experto en IA · Prompt Engineer',
   };
 
   if (isAuth() === false) {
