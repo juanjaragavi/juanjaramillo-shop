@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#EC4899`,
         display: `standalone`,
-        icon: 'https://files.juanjaramillo.tech/favicon.webp',
+        icon: '/assets/favicon.webp',
       },
     },
     'gatsby-plugin-netlify',
