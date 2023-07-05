@@ -7,10 +7,15 @@
         "alt": "Consultoría en IA (Remoto)",
         "image": "https://files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp",
         "colorOptions": [
-            {"color": "#B88948", "title": "Bronce", "description": "Evaluar tecnologías existentes para adaptar unidades de negocio a la IA."},
-            {"color": "#D4D6D5", "title": "Plata", "description": "Mantener actualizado y capacitar al personal en tecnologías de IA y Big Data."},
-            {"color": "#D2AC5A", "title": "Oro", "description": "Liderar y coordinar proyectos de automatización inteligente."},
-            {"color": "#6ED0FF", "title": "Diamante", "description": "Entrenar modelos cognitivos con información de la empresa."}
+            {"color": "#B88948", "title": "Adaptación de Negocio a la IA", "description": "Evaluar tecnologías existentes para adaptar unidades de negocio a la IA."},
+            {"color": "#D4D6D5", "title": "Actualización de Personal a la IA", "description": "Mantener actualizado y capacitar al personal en tecnologías de IA y Big Data."},
+            {"color": "#D2AC5A", "title": "Automatización de Procesos con IA", "description": "Liderar y coordinar proyectos de automatización inteligente."},
+            {"color": "#00CED1", "title": "Optimización de Operaciones con IA", "description": "Reinventar flujos de trabajo con IA para mejorar eficiencia y resultados."},
+            {"color": "#a70074", "title": "Solución de Retos y Problemas con IA", "description": "Resolver rápidamente desafíos empresariales con soluciones predefinidas y personalizables."},
+            {"color": "#FF7900", "title": "Entrenamiento de Modelos de IA", "description": "Entrenar modelos cognitivos con información de la empresa."},
+            {"color": "#FEF086", "title": "Investigación y Desarrollo con IA", "description": "Crear soluciones inteligentes con Deep Learning y Machine Learning."},
+            {"color": "#43c904", "title": "Análisis de Datos con IA", "description": "Analizar datos para convertirlos en información útil."},
+            {"color": "#DD577A", "title": "Estrategias de Negocios con IA", "description": "Generar ideas rápidamente para acelerar la toma de decisiones y crear valor."}
         ],
         "sizeOptions": ["1 hora", "2 horas", "3 horas", "+ horas"],
         "wishlist": true,
