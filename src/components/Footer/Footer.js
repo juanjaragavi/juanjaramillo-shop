@@ -13,12 +13,6 @@ import * as styles from './Footer.module.css';
 const Footer = (prop) => {
   const [email, setEmail] = useState('');
 
-  const subscribeHandler = (e) => {
-    e.preventDefault();
-    setEmail('');
-    console.log('Inscribe este correo electrónico: ', email);
-  };
-
   const handleSocialClick = (platform) => {
     window.open(Config.social[platform]);
   };
@@ -80,7 +74,6 @@ const Footer = (prop) => {
 
                 <form
                   className={styles.newsLetterForm}
-                  onSubmit={(e) => subscribeHandler(e)}
                   id="sib-form"
                   method="POST"
                   action="https://453c3c1b.sibforms.com/serve/MUIFAJdLAuVBFobSY76iLbHmNoTPEJaLAzibqT3H-5NBojIYbW399sxWhPYphHtKjcSTRAKjfLZxfz1SAYcluGSvESK9TYfBZf4LE_WpE8Xvj2kjD66xe8Fixvvue5iWyD2szV5IvCQ_YxtlHi9iLrmuoHQpEaSnboe2qFvaXBoAlbLJuTuK5s0P9rMfYrBZTuiAkzvbIiGAJR8Z"
@@ -88,7 +81,6 @@ const Footer = (prop) => {
                   <FormInputField
                     icon={'arrow'}
                     id={'EMAIL'}
-                    value={email}
                     placeholder={'Ingresa tu Correo Electrónico'}
                     handleChange={(_, e) => setEmail(e)}
                   />
