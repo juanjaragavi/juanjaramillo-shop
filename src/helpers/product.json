@@ -7,10 +7,10 @@
         "alt": "Consultoría en IA (Remoto)",
         "image": "https://files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp",
         "colorOptions": [
-            {"color": "#B88948", "title": "Bronce", "description": "Descripción de Bronce"},
-            {"color": "#D4D6D5", "title": "Plata", "description": "Descripción de Plata"},
-            {"color": "#D2AC5A", "title": "Oro", "description": "Descripción de Oro"},
-            {"color": "#6ED0FF", "title": "Diamante", "description": "Descripción de Diamante"}
+            {"color": "#B88948", "title": "Bronce", "description": "Evaluar tecnologías existentes para adaptar unidades de negocio a la IA."},
+            {"color": "#D4D6D5", "title": "Plata", "description": "Mantener actualizado y capacitar al personal en tecnologías de IA y Big Data."},
+            {"color": "#D2AC5A", "title": "Oro", "description": "Liderar y coordinar proyectos de automatización inteligente."},
+            {"color": "#6ED0FF", "title": "Diamante", "description": "Entrenar modelos cognitivos con información de la empresa."}
         ],
         "sizeOptions": ["1 hora", "2 horas", "3 horas", "+ horas"],
         "wishlist": true,
@@ -21,7 +21,7 @@
             {"image": "https://files.juanjaramillo.tech/2-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
             {"image": "https://files.juanjaramillo.tech/1-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"}
         ],
-        "description": "This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife. Once knitted, the garment is washed in Scottish spring water to make it beautifully soft."
+        "description": "Servicios de consultoría en IA y Big Data para adaptar y optimizar las unidades de negocio, liderar proyectos de automatización inteligente, entrenar modelos cognitivos, analizar datos y generar ideas para acelerar la toma de decisiones y crear valor, y hacer que los sistemas de IA sean transparentes y fiables."
     },
     {
         "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",

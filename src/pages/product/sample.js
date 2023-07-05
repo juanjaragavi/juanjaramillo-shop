@@ -114,7 +114,7 @@ const ProductPage = (props) => {
                 <Accordion
                   type={'plus'}
                   customStyle={styles}
-                  title={'composition & care'}
+                  title={'¿En qué consisten estos servicios?'}
                 >
                   <p className={styles.information}>
                     {sampleProduct.description}
@@ -123,13 +123,13 @@ const ProductPage = (props) => {
                 <Accordion
                   type={'plus'}
                   customStyle={styles}
-                  title={'delivery & returns'}
+                  title={'¿Qué recibiré después de pagar?'}
                 >
                   <p className={styles.information}>
                     {sampleProduct.description}
                   </p>
                 </Accordion>
-                <Accordion type={'plus'} customStyle={styles} title={'help'}>
+                <Accordion type={'plus'} customStyle={styles} title={'¿En cuánto tiempo recibiré el servicio?'}>
                   <p className={styles.information}>
                     {sampleProduct.description}
                   </p>
