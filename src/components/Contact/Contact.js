@@ -38,8 +38,8 @@ function Contact() {
       <div className={styles.section}>
         <h4>Teléfono</h4>
         <p>
-        <a className={styles.linkDestacado} href="tel:+57 (321) 885 6199" target="_blank">
-          +57 (321) 885 6199
+        <a className={styles.linkDestacado} href="https://wa.link/5twaug/" target="_blank" rel="noreferrer">
+          +57 (305) 420 6139
           </a>
         </p>
         <p>Lúnes a Viernes - 9am - 5pm</p>
