@@ -1,4 +1,5 @@
 import Button from '../Button';
+import { navigate } from 'gatsby';
 import React, { useState } from 'react';
 import * as styles from './Contact.module.css';
 
@@ -29,6 +30,7 @@ function Contact() {
       body: formData.toString(),
     })
       .then((response) => response.json())
+      .then(navigate('#gracias'))
       .then((data) => console.log(data))
       .catch((error) => console.error('Error:', error));
   };

@@ -1,0 +1,146 @@
+.linkDestacado {
+    text-decoration: underline;
+}
+.root {
+}
+
+.label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 8px;
+}
+
+.formField {
+    position: relative;
+    /* background-color: var(--standard-white); */
+}
+.formField input::placeholder {
+    color: var(--standard-white);
+    font-size: 18px;
+}
+
+@media screen and (max-width: 550px) {
+    .formField {
+        margin-bottom: 15px;
+    }
+}
+
+.label span {
+    margin-right: 3px;
+    color: var(--sale);
+}
+
+.input {
+    border: 1px solid var(--standard-white);
+    margin: 5px 2px 10px 2px;
+    padding: 12px 15px 8px 15px;
+    min-width: 90%;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: var(--standard-font);
+    letter-spacing: 0.4px;
+    color: var(--standard-white);
+    font-size: 18px;
+    transition: all 0.5s ease-out;
+}
+.input:hover {
+    background-color: transparent;
+    border: 1px solid var(--jj-pink);
+}
+.input:focus {
+    background-color: transparent;
+    border: 1px solid var(--jj-pink);
+}
+
+.textarea {
+    margin: 5px 2px 10px 2px;
+    padding: 5px 15px;
+    font-family: var(--standard-font);
+    width: 95.5%;
+    min-height: 150px;
+    background-color: transparent;
+    color: var(--standard-white);
+    border: 1px solid var(--standard-white);
+    border-radius: 20px;
+    transition: all 0.5s ease-out;
+}
+.textarea:hover {
+    background-color: transparent;
+    border: 1px solid var(--jj-pink);
+}
+.textarea:focus {
+    background-color: transparent;
+    border: 1px solid var(--jj-pink);
+}
+
+.section:first-child {
+    margin-top: 0px;
+}
+
+.section {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+
+.section h4 {
+    font-weight: semibold;
+    font-size: 60px;
+    line-height: 64px;
+    margin-top: 25vh;
+}
+
+.section p {
+    margin-top: 10px;
+    font-weight: light;
+    font-size: 26px;
+    line-height: 28px
+}
+
+.contactForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+.commentInput {
+    margin-top: 32px;
+    grid-column: 1 / span 2;
+}
+
+.customButton {
+    margin-top: 20px;
+    width: 220px;
+    font-size: 18px;
+}
+.marginTop {
+    margin-top: 5px
+}
+.contactContainer {
+    width: 95%;
+    margin-top: 32px;
+}
+
+@media (max-width: 800px) {
+    .contactForm {
+        grid-template-columns: 1fr;
+    }
+
+    .commentInput {
+        grid-column: 1; 
+    }
+
+    .customButton {
+        width: 100%;
+    }
+
+    .commentInput {
+        margin-top: 0px;
+    }
+
+    .section h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}

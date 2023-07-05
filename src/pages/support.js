@@ -4,6 +4,7 @@ import * as styles from './support.module.css';
 import { Helmet } from 'react-helmet';
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
+import Gracias from '../components/Gracias';
 import Layout from '../components/Layout/Layout';
 import ThemeLink from '../components/ThemeLink';
 import Policy from '../components/Policy';
@@ -12,10 +13,11 @@ import Container from '../components/Container';
 const SupportPage = (props) => {
   const subpages = [
     { title: 'Envío', key: 'shipping' },
+    { title: 'Gracias', key: 'gracias' },
+    { title: 'Contacto', key: 'contact' },
     { title: 'Devoluciones', key: 'returns' },
     { title: 'Pagos y Seguridad', key: 'payments' },
     { title: 'Términos y Condiciones', key: 'terms' },
-    { title: 'Contacto', key: 'contact' },
     { title: 'Política de Privacidad', key: 'policy' },
   ];
 
@@ -25,6 +27,9 @@ const SupportPage = (props) => {
     let tempElement = <React.Fragment />;
 
     switch (key) {
+      case 'gracias':
+        tempElement = <Gracias />;
+        break;
       case 'contact':
         tempElement = <Contact />;
         break;
