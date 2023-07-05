@@ -77,14 +77,17 @@ const Footer = (prop) => {
                   el primero en enterarte sobre rebajas, lanzamientos de nuevos
                   productos y ofertas exclusivas.
                 </p>
-                
+
                 <form
                   className={styles.newsLetterForm}
                   onSubmit={(e) => subscribeHandler(e)}
+                  id="sib-form"
+                  method="POST"
+                  action="https://453c3c1b.sibforms.com/serve/MUIFAJdLAuVBFobSY76iLbHmNoTPEJaLAzibqT3H-5NBojIYbW399sxWhPYphHtKjcSTRAKjfLZxfz1SAYcluGSvESK9TYfBZf4LE_WpE8Xvj2kjD66xe8Fixvvue5iWyD2szV5IvCQ_YxtlHi9iLrmuoHQpEaSnboe2qFvaXBoAlbLJuTuK5s0P9rMfYrBZTuiAkzvbIiGAJR8Z"
                 >
                   <FormInputField
                     icon={'arrow'}
-                    id={'newsLetterInput'}
+                    id={'EMAIL'}
                     value={email}
                     placeholder={'Ingresa tu Correo Electrónico'}
                     handleChange={(_, e) => setEmail(e)}
