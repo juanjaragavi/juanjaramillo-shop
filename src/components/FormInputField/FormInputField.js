@@ -111,13 +111,14 @@ const FormInputField = React.forwardRef((props, ref) => {
       {note && <span className={styles.note}>{note}</span>}
       {error && <span className={'error'}>{error}</span>}
       {icon && (
-        <div
+        <button
+          type="submit"
           className={`${styles.iconContainer} ${
             labelName !== undefined ? styles.offsetIcon : ''
           }`}
         >
           <Icon symbol={icon} />
-        </div>
+        </button>
       )}
     </div>
   );

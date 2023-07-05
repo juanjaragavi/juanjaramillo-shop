@@ -77,6 +77,7 @@ const Footer = (prop) => {
                   el primero en enterarte sobre rebajas, lanzamientos de nuevos
                   productos y ofertas exclusivas.
                 </p>
+                
                 <form
                   className={styles.newsLetterForm}
                   onSubmit={(e) => subscribeHandler(e)}

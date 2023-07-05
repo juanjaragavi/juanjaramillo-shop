@@ -2,7 +2,16 @@
     position: relative;
     /* background-color: var(--standard-white); */
 }
-
+button {
+  background-color: transparent;
+  border: 0;
+  color: var(--standard-white);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+button:hover {
+  color: var(--jj-pink);
+}
 .label {
     font-weight: 500;
     font-size: 14px;
@@ -30,7 +39,6 @@
     color: var(--standard-white);
   }
   .input:focus {
-    border: 1px solid var(--jj-pink);
     background-color: transparent;
   }
   
