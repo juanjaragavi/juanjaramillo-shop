@@ -21,10 +21,10 @@
         "wishlist": true,
         "tags": ["sample"],
         "gallery": [
-            {"image": "https://files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
-            {"image": "https://files.juanjaramillo.tech/5-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
-            {"image": "https://files.juanjaramillo.tech/2-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
-            {"image": "https://files.juanjaramillo.tech/1-tienda-online-de-juan-jaramillo.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"}
+            {"image": "https://files.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-1.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
+            {"image": "https://files.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-2.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
+            {"image": "https://files.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-3.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
+            {"image": "https://files.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-4.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"}
         ],
         "description": "Servicios de consultoría en IA y Big Data para adaptar y optimizar las unidades de negocio, liderar proyectos de automatización inteligente, entrenar modelos cognitivos, analizar datos y generar ideas para acelerar la toma de decisiones y crear valor, y hacer que los sistemas de IA sean transparentes y fiables."
     },
