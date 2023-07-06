@@ -19,7 +19,7 @@ const SupportPage = (props) => {
     { title: 'Política de Privacidad', key: 'policy' },
   ];
 
-  const [current, setCurrent] = useState(subpages[4]);
+  const [current, setCurrent] = useState(subpages[3]);
 
   const renderElement = (key) => {
     let tempElement = <React.Fragment />;
