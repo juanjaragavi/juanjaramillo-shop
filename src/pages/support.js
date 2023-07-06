@@ -9,14 +9,12 @@ import Layout from '../components/Layout/Layout';
 import ThemeLink from '../components/ThemeLink';
 import Policy from '../components/Policy';
 import Container from '../components/Container';
+import Terms from '../components/Terms/Terms';
 
 const SupportPage = (props) => {
   const subpages = [
-    { title: 'Envío', key: 'shipping' },
     { title: 'Gracias', key: 'gracias' },
     { title: 'Contacto', key: 'contact' },
-    { title: 'Devoluciones', key: 'returns' },
-    { title: 'Pagos y Seguridad', key: 'payments' },
     { title: 'Términos y Condiciones', key: 'terms' },
     { title: 'Política de Privacidad', key: 'policy' },
   ];
@@ -36,17 +34,8 @@ const SupportPage = (props) => {
       case 'policy':
         tempElement = <Policy />;
         break;
-      case 'shipping':
-        tempElement = <Policy />;
-        break;
-      case 'returns':
-        tempElement = <Policy />;
-        break;
-      case 'payments':
-        tempElement = <Policy />;
-        break;
       case 'terms':
-        tempElement = <Policy />;
+        tempElement = <Terms />;
         break;
       default:
         break;
