@@ -158,7 +158,7 @@ const ProductPage = (props) => {
               'La Inteligencia Artificial (IA) se está convirtiendo rápidamente en una parte esencial de las empresas modernas. Sin embargo, su implementación requiere conocimientos especializados que sólo un experto y consultor en IA puede proporcionar.'
             }
             ctaText={'Conoce más'}
-            cta={() => navigate('https://blog.juanjaramillo.tech/posts/desbloquea-el-poder-de-la-ia-por-que-tu-empresa-necesita-hoy-un-consultor-experto')}
+            cta={() => navigate('/why/')}
             bgColor={'transparent'}
           />
         </div>

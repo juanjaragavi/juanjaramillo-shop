@@ -16,7 +16,7 @@ const IndexPage = () => {
         />
         <meta
           name="keywords"
-          content="Juan Jaramillo, artificial intelligence, machine learning, prompt engineer, AI projects, developer, digital marketing, AI expert"
+          content="Juan Jaramillo, inteligencia artificial, aprendizaje automático, ingeniero de prompts, proyectos de IA, desarrollador, marketing digital, experto en IA"
         />
         <meta
           property="og:image"
