@@ -20,7 +20,7 @@ const IndexPage = () => {
         />
         <meta
           property="og:image"
-          content="https://media.juanjaramillo.tech/og-image.webp"
+          content="https://static.files.juanjaramillo.tech/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/" />
         <title>
