@@ -15,27 +15,27 @@ const FavoritesPage = (props) => {
   const sampleFavorite1 = {
     color: 'Bronce',
     size: '2',
-    img: 'https://static.files.juanjaramillo.tech/1-tienda-online-de-juan-jaramillo.webp',
+    img: 'https://static.files.juanjaramillo.tech/jjcontainer/1-tienda-online-de-juan-jaramillo.webp',
     alt: 'Juan Jaramillo | Experto en IA · Prompt Engineer',
   };
 
   const sampleFavorite2 = {
     color: 'Plata',
     size: '1',
-    img: 'https://static.files.juanjaramillo.tech/2-tienda-online-de-juan-jaramillo.webp',
+    img: 'https://static.files.juanjaramillo.tech/jjcontainer/2-tienda-online-de-juan-jaramillo.webp',
     alt: 'Juan Jaramillo | Experto en IA · Prompt Engineer',
   };
 
   const sampleFavorite3 = {
     color: 'Oro',
     size: '1',
-    img: 'https://static.files.juanjaramillo.tech/3-tienda-online-de-juan-jaramillo.webp',
+    img: 'https://static.files.juanjaramillo.tech/jjcontainer/3-tienda-online-de-juan-jaramillo.webp',
     alt: 'Juan Jaramillo | Experto en IA · Prompt Engineer',
   };
   const sampleFavorite4 = {
     color: 'Bronce',
     size: '1',
-    img: 'https://static.files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp',
+    img: 'https://static.files.juanjaramillo.tech/jjcontainer/4-tienda-online-de-juan-jaramillo.webp',
     alt: 'Juan Jaramillo | Experto en IA · Prompt Engineer',
   };
 
@@ -60,7 +60,7 @@ const FavoritesPage = (props) => {
         />
         <meta
           property="og:image"
-          content="https://static.files.juanjaramillo.tech/og-image.webp"
+          content="https://static.files.juanjaramillo.tech/jjcontainer/og-image.webp"
         />
         <link
           rel="canonical"

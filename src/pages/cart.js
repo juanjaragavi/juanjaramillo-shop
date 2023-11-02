@@ -12,7 +12,7 @@ import * as styles from './cart.module.css';
 
 const CartPage = (props) => {
   const sampleCartItem = {
-    image: 'https://static.files.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp',
+    image: 'https://static.files.juanjaramillo.tech/jjcontainer/4-tienda-online-de-juan-jaramillo.webp',
     alt: '',
     name: 'Consultoría en Inteligencia Artificial (Servicio Remoto)',
     price: 120000,

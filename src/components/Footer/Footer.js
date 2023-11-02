@@ -146,21 +146,21 @@ const Footer = (prop) => {
                 {Config.paymentOptions.amex && (
                   <img
                     className={styles.amexSize}
-                    src={'https://static.files.juanjaramillo.tech/amex.webp'}
+                    src={'https://static.files.juanjaramillo.tech/jjcontainer/amex.webp'}
                     alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                   ></img>
                 )}
                 {Config.paymentOptions.mastercard && (
                   <img
                     className={styles.masterSize}
-                    src={'https://static.files.juanjaramillo.tech/master.webp'}
+                    src={'https://static.files.juanjaramillo.tech/jjcontainer/master.webp'}
                     alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                   ></img>
                 )}
                 {Config.paymentOptions.visa && (
                   <img
                     className={styles.visaSize}
-                    src={'https://static.files.juanjaramillo.tech/visa.webp'}
+                    src={'https://static.files.juanjaramillo.tech/jjcontainer/visa.webp'}
                     alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                   ></img>
                 )}

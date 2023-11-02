@@ -12,7 +12,7 @@ const Brand = (props) => {
         <img
           className={styles.logojuanjaramillo}
           alt="Juan Jaramillo | Experto en IA · Prompt Engineer"
-          src="https://static.files.juanjaramillo.tech/logo-juan-jaramillo.webp"
+          src="https://static.files.juanjaramillo.tech/jjcontainer/logo-juan-jaramillo.webp"
         />
         <p className={styles.taglinetienda}>
           Tienda en Línea de Productos y Servicios de IA.

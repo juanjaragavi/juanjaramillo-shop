@@ -30,7 +30,7 @@ const NotFoundPage = () => {
         />
         <meta
           property="og:image"
-          content="https://static.files.juanjaramillo.tech/og-image.webp"
+          content="https://static.files.juanjaramillo.tech/jjcontainer/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/404" />
         <title>
