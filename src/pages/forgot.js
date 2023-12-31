@@ -36,7 +36,7 @@ const ForgotPage = (props) => {
         />
         <meta
           property="og:image"
-          content="https://static.files.juanjaramillo.tech/jjcontainer/og-image.webp"
+          content="https://media.juanjaramillo.tech/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/forgot" />
         <title>

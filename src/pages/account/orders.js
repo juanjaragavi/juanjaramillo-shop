@@ -20,14 +20,14 @@ const OrderPage = (props) => {
     status: 'pendiente',
     items: [
       {
-        image: 'https://static.files.juanjaramillo.tech/jjcontainer/4-tienda-online-de-juan-jaramillo.webp',
+        image: 'https://media.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp',
         alt: 'order 1 product 1',
         name: 'Lambswool Crew Neck Jumper',
         quantity: '2',
         price: '120000',
       },
       {
-        image: 'https://static.files.juanjaramillo.tech/jjcontainer/5-tienda-online-de-juan-jaramillo.webp',
+        image: 'https://media.juanjaramillo.tech/5-tienda-online-de-juan-jaramillo.webp',
         alt: 'order 1 product 2',
         name: 'Lambswool Crew Neck Jumper',
         quantity: '1',
@@ -57,7 +57,7 @@ const OrderPage = (props) => {
     status: 'pendiente',
     items: [
       {
-        image: 'https://static.files.juanjaramillo.tech/jjcontainer/5-tienda-online-de-juan-jaramillo.webp',
+        image: 'https://media.juanjaramillo.tech/5-tienda-online-de-juan-jaramillo.webp',
         alt: 'order 1 product 1',
         name: 'Lambswool Crew Neck Jumper',
         quantity: '2',
@@ -95,7 +95,7 @@ const OrderPage = (props) => {
         />
         <meta
           property="og:image"
-          content="https://static.files.juanjaramillo.tech/jjcontainer/og-image.webp"
+          content="https://media.juanjaramillo.tech/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/account/orders" />
         <title>

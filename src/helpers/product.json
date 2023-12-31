@@ -5,7 +5,7 @@
         "vendor": "Juan Jaramillo",
         "price": 120000,
         "alt": "Consultoría en IA (Remoto)",
-        "image": "https://static.files.juanjaramillo.tech/jjcontainer/4-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://media.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp",
         "colorOptions": [
             {"color": "#B88948", "title": "Adaptación de Negocio a la IA", "description": "Evaluar tecnologías existentes para adaptar unidades de negocio a la IA."},
             {"color": "#D4D6D5", "title": "Actualización de Personal a la IA", "description": "Mantener actualizado y capacitar al personal en tecnologías de IA y Big Data."},
@@ -21,10 +21,10 @@
         "wishlist": true,
         "tags": ["sample"],
         "gallery": [
-            {"image": "https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-1.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
-            {"image": "https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-2.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
-            {"image": "https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-3.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
-            {"image": "https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-4.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"}
+            {"image": "https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-1.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
+            {"image": "https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-2.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
+            {"image": "https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-3.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"},
+            {"image": "https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-4.webp", "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer"}
         ],
         "description": "Servicios de consultoría en IA y Big Data para adaptar y optimizar las unidades de negocio, liderar proyectos de automatización inteligente, entrenar modelos cognitivos, analizar datos y generar ideas para acelerar la toma de decisiones y crear valor, y hacer que los sistemas de IA sean transparentes y fiables."
     },
@@ -32,28 +32,28 @@
         "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
         "price": 120000,
         "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "https://static.files.juanjaramillo.tech/jjcontainer/4-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://media.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp",
         "tags": ["woman"]
     },
     {
         "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
         "price": 120000,
         "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "https://static.files.juanjaramillo.tech/jjcontainer/5-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://media.juanjaramillo.tech/5-tienda-online-de-juan-jaramillo.webp",
         "tags": ["woman"]
     },    
     {
         "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
         "price": 120000,
         "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "https://static.files.juanjaramillo.tech/jjcontainer/2-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://media.juanjaramillo.tech/2-tienda-online-de-juan-jaramillo.webp",
         "tags": ["woman"]
     },
     {
         "name": "Consultoría en Inteligencia Artificial (Servicio Remoto)",
         "price": 120000,
         "alt": "Juan Jaramillo | Experto en IA · Prompt Engineer",
-        "image": "https://static.files.juanjaramillo.tech/jjcontainer/1-tienda-online-de-juan-jaramillo.webp",
+        "image": "https://media.juanjaramillo.tech/1-tienda-online-de-juan-jaramillo.webp",
         "tags": ["woman"]
     }
 ]

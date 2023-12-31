@@ -39,7 +39,7 @@ const WhyPage = (props) => {
         />
         <meta
           property="og:image"
-          content="https://static.files.juanjaramillo.tech/jjcontainer/og-image.webp"
+          content="https://media.juanjaramillo.tech/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/login" />
         <title>
@@ -52,7 +52,7 @@ const WhyPage = (props) => {
         <Hero
           maxWidth={'900px'}
           image={
-            'https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-7.webp'
+            'https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-7.webp'
           }
           title={`¿por qué contratar\na un experto en IA?`}
         />
@@ -110,7 +110,7 @@ const WhyPage = (props) => {
           <img
             alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
             src={
-              'https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-6.webp'
+              'https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-6.webp'
             }
           ></img>
         </div>
@@ -129,7 +129,7 @@ const WhyPage = (props) => {
               <img
                 alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                 src={
-                  'https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-9.webp'
+                  'https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-9.webp'
                 }
               ></img>
             </div>
@@ -145,7 +145,7 @@ const WhyPage = (props) => {
               <img
                 alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                 src={
-                  'https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-10.webp'
+                  'https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-10.webp'
                 }
               ></img>
             </div>
@@ -159,7 +159,7 @@ const WhyPage = (props) => {
               <img
                 alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                 src={
-                  'https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-11.webp'
+                  'https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-11.webp'
                 }
               ></img>
             </div>
@@ -175,7 +175,7 @@ const WhyPage = (props) => {
               <img
                 alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                 src={
-                  'https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-8.webp'
+                  'https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-8.webp'
                 }
               ></img>
             </div>
@@ -190,7 +190,7 @@ const WhyPage = (props) => {
               <img
                 alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                 src={
-                  'https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-12.webp'
+                  'https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-12.webp'
                 }
               ></img>
             </div>
@@ -201,7 +201,7 @@ const WhyPage = (props) => {
           <img
             alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
             src={
-              'https://static.files.juanjaramillo.tech/jjcontainer/servicios-de-consultoria-tienda-juan-jaramillo-5.webp'
+              'https://media.juanjaramillo.tech/servicios-de-consultoria-tienda-juan-jaramillo-5.webp'
             }
           ></img>
         </div>
