@@ -24,7 +24,11 @@
       "links": [
         {
           "text": "Conóceme",
-          "link": "https://juanjaramillo.tech/"
+          "link": "https://juanjaramillo.tech/#about"
+        },
+        {
+          "text": "Trabajo",
+          "link": "https://juanjaramillo.tech/#work"
         },
         {
           "text": "Blog",
