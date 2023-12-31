@@ -153,7 +153,7 @@ const Footer = (prop) => {
                 {Config.paymentOptions.mastercard && (
                   <img
                     className={styles.masterSize}
-                    src={'https://media.juanjaramillo.tech/master.webp'}
+                    src={'https://media.juanjaramillo.tech/masterlogo.webp'}
                     alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                   ></img>
                 )}
