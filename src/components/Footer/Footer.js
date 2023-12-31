@@ -146,7 +146,7 @@ const Footer = (prop) => {
                 {Config.paymentOptions.amex && (
                   <img
                     className={styles.amexSize}
-                    src={'https://media.juanjaramillo.tech/amex.webp'}
+                    src={'https://media.juanjaramillo.tech/amexlogo.webp'}
                     alt={'Juan Jaramillo | Experto en IA · Prompt Engineer'}
                   ></img>
                 )}
