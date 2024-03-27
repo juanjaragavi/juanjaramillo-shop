@@ -75,7 +75,7 @@ const SupportPage = (props) => {
         />
         <meta
           property="og:image"
-          content="https://storage.googleapis.com/media.juanjaramillo.tech/og-image.webp"
+          content="https://media.juanjaramillo.tech/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/support" />
         <title>
@@ -86,7 +86,7 @@ const SupportPage = (props) => {
         <Banner
           maxWidth={'650px'}
           name={current.title}
-          bgImage={'https://storage.googleapis.com/media.juanjaramillo.tech/fondo-header-contacto-tienda-online-de-juan-jaramillo.webp'}
+          bgImage={'https://media.juanjaramillo.tech/fondo-header-contacto-tienda-online-de-juan-jaramillo.webp'}
           color={'var(--standard-white)'}
           height={'350px'}
         />
