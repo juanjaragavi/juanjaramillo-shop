@@ -9,7 +9,7 @@ import * as styles from './MiniCart.module.css';
 
 const MiniCart = (props) => {
   const sampleCartItem = {
-    image: 'https://media.juanjaramillo.tech/4-tienda-online-de-juan-jaramillo.webp',
+    image: 'https://media.myparcero.com/4-tienda-online-de-juan-jaramillo.webp',
     alt: '',
     name: 'Consultoría en Inteligencia Artificial (Servicio Remoto)',
     price: 120000,

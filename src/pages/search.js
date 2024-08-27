@@ -31,7 +31,7 @@ const SearchPage = (props) => {
         />
         <meta
           property="og:image"
-          content="https://media.juanjaramillo.tech/og-image.webp"
+          content="https://media.myparcero.com/og-image.webp"
         />
         <link rel="canonical" href="http://shop.juanjaramillo.tech/search" />
         <title>
